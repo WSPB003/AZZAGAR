@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | Kingstown Cleaning Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#stairs">Pre-Finished Wood Stairs</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#carpentry">Fine Wood Carpentry</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" fill="#EAE4D9"/>
+                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
+                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
+                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
+                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
+                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
+                </svg>
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="index.html">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- 1. Hero Section -->
+        <section class="coll-hero">
+            <img src="assets/maintenance.png" alt="Cleaning Solution Banner" class="coll-hero-bg">
+            <div class="coll-hero-overlay"></div>
+            <div class="coll-hero-content">
+                <h2>KINGSTOWN CLEANING SOLUTIONS</h2>
+                <p style="font-size: 0.95rem; letter-spacing: 0.05em; font-family: var(--font-body); font-weight: 300; margin-top: 0.8rem; color: #EAE4D9;">ผลิตภัณฑ์ทำความสะอาดคุณภาพสูง รักษาสุขอนามัยและถนอมผิววัสดุในบ้านของคุณ</p>
+            </div>
+        </section>
+
+        <!-- 2. Products Catalog Section -->
+        <section class="flooring-collections-section">
+            <div class="section-container wide-container">
+                <div class="right-sec-header">
+                    <h3>ผลิตภัณฑ์ทำความสะอาด ตรา คิงส์ทาวน์</h3>
+                    <p>KINGSTOWN HOUSEHOLD CLEANERS</p>
+                </div>
+
+                <div class="flooring-grid" style="grid-template-columns: repeat(4, 1fr); margin-top: 3rem;">
+                    <!-- Product 1 -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <!-- Bottle SVG -->
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="24" y="6" width="16" height="8" rx="1" fill="#DCCBB3" fill-opacity="0.2" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M28 14V22H36V14" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M18 24C18 22.8954 18.8954 22 20 22H44C45.1046 22 46 22.8954 46 24V54C46 56.2091 44.2091 58 42 58H22C19.7909 58 18 56.2091 18 54V24Z" fill="#DCCBB3" fill-opacity="0.1" stroke="#DCCBB3" stroke-width="2"/>
+                                <line x1="22" y1="34" x2="42" y2="34" stroke="#DCCBB3" stroke-width="1.5"/>
+                                <text x="32" y="46" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#DCCBB3" text-anchor="middle">FLOOR</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>ผลิตภัณฑ์ถูพื้นประจำวัน</h4>
+                            <p class="quality-tag" style="margin-bottom: 0.8rem;">Daily Floor Cleaner</p>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.5rem; height: 75px; overflow: hidden;">สูตรอ่อนโยนสำหรับถูพื้นประจำวัน ช่วยขจัดคราบฝุ่นสกปรก ให้พื้นผิวสะอาดเงางาม ไม่ทิ้งคราบเหนียว ปลอดภัยสำหรับทุกคนในบ้าน</p>
+                            <button class="btn-see-details">Add to Enquiry</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <!-- Jerrycan SVG -->
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="8" width="12" height="6" rx="1" fill="#DCCBB3" fill-opacity="0.2" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M16 20C16 16.6863 18.6863 14 22 14H42C45.3137 14 48 16.6863 48 20V52C48 55.3137 45.3137 58 42 58H22C18.6863 58 16 55.3137 16 52V20Z" fill="#DCCBB3" fill-opacity="0.1" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M48 20H52V36H48" stroke="#DCCBB3" stroke-width="2" stroke-linecap="round"/>
+                                <line x1="20" y1="28" x2="44" y2="28" stroke="#DCCBB3" stroke-width="1.5"/>
+                                <text x="32" y="44" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#DCCBB3" text-anchor="middle">WASH</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>ผลิตภัณฑ์ล้างพื้น</h4>
+                            <p class="quality-tag" style="margin-bottom: 0.8rem;">Deep Floor Wash</p>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.5rem; height: 75px; overflow: hidden;">สูตรทำความสะอาดล้ำลึก ขจัดคราบมัน คราบฝังแน่น และคราบสกปรกหนักที่พื้นผิวทั่วไปได้อย่างมีประสิทธิภาพ ถนอมเนื้อไม้</p>
+                            <button class="btn-see-details">Add to Enquiry</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <!-- Toilet Bottle SVG -->
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="26" y="4" width="12" height="6" rx="1" fill="#DCCBB3" fill-opacity="0.2" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M26 10L20 18V24H44V18L38 10H26Z" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M20 24C20 24 16 32 16 36V54C16 56.2091 17.7909 58 20 58H44C46.2091 58 48 56.2091 48 54V36C48 32 44 24 44 24H20Z" fill="#DCCBB3" fill-opacity="0.1" stroke="#DCCBB3" stroke-width="2"/>
+                                <text x="32" y="44" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#DCCBB3" text-anchor="middle">BATH</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>ผลิตภัณฑ์ล้างห้องน้ำ</h4>
+                            <p class="quality-tag" style="margin-bottom: 0.8rem;">Bathroom Cleaner</p>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.5rem; height: 75px; overflow: hidden;">สูตรขจัดคราบสบู่ คราบหินปูน และรอยเปื้อนฝังแน่นในห้องน้ำ สะอาดหมดจดโดยไม่ทำลายยาแนวหรือชั้นเคลือบผิวสุขภัณฑ์</p>
+                            <button class="btn-see-details">Add to Enquiry</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <!-- Soap Dispenser SVG -->
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 14H36V22H28V14Z" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M32 14V6H24" stroke="#DCCBB3" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M20 24C20 22.8954 20.8954 22 22 22H42C43.1046 22 44 22.8954 44 24V54C44 56.2091 42.1046 58 40 58H24C21.7909 58 20 56.2091 20 54V24Z" fill="#DCCBB3" fill-opacity="0.1" stroke="#DCCBB3" stroke-width="2"/>
+                                <circle cx="32" cy="36" r="4" stroke="#DCCBB3" stroke-width="1.5"/>
+                                <text x="32" y="48" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#DCCBB3" text-anchor="middle">DISH</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>ผลิตภัณฑ์ล้างจาน</h4>
+                            <p class="quality-tag" style="margin-bottom: 0.8rem;">Dishwashing Liquid</p>
+                            <p style="font-size: 0.75rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.5rem; height: 75px; overflow: hidden;">ขจัดคราบมันและคราบเศษอาหารบนภาชนะจานชามได้อย่างสะอาดหมดจด อ่อนโยนต่อผิวสัมผัส ไร้สารเคมีตกค้าง</p>
+                            <button class="btn-see-details">Add to Enquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057</p>
+            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+    </script>
+</body>
+</html>

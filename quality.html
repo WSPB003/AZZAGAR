@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | Quality Standards & Certificates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#stairs">Pre-Finished Wood Stairs</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#carpentry">Fine Wood Carpentry</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" fill="#EAE4D9"/>
+                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
+                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
+                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
+                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
+                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
+                </svg>
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="index.html">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- 1. Quality Hero Banner -->
+        <section class="coll-hero">
+            <img src="assets/wood_test_abrasion.png" alt="Quality Standards Banner" class="coll-hero-bg">
+            <div class="coll-hero-overlay"></div>
+            <div class="coll-hero-content">
+                <h2>UNCOMPROMISING QUALITY, PROVEN STANDARDS</h2>
+                <p style="font-size: 0.95rem; letter-spacing: 0.05em; font-family: var(--font-body); font-weight: 300; margin-top: 0.8rem; color: #EAE4D9;">มาตรฐานเยอรมันที่ผ่านการรับรองอย่างเข้มงวด เพื่อความมั่นใจในทุกย่างก้าว</p>
+            </div>
+        </section>
+
+        <!-- 2. Certification & Standards Center -->
+        <section class="flooring-collections-section">
+            <div class="section-container wide-container">
+                <div class="right-sec-header">
+                    <h3>ศูนย์ข้อมูลใบรับรองและมาตรฐานคุณภาพ</h3>
+                </div>
+
+                <div class="flooring-grid">
+                    <!-- Cert 1: ISO -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <circle cx="30" cy="30" r="22" fill="#DCCBB3" fill-opacity="0.1"/>
+                                <text x="30" y="35" font-family="'Montserrat', sans-serif" font-size="11" font-weight="700" fill="#DCCBB3" text-anchor="middle">ISO</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>ISO 9001:2015</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Certified quality management system</p>
+                            <button class="btn-see-details">View Certificate</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: CE -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <text x="30" y="37" font-family="'Montserrat', sans-serif" font-size="18" font-weight="600" fill="#DCCBB3" text-anchor="middle" letter-spacing="-0.05em">CE</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>CE Marking</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Compliant with EU safety and performance standards</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: DIN -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="12" y="15" width="36" height="30" rx="3" stroke="#DCCBB3" stroke-width="2"/>
+                                <text x="30" y="35" font-family="'Montserrat', sans-serif" font-size="13" font-weight="700" fill="#DCCBB3" text-anchor="middle">DIN</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>DIN Standard</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Verified adherence to strict German benchmarks</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: LEED -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M30 18C23.37 18 18 23.37 18 30H30V18Z" fill="#DCCBB3" fill-opacity="0.3"/>
+                                <text x="30" y="44" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="#DCCBB3" text-anchor="middle">LEED</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>LEED Compliant</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Contributes to sustainable building environments</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5: LEED -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M30 18C23.37 18 18 23.37 18 30H30V18Z" fill="#DCCBB3" fill-opacity="0.3"/>
+                                <text x="30" y="44" font-family="'Montserrat', sans-serif" font-size="9" font-weight="700" fill="#DCCBB3" text-anchor="middle">LEED</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>LEED Compliant</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Contributes to sustainable building environments</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 6: TIS -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M30 18L38 34H22L30 18Z" stroke="#DCCBB3" stroke-width="1.5"/>
+                                <text x="30" y="43" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#DCCBB3" text-anchor="middle">TIS</text>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>TIS Standard (Thailand)</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Meets Thailand industrial quality standards</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 7: PEFC -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M26 38V28H22L30 18L38 28H34V38H26Z" fill="#DCCBB3" fill-opacity="0.3" stroke="#DCCBB3" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>PEFC Certified</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Verifies sustainably sourced wood origins</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Cert 8: PEFC -->
+                    <div class="floor-item" style="text-align: center; align-items: center;">
+                        <div class="floor-swatch" style="display: flex; align-items: center; justify-content: center; background: #FAF8F5;">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="30" cy="30" r="26" stroke="#DCCBB3" stroke-width="2"/>
+                                <path d="M26 38V28H22L30 18L38 28H34V38H26Z" fill="#DCCBB3" fill-opacity="0.3" stroke="#DCCBB3" stroke-width="1"/>
+                            </svg>
+                        </div>
+                        <div class="floor-info">
+                            <h4>PEFC Certified</h4>
+                            <p class="quality-tag" style="margin-bottom: 1.5rem;">Verifies sustainably sourced wood origins</p>
+                            <button class="btn-see-details">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Quality Assurance Process -->
+        <section class="stairs-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>กระบวนการรับประกันคุณภาพ</h3>
+                    <p>Tested for Uncompromising Strength</p>
+                </div>
+                <div class="stairs-carpentry-grid">
+                    <!-- Process 1 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/wood_test_abrasion.png" alt="Precision Abrasion Test">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>PRECISION ABRASION TEST</h4>
+                            <p>Tested for superior wear resistance</p>
+                            <button class="btn-enquire">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Process 2 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/planks.png" alt="Moisture Stability Report">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>MOISTURE STABILITY REPORT</h4>
+                            <p>Proven stability under varying humidity</p>
+                            <button class="btn-enquire">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Process 3 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/textures.png" alt="Structural Integrity Analysis">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>STRUCTURAL INTEGRITY ANALYSIS</h4>
+                            <p>Tested for strength and perfect fit</p>
+                            <button class="btn-enquire">เรียนรู้เพิ่มเติม</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Project Quality Case Studies -->
+        <section class="carpentry-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>PROJECT QUALITY CASE STUDIES</h3>
+                    <p>เคสตัวอย่างคุณภาพโครงการ</p>
+                </div>
+                <div class="stairs-carpentry-grid">
+                    <!-- Case 1 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/hero.png" alt="Luxury Apartment Project">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>LUXURY APARTMENT PROJECT - CERTIFIED</h4>
+                            <p>All floors and custom carpentry passed quality checks</p>
+                            <button class="btn-quote">View Case Study</button>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/built_in_kitchen.png" alt="Commercial Office Project">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>COMMERCIAL OFFICE PROJECT - TESTED</h4>
+                            <p>Complies with commercial wear and safety standards</p>
+                            <button class="btn-quote">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+
+                    <!-- Case 3 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/built_in_fireplace.png" alt="Resort Villa Project">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>RESORT VILLA PROJECT - VERIFIED</h4>
+                            <p>Tested for sustainable sourcing and durability</p>
+                            <button class="btn-quote">ดูใบรับรอง</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Quality Maintenance & Care -->
+        <section class="maintenance-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>QUALITY MAINTENANCE & CARE</h3>
+                </div>
+                <div class="stairs-carpentry-grid">
+                    <!-- Care item 1 -->
+                    <div class="coll-prod-item" style="text-align: center; align-items: center; padding: 2.5rem 1.5rem;">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 1.5rem;">
+                            <path d="M12 40V12H36V40H12Z" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M20 12V8C20 6.89543 20.8954 6 22 6H26C27.1046 6 28 6.89543 28 8V12" stroke="#DCCBB3" stroke-width="2"/>
+                            <circle cx="24" cy="26" r="4" fill="#DCCBB3" fill-opacity="0.3" stroke="#DCCBB3" stroke-width="2"/>
+                        </svg>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">WOOD CLEANER</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1.5rem;">Specialized maintenance</p>
+                        <button class="btn-see-details" onclick="location.href='cleaning_solution.html'">View Cleaners</button>
+                    </div>
+
+                    <!-- Care item 2 -->
+                    <div class="coll-prod-item" style="text-align: center; align-items: center; padding: 2.5rem 1.5rem;">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 1.5rem;">
+                            <path d="M12 10H36V38H12V10Z" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M18 16H30" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M18 22H30" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M18 28H26" stroke="#DCCBB3" stroke-width="2"/>
+                        </svg>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">STAIRWAY CARE</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1.5rem;">Access longevity manuals</p>
+                        <button class="btn-see-details" onclick="location.href='collections.html'">View Stair Guides</button>
+                    </div>
+
+                    <!-- Care item 3 -->
+                    <div class="coll-prod-item" style="text-align: center; align-items: center; padding: 2.5rem 1.5rem;">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 1.5rem;">
+                            <path d="M24 8L36 20V40H12V20L24 8Z" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M24 20V32" stroke="#DCCBB3" stroke-width="2"/>
+                            <path d="M18 26H30" stroke="#DCCBB3" stroke-width="2"/>
+                        </svg>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem;">WOOD POLISH</h4>
+                        <p style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1.5rem;">Enhance natural finish</p>
+                        <button class="btn-see-details" onclick="location.href='cleaning_solution.html'">View Cleaners</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+    </script>
+</body>
+</html>

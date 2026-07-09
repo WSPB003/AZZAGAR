@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | Projects Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#stairs">Pre-Finished Wood Stairs</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#carpentry">Fine Wood Carpentry</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" fill="#EAE4D9"/>
+                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
+                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
+                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
+                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
+                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
+                </svg>
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="index.html">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- 1. Portfolio Hero Banner -->
+        <section class="coll-hero">
+            <img src="assets/project_banner.png" alt="Installation Portfolio Banner" class="coll-hero-bg">
+            <div class="coll-hero-overlay"></div>
+            <div class="coll-hero-content">
+                <h2>AZZAGAR INSTALLATION PORTFOLIO</h2>
+            </div>
+        </section>
+
+        <!-- 2. Flooring Installations Grid Section -->
+        <section class="flooring-collections-section">
+            <div class="section-container wide-container">
+                <div class="right-sec-header">
+                    <h3>ผลงานการติดตั้งพื้น</h3>
+                    <p>FLOORING INSTALLATIONS</p>
+                </div>
+
+                <div class="flooring-grid">
+                    <!-- Project 1: Villa Luxury Living -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-1"></div></div>
+                        <div class="floor-info">
+                            <h4>VILLA LUXURY LIVING</h4>
+                            <p class="quality-tag">WHITE OAK</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Modern Penthouse -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-2"></div></div>
+                        <div class="floor-info">
+                            <h4>MODERN PENTHOUSE</h4>
+                            <p class="quality-tag">WALNUT</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Executive Office -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-3"></div></div>
+                        <div class="floor-info">
+                            <h4>EXECUTIVE OFFICE</h4>
+                            <p class="quality-tag">SMOKED OAK</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: ออฟฟิศ</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Boutique Hotel Lobby -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-4"></div></div>
+                        <div class="floor-info">
+                            <h4>BOUTIQUE HOTEL LOBBY</h4>
+                            <p class="quality-tag">TEAK</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: โรงแรม</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Boutique Hotel Lobby -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-5"></div></div>
+                        <div class="floor-info">
+                            <h4>BOUTIQUE HOTEL LOBBY</h4>
+                            <p class="quality-tag">TEAK</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: โรงแรม</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Minimalist Residence -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-6"></div></div>
+                        <div class="floor-info">
+                            <h4>MINIMALIST RESIDENCE</h4>
+                            <p class="quality-tag">SILVER OAK</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Minimalist Floor -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-7"></div></div>
+                        <div class="floor-info">
+                            <h4>MINIMALIST FLOOR</h4>
+                            <p class="quality-tag">GREY LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Private Gym Floor -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><div class="floor-swatch-crop sw-8"></div></div>
+                        <div class="floor-info">
+                            <h4>PRIVATE GYM FLOOR</h4>
+                            <p class="quality-tag">GREY LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: ฟิตเนส</p>
+                            <button class="btn-see-details">See Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Staircase Installations Section -->
+        <section class="stairs-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>ผลงานการติดตั้งบันได</h3>
+                    <p>STAIRCASE INSTALLATIONS</p>
+                </div>
+                <div class="stairs-carpentry-grid">
+                    <!-- Stair 1 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/stairs.png" alt="Coastal Villa Spiral Stair">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>COASTAL VILLA SPIRAL STAIR</h4>
+                            <p>COMPACT & ELEGANT WALNUT</p>
+                            <button class="btn-enquire" onclick="location.href='collections.html'">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Stair 2 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/stairs_straight.png" alt="Modern Home Floating Stair">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>MODERN HOME FLOATING STAIR</h4>
+                            <p>MINIMALIST OAK & GLASS</p>
+                            <button class="btn-enquire" onclick="location.href='collections.html'">See Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Stair 3 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/grand_staircase.png" alt="Luxury Hotel Grand Staircase">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>LUXURY HOTEL GRAND STAIRCASE</h4>
+                            <p>BESPOKE TEAK & IRON</p>
+                            <button class="btn-enquire" onclick="location.href='collections.html'">See Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Craftsmanship & Built-in Section -->
+        <section class="carpentry-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>งานช่างฝีมือและ Built-in</h3>
+                </div>
+                <div class="stairs-carpentry-grid">
+                    <!-- Built-in 1 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/built_in_kitchen.png" alt="Private Residence Kitchen">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>PRIVATE RESIDENCE KITCHEN</h4>
+                            <p>WALNUT CABINETRY</p>
+                            <button class="btn-quote">Get a Quote</button>
+                        </div>
+                    </div>
+
+                    <!-- Built-in 2 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/carpentry_closet.png" alt="Designed Walk-in Closet">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>DESIGNED WALK-IN CLOSET</h4>
+                            <p>CUSTOM EXOTIC</p>
+                            <button class="btn-quote">Get a Quote</button>
+                        </div>
+                    </div>
+
+                    <!-- Built-in 3 -->
+                    <div class="coll-prod-item">
+                        <div class="coll-prod-img">
+                            <img src="assets/built_in_fireplace.png" alt="Fireplace Feature Wall">
+                        </div>
+                        <div class="coll-prod-info">
+                            <h4>FIREPLACE FEATURE WALL</h4>
+                            <p>CONTEMPORARY FEATURE</p>
+                            <button class="btn-quote">Get a Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Latest Projects & Reviews Section -->
+        <section class="maintenance-section">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>โครงการล่าสุดและรีวิว</h3>
+                </div>
+                <div class="maintenance-container" style="align-items: stretch;">
+                    <div class="maintenance-img-container" style="width: 35%;">
+                        <img src="assets/maintenance.png" alt="Project Review Swatch" style="height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="maintenance-list" style="width: 65%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                        <!-- Review 1 -->
+                        <div class="coll-prod-item" style="box-shadow: none; border-color: rgba(220, 203, 179, 0.15); background: transparent;">
+                            <div class="stars-row" style="color: #c7b9a1; font-size: 1.1rem; margin-bottom: 0.8rem;">★★★★★</div>
+                            <p style="font-size: 0.78rem; line-height: 1.5; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">"Highly client completed damned and client toward the smart and feedback"</p>
+                            <button class="btn-see-details" style="font-size: 0.62rem; padding: 0.45rem;">Read More</button>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="coll-prod-item" style="box-shadow: none; border-color: rgba(220, 203, 179, 0.15); background: transparent;">
+                            <div class="stars-row" style="color: #c7b9a1; font-size: 1.1rem; margin-bottom: 0.8rem;">★★★★★</div>
+                            <p style="font-size: 0.78rem; line-height: 1.5; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">"Very client's silent client was completed customized with mudsily more"</p>
+                            <button class="btn-see-details" style="font-size: 0.62rem; padding: 0.45rem;">Read More</button>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="coll-prod-item" style="box-shadow: none; border-color: rgba(220, 203, 179, 0.15); background: transparent;">
+                            <div class="stars-row" style="color: #c7b9a1; font-size: 1.1rem; margin-bottom: 0.8rem;">★★★★★</div>
+                            <p style="font-size: 0.78rem; line-height: 1.5; color: var(--text-light); margin-bottom: 1.5rem; flex-grow: 1;">"Slowly emerge has howed contact us meck and senceisnd on or client back"</p>
+                            <button class="btn-see-details" style="font-size: 0.62rem; padding: 0.45rem;">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Trusted Real Estate Project Database -->
+        <section class="quality-section" style="background-color: #FAF8F5; padding: 6rem 0;">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>โครงการความร่วมมือและอ้างอิง</h3>
+                    <p>TRUSTED REAL ESTATE REFERENCES</p>
+                </div>
+                <div style="margin: 2.5rem 0; text-align: center;">
+                    <input type="text" id="projectSearch" placeholder="พิมพ์ชื่อโครงการเพื่อค้นหา... (เช่น เศรษฐศิริ, บุราสิริ, พลีโน่, Aspire, ดีคอนโด...)" style="width: 100%; max-width: 600px; padding: 1.1rem; border: 1px solid var(--border-color); background: var(--white); font-family: var(--font-body); font-size: 0.82rem; letter-spacing: 0.05em; transition: all 0.3s; box-shadow: 0 4px 12px rgba(139, 123, 97, 0.02);">
+                </div>
+                <div id="projectList" style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; max-height: 380px; overflow-y: auto; padding: 1.5rem; background: var(--white); border: 1px solid var(--border-color); border-radius: 4px;">
+                    <!-- Project tags -->
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เศรษฐศิริ พัฒนาการ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เศรษฐศิริ อ่อนนุช - ศรีนครินทร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เศรษฐสิริ วงแหวน - ลำลูกกา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เศรษฐสิริ อุดรธานี</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ ปัญญาอินทรา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ ปัญญาอินทรา เฟส 2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ วงแหวน อ่อนนุช</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ ท่าข้าม พระราม 2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ รังสิต บางพูน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ บึงหนองโคตร ขอนแก่น</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ งามวงศ์วาน - ประชาชื่น</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ ราชพฤกษ์ - แจ้งวัฒนะ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บุราสิริ อ่อนนุช – บางนา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ สิริ สแควร์ เจริญกรุง 80</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ การ์เด้น สแควร์ สุขุมวิท 77</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ พลัส ซิตี้พาร์ค เกษตร - งามวงศ์วาน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ พลัส ซิตี้พาร์ค ศรีนครินทร์ - สวนหลวง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส ประชาอุทิศ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส - เอ็กซ์ ประชาชื่น</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส - เอ็กซ์ ลาดพร้าว</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส เกษตร-นวมินทร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส พระรามเก้า</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส หัวหมาก</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส เทพารักษ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส สุวรรณภูมิ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส เพชรเกษม - บางแค</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส ราชพฤกษ์ - จรัญสนิทวงศ์ 13</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ พลัส อ่อนนุช</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว พระราม 9</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว ศรีนครินทร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว พระราม 2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว เมิร์จ รัตนาธิเบศร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว ไทม์ ท่าข้าม 16</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ทาวน์ อเวนิว สองแคว</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบิทาวน์ เนสท์ ท่าข้าม – พระราม 2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบิทาวน์ วัชรพล</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบิทาวน์ โฟลด์ - ติวานนท์ แจ้งวัฒนะ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบีเทีย ปัญญาอินทรา เฟส 2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบีเทีย วัชรพล</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาบิเทีย เวนต์ – ปัญญาอินทรา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ เบส การ์เด้น - พระราม 9</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ ไลน์ สุขุมวิท 71</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ฮาสุเฮ้าส์ - สุขุมวิท 77</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ โมริเฮาส์ สุขุมวิท 77</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ไมน์ - ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ลักษ์ - ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ครีก - ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด แคมปัส รีสอร์ท บางนา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด แคมปัส รีสอร์ท รังสิต - ธรรมศาสตร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด แคมปัส รีสอร์ท เชียงใหม่</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ซายน์ เชียงใหม่</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ฮาย เชียงราย</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด เนินพระ - ระยอง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด นครระยอง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด ราชพฤกษ์ - จรัญฯ 13</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด แคมปัส รีสอร์ท บางแสน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด กาญจนวณิช - หาดใหญ่</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด อ่อนนุช - พระราม 9</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด อ่อนนุช-สุวรรณภูมิ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด รามอินทรา</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด รามคำแหง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด จรัล บางขุนนนท์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด สาธุประดิษฐ์ 49</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด กะทู้ - ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด กะทู้ - ป่าตอง ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด กู้กู - ภูเก็ต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด รามคำแหง 64</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ดี คอนโด หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ มายคอนโด สุขุมวิท 81</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ มายคอนโด สุขุมวิท 52</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ มายคอนโด ลาดพร้าว 27</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านทิวลม ชะอำ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านอิ่มเอม หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านเพียงเพลิน หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านเคียงฟ้า หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านคุ้นเคย หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านคู่เคียง หัวหิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการบ้านกลางเมือง ลาดพร้าว 101</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านกลางเมือง พระราม 9 - รามคำแหง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการบ้านกลางเมือง งามวงศ์วาน - ชินเขต</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านกลางเมือง รัตนาธิเบศร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านกลางเมือง พิบูลสงคราม</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการบ้านกลางเมือง สาทร - ราชพฤกษ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการบ้านกลางเมือง พระราม 3 - ราษฎร์บูรณะ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการบ้านกลางเมือง ลาดพร้าว 87</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านกลางเมือง สุกสวัสดิ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ บ้านกลางเมือง สวนหลวง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ พระราม 5 - ปิ่นเกล้า</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ รัตนาธิเบศร์ - ชัยพฤกษ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ ปิ่นเกล้า - ราชพฤกษ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ ศรีนครินทร์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ ติวานนท์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ สุขสวัสดิ์ 30</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ ราชพฤกษ์ - พระราม 5</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ พลีโน่ ราชพฤกษ์ บางศรีเมือง</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ เซ็นโทร ปิ่นเกล้า - วงแหวน (วัดพระเงิน)</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เดอะ เซ็นโทร สุขสวัสดิ์ - พระราม 3</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ เซ็นโทร ราชพฤกษ์ (บางเลน)</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ The City บางใหญ่</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ The City พหลโยธิน</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ BIZTOWN พระราม 3 - สุขสวัสดิ์</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ RHYTHM รางน้ำ</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ RHYTHM สุขุมวิท 42</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ASPIRE รัตนาธิเบศร์ 1</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ASPIRE Ngamwongwan</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ASPIRE Erawan</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ ASPIRE Sathon - Ratchaphruek</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Life Asoke</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Life Pinklao</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Life Sukhumvit 48</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Ideo Wutthakat</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Ideo Q Chula - Samyan</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Ideo Sukhumvit 115</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Ideo O2</span>
+                    <span class="project-tag" style="padding: 0.6rem 1rem; border: 1px solid var(--border-color); font-size: 0.72rem; letter-spacing: 0.05em; font-family: var(--font-body); color: var(--text-light); transition: all 0.3s; cursor: default;">โครงการ Ideo Thaphra - Interchange</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+    </script>
+</body>
+</html>

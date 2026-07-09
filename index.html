@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | Premium Flooring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="active">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#stairs">Pre-Finished Wood Stairs</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#carpentry">Fine Wood Carpentry</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" fill="#EAE4D9"/>
+                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
+                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
+                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
+                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
+                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
+                </svg>
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="index.html" class="active">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="consultation.html">CONSULTATION</a>
+            <a href="consultation.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/hero.png" alt="Luxurious Living Room" class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>ELEGANCE IN EVERY STEP.</h1>
+                <p>Discover Premium German-Engineered Flooring & Bespoke Wood Staircases.</p>
+                <button class="btn-primary">REQUEST A PRIVATE CONSULTATION</button>
+            </div>
+        </section>
+
+        <!-- Craftsmanship Section -->
+        <section class="craftsmanship">
+            <div class="section-container">
+                <h2 class="section-title">OUR CRAFTSMANSHIP</h2>
+                <div class="craft-content">
+                    <div class="craft-image-container">
+                        <div class="bg-offset"></div>
+                        <div class="image-wrapper">
+                            <img src="assets/planks.png" alt="OUR CRAFTSMANSHIP">
+                        </div>
+                    </div>
+                    <div class="craft-text">
+                        <h3>German Engineering,<br>Asian Durability</h3>
+                        <p class="desc">German Engineering, Asian Durability flooring & Bespoke uniocom wood flank.</p>
+                        <p class="quality"><a href="quality.html" style="color: inherit; text-decoration: underline;">Uncompromising Quality & Standards</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info Section Top -->
+        <section class="info-top">
+            <div class="section-container">
+                <div class="info-content">
+                    <div class="info-image-container">
+                        <div class="bg-offset"></div>
+                        <div class="image-wrapper" style="overflow: hidden; border: 1px solid var(--border-color);">
+                            <div id="finish-preview" style="width: 100%; height: 100%; min-height: 380px; background-image: url('assets/planks.png'); background-size: cover; background-position: center; transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <h3>German Engineering,<br>Asian Durability</h3>
+                        <p class="desc">German Engineering, Asian Durability and aminate floor</p>
+                        <p class="quality"><a href="quality.html" style="color: inherit; text-decoration: underline;">Uncompromising Quality</a></p>
+                        <div class="divider" style="height: 1px; background-color: var(--border-color); opacity: 0.15; margin: 1.8rem 0;"></div>
+                        <p style="font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.2rem; color: var(--text-light); font-weight: 600;">Customizable Finishes</p>
+                        <div style="display: flex; gap: 1rem 0.8rem; align-items: center; flex-wrap: wrap; max-width: 480px;">
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw1', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 0% 0%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">White Oak</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw2', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 33.33% 0%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Walnut</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw3', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 66.66% 0%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Teak</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw4', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 100% 0%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Classic Oak</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw5', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 0% 100%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Wainuo</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw6', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 33.33% 100%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Huno</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw7', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 66.66% 100%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Tonnco</span>
+                            </div>
+                            <div style="text-align: center; width: 62px;">
+                                <div class="swatch-circle" onclick="selectFinish('sw8', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 100% 100%;"></div>
+                                <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Espresso</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="cards-section">
+            <div class="section-container">
+                <div class="cards-wrapper">
+                    <!-- Laminate Card -->
+                    <div class="card card-laminate">
+                        <div class="card-header">
+                            <h3>PREMIUM LAMINATE FLOORING</h3>
+                            <p>Available nominate flooring</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="swatches-grid">
+                                <div class="swatch swatch-1"><span class="swatch-label">White Oak</span></div>
+                                <div class="swatch swatch-2"><span class="swatch-label">Walnut</span></div>
+                                <div class="swatch swatch-3"><span class="swatch-label">White Oak</span></div>
+                                <div class="swatch swatch-4"><span class="swatch-label">Walnut</span></div>
+                                <div class="swatch swatch-5"><span class="swatch-label">Wainuo</span></div>
+                                <div class="swatch swatch-6"><span class="swatch-label">Huno</span></div>
+                                <div class="swatch swatch-7"><span class="swatch-label">Tonnco</span></div>
+                                <div class="swatch swatch-8"><span class="swatch-label">Other</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stairs Card -->
+                    <div class="card card-stairs">
+                        <div class="card-header">
+                            <h3>CUSTOM WOOD STAIRS</h3>
+                            <p>Uniques quality TOA finishes</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="stairs-gallery">
+                                <div class="stair-img-wrapper">
+                                    <img src="assets/stairs.png" alt="Spiral Stairs">
+                                </div>
+                                <div class="stair-img-wrapper">
+                                    <img src="assets/stairs_straight.png" alt="Straight Stairs">
+                                </div>
+                            </div>
+                            <button class="btn-see-details" style="margin-top: 1.5rem; width: 100%;" onclick="location.href='collections.html'">See Staircase Collections & Guides</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+
+        function selectFinish(type, element) {
+            // Reset all circles
+            document.querySelectorAll('.swatch-circle').forEach(circle => {
+                circle.style.borderColor = 'rgba(255,255,255,0.15)';
+                circle.style.boxShadow = '0 4px 10px rgba(0,0,0,0.15)';
+                circle.classList.remove('active-finish');
+            });
+            
+            // Highlight current
+            element.style.borderColor = 'var(--border-color)';
+            element.style.boxShadow = '0 6px 15px rgba(220, 203, 179, 0.3)';
+            element.classList.add('active-finish');
+            
+            // Update preview
+            const preview = document.getElementById('finish-preview');
+            preview.style.backgroundImage = "url('assets/textures.png')";
+            preview.style.backgroundSize = "200% 200%";
+            
+            if (type === 'sw1') {
+                preview.style.backgroundPosition = "0% 0%";
+            } else if (type === 'sw2') {
+                preview.style.backgroundPosition = "33.33% 0%";
+            } else if (type === 'sw3') {
+                preview.style.backgroundPosition = "66.66% 0%";
+            } else if (type === 'sw4') {
+                preview.style.backgroundPosition = "100% 0%";
+            } else if (type === 'sw5') {
+                preview.style.backgroundPosition = "0% 100%";
+            } else if (type === 'sw6') {
+                preview.style.backgroundPosition = "33.33% 100%";
+            } else if (type === 'sw7') {
+                preview.style.backgroundPosition = "66.66% 100%";
+            } else if (type === 'sw8') {
+                preview.style.backgroundPosition = "100% 100%";
+            }
+        }
+    </script>
+</body>
+</html>
