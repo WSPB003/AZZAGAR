@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | About Us & History</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+            </svg>
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="about.html" class="active">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#stairs">Pre-Finished Wood Stairs</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#carpentry">Fine Wood Carpentry</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                    <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                    <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                    <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                    <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="about.html" class="active">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- History Section -->
+        <section class="about-history-section" style="padding: 7rem 0 4rem; background-color: var(--bg-main);">
+            <div class="section-container" style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+                <h1 style="font-family: var(--font-heading); font-size: 3rem; text-align: center; color: var(--border-color); margin-bottom: 3rem; letter-spacing: 0.05em; font-weight: 400;">COMPANY HISTORY & PROFILE</h1>
+                
+                <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 5rem;">
+                    <!-- Text Side -->
+                    <div class="history-text" style="font-size: 0.95rem; line-height: 2; color: var(--text-main); font-weight: 300; letter-spacing: 0.02em;">
+                        <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-main); font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 0.04em;">ประวัติความเป็นมา แอซซาก้า</h2>
+                        <p style="margin-bottom: 1.5rem;">
+                            <strong>บริษัท แอซซาก้า จำกัด (Az Zagar Co., Ltd.)</strong> ดำเนินธุรกิจเป็นผู้นำด้านการจำหน่ายและติดตั้งวัสดุปูพื้นไม้สำเร็จรูป ไม้บันไดทำสีสำเร็จ และงานไม้ตกแต่งครบวงจร เรามุ่งมั่นคัดสรรเฉพาะวัสดุเกรดพรีเมียมที่ผลิตด้วยเทคโนโลยีวิศวกรรมขั้นสูงจากประเทศเยอรมนี เพื่อตอบสนองความต้องการงานตกแต่งที่เรียกร้องความประณีตและความคงทนระดับสูงสุด
+                        </p>
+                        <p style="margin-bottom: 1.5rem;">
+                            ด้วยประสบการณ์ที่สั่งสมมาอย่างยาวนานและความเป็นมืออาชีพในการทำงาน ทำให้เราได้รับความไว้วางใจจากบริษัทอสังหาริมทรัพย์ชั้นนำระดับประเทศในการดูแลติดตั้งพื้นไม้สำหรับโครงการบ้านเดี่ยวและคอนโดมิเนียมหรูหรามากมาย
+                        </p>
+                        <p style="margin-bottom: 1.5rem; color: var(--border-color); font-weight: 400;">
+                            เราได้รับเกียรติเป็นพันธมิตรคุณภาพระดับ <strong>Diamond Partner</strong> จากงาน Sansiri Quality Day และรางวัลชนะเลิศอันดับ 1 ในประเภทงานบริการจัดส่งสินค้าและติดตั้งที่ได้มาตรฐานความปลอดภัยเป็นมิตรต่อสิ่งแวดล้อม
+                        </p>
+                    </div>
+
+                    <!-- Owner/Award Photo Side -->
+                    <div class="history-photo-card" style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--border-color); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">FOUNDER & QUALITY AWARDS</h3>
+                        <img src="assets/award_new.png" alt="Azzagar Owner & Awards" style="width: 100%; height: auto; display: block; border-radius: 2px; margin-bottom: 1rem;">
+                        <p style="font-size: 0.72rem; color: var(--text-light); line-height: 1.5; margin: 0; font-weight: 500;">
+                            คุณศิริชัย (ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด) เข้ารับมอบรางวัลผู้รับเหมาผลงานดีเด่นอันดับ 1 จากคณะผู้บริหารแสนสิริ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Showcases Section -->
+        <section class="about-work-showcase" style="padding: 4rem 0 6rem; background-color: var(--accent); border-top: 1px solid var(--border-color);">
+            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; text-align: center; color: var(--text-main); margin-bottom: 3rem; letter-spacing: 0.05em; font-weight: 400;">PORTFOLIO SHOWCASE & SERVICES</h2>
+                
+                <div class="work-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                    <!-- Card 1 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="assets/big1.jpg" alt="Azzagar Work Example 1" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Residential Laminate Flooring</h4>
+                            <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                ติดตั้งพื้นไม้สำเร็จรูปด้วยนวัตกรรมและเทคนิคขั้นสูงจากประเทศเยอรมนี รอยต่อแนบสนิท แข็งแรงทนทาน เหมาะสำหรับบ้านพักอาศัยสมัยใหม่
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="assets/big6.jpg" alt="Azzagar Work Example 2" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Heavy-Duty Commercial Projects</h4>
+                            <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                รองรับงานติดตั้งบนพื้นที่การใช้งานหนักเป็นพิเศษ (Heavy Duty) เช่น อาคารสำนักงาน โรงแรม ฟิตเนส และคลินิกการแพทย์ที่ต้องการมาตรฐานความแข็งแกร่งสูงสุด
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="assets/big7.jpg" alt="Azzagar Work Example 3" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Bespoke Material Selection</h4>
+                            <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                คัดเลือกและให้คำปรึกษาเฉดสีไม้ตกแต่งตามต้องการ เพื่อให้ผลงานปูพื้นคุมโทนสลับแต่งเข้ากับเฟอร์นิเจอร์หลักได้อย่างหรูหรามีสไตล์
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+    </script>
+</body>
+</html>

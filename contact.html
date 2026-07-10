@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AZZAGAR | Consultation & Contact</title>
+    <title>AZZAGAR | Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +22,7 @@
             <span class="logo-text">AZZAGAR</span>
         </div>
         <nav class="nav">
-            <a href="index.html">ABOUT US</a>
+            <a href="about.html">ABOUT US</a>
             <div class="nav-dropdown">
                 <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
                 <div class="dropdown-content">
@@ -34,8 +34,7 @@
                 </div>
             </div>
             <a href="projects.html">PROJECTS</a>
-            <a href="consultation.html" class="active">CONSULTATION</a>
-            <a href="consultation.html">CONTACT</a>
+            <a href="contact.html" class="active">CONTACT</a>
         </nav>
         <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
             <span class="bar"></span>
@@ -49,23 +48,21 @@
         <div class="drawer-header">
             <div class="logo" onclick="location.href='index.html'">
                 <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" fill="#EAE4D9"/>
-                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
-                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
-                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
-                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
-                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
+                    <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
+                    <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
+                    <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
+                    <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
+                    <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
                 </svg>
                 <span class="logo-text">AZZAGAR</span>
             </div>
             <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
         </div>
         <nav class="drawer-nav">
-            <a href="index.html">ABOUT US</a>
+            <a href="about.html">ABOUT US</a>
             <a href="collections.html">COLLECTIONS</a>
             <a href="projects.html">PROJECTS</a>
-            <a href="consultation.html" class="active">CONSULTATION</a>
-            <a href="consultation.html">CONTACT</a>
+            <a href="contact.html" class="active">CONTACT</a>
         </nav>
     </div>
 
@@ -102,21 +99,26 @@
                             </div>
 
                             <!-- Card 4: Address -->
-                            <div class="contact-card address-card">
+                            <div class="contact-card address-card" style="grid-column: span 1;">
                                 <div class="card-icon">📍</div>
-                                <h4>ADDRESS & MAP PIN</h4>
+                                <h4>ADDRESS & LOCATION</h4>
                                 <p class="card-val" style="font-size: 0.74rem;">20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
-                                <div class="map-thumb">
-                                    <img src="assets/map_thumbnail.png" alt="Location Map">
-                                </div>
                             </div>
+                        </div>
+
+                        <!-- Map Section -->
+                        <div class="map-container" style="margin-top: 2rem; border: 1px solid var(--border-color); overflow: hidden; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                            <h3 style="padding: 1rem; background-color: var(--white); border-bottom: 1px solid var(--border-color); margin: 0; font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: 0.05em; color: var(--border-color); text-align: center;">AZZAGAR OFFICE LOCATION MAP</h3>
+                            <a href="assets/Map.jpg" target="_blank" title="Click to view large map">
+                                <img src="assets/Map.jpg" alt="Azzagar Location Map" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Right Side: Consultation form -->
+                    <!-- Right Side: Contact form -->
                     <div class="consultation-form-side">
                         <div class="form-card">
-                            <h3>START YOUR FLOORING CONSULTATION.</h3>
+                            <h3>SEND US A MESSAGE</h3>
                             <form action="#" class="consult-form">
                                 <div class="form-group">
                                     <input type="text" placeholder="FULL NAME" required>
@@ -128,12 +130,12 @@
                                     <input type="tel" placeholder="PHONE NUMBER" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" placeholder="PROJECT TYPE (e.g., Luxury Residential, Commercial, Stairs)">
+                                    <input type="text" placeholder="SUBJECT">
                                 </div>
                                 <div class="form-group">
-                                    <textarea placeholder="YOUR MESSAGE / PROJECT DETAILS" rows="5" required></textarea>
+                                    <textarea placeholder="YOUR MESSAGE / DETAILS" rows="7" required></textarea>
                                 </div>
-                                <button type="submit" class="btn-submit-consultation">REQUEST A PRIVATE CONSULTATION.</button>
+                                <button type="submit" class="btn-submit-consultation" style="width: 100%; margin-top: 1rem;">SEND MESSAGE</button>
                             </form>
                         </div>
                     </div>
