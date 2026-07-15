@@ -79,21 +79,18 @@ body {
 }
 
 .logo-icon {
-    width: 38px;
-    height: 38px;
+    height: 55px;
+    width: auto;
     transition: transform 0.4s ease;
+    object-fit: contain;
 }
 
 .logo:hover .logo-icon {
-    transform: rotate(5deg) scale(1.05);
+    transform: scale(1.03);
 }
 
 .logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    color: var(--text-main);
+    display: none;
 }
 
 .nav {
@@ -417,7 +414,7 @@ body {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('assets/textures.png');
+    background-image: url('images/textures.png');
     background-size: 400% 200%;
     transition: transform 0.5s ease;
     z-index: 1;
@@ -870,7 +867,7 @@ body {
     border: 1px solid rgba(0,0,0,0.03);
 }
 .floor-swatch-crop {
-    background-image: url('assets/textures.png');
+    background-image: url('images/textures.png');
     background-size: 400% 200%;
     width: 100%;
     height: 100%;
@@ -1427,3 +1424,29 @@ body {
     border-color: var(--border-color) !important;
     box-shadow: 0 6px 15px rgba(220, 203, 179, 0.3) !important;
 }
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    opacity: 1 !important;
+}
+
+.project-card:hover .project-img-wrapper, 
+.project-img-wrapper.active-border {
+    border-color: #8b5cf6 !important; /* Glowing purple border from screenshot */
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.45) !important;
+}
+
+.project-card:hover img {
+    transform: scale(1.04);
+}
+
+.craftsmanship button:hover {
+    background: var(--border-color) !important;
+    color: var(--bg-main) !important;
+    border-color: var(--border-color) !important;
+    transform: scale(1.03);
+}
+

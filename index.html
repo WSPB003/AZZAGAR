@@ -12,13 +12,7 @@
 <body>
     <header class="header">
         <div class="logo" onclick="location.href='index.html'">
-            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 6H34V8H6V6Z" fill="currentColor"/>
-                <path d="M6 12H28V14H6V12Z" fill="currentColor"/>
-                <path d="M6 18H34V20H6V18Z" fill="currentColor"/>
-                <path d="M6 24H24V26H6V24Z" fill="currentColor"/>
-                <path d="M6 30H34V32H6V30Z" fill="currentColor"/>
-            </svg>
+            <img src="images/Logo.png" class="logo-icon" alt="AZZAGAR Logo">
             <span class="logo-text">AZZAGAR</span>
         </div>
         <nav class="nav">
@@ -47,14 +41,7 @@
     <div class="mobile-drawer" id="mobileDrawer">
         <div class="drawer-header">
             <div class="logo" onclick="location.href='index.html'">
-                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="40" height="40" fill="#EAE4D9"/>
-                    <path d="M6 6H34V8H6V6Z" fill="#DCCBB3"/>
-                    <path d="M6 12H28V14H6V12Z" fill="#DCCBB3"/>
-                    <path d="M6 18H34V20H6V18Z" fill="#DCCBB3"/>
-                    <path d="M6 24H24V26H6V24Z" fill="#DCCBB3"/>
-                    <path d="M6 30H34V32H6V30Z" fill="#DCCBB3"/>
-                </svg>
+                <img src="images/Logo.png" class="logo-icon" alt="AZZAGAR Logo">
                 <span class="logo-text">AZZAGAR</span>
             </div>
             <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
@@ -70,7 +57,7 @@
     <main class="main-content">
         <!-- Hero Section -->
         <section class="hero">
-            <img src="assets/hero.png" alt="Luxurious Living Room" class="hero-bg">
+            <img src="images/hero.png" alt="Luxurious Living Room" class="hero-bg">
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>ELEGANCE IN EVERY STEP.</h1>
@@ -79,32 +66,82 @@
             </div>
         </section>
 
-        <!-- Brand Logo Section -->
-        <section class="brand-logo-section" style="padding: 4.5rem 0 2rem; text-align: center; background-color: var(--white); border-bottom: 1px solid rgba(220, 203, 179, 0.15);">
-            <div class="section-container" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; padding: 0 2rem;">
-                <img src="assets/Logo.jpg" alt="Az Zagar Decoration Logo" style="max-width: 250px; height: auto; display: block; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); border-radius: 4px; margin-bottom: 1.5rem;">
-                <p style="font-size: 0.85rem; letter-spacing: 0.05em; color: var(--text-light); line-height: 1.8; text-transform: uppercase; font-weight: 500; font-family: var(--font-body);">
-                    ผู้นำด้านการจำหน่ายและติดตั้งพื้นไม้สำเร็จรูปคุณภาพสูงและไม้บันไดทำสีสำเร็จครบวงจร
-                </p>
-            </div>
-        </section>
+        <!-- Craftsmanship Section (Featured Projects Carousel) -->
+        <section class="craftsmanship" style="padding: 6rem 0; background-color: #2F2A25; border-bottom: 1px solid rgba(220, 203, 179, 0.15);">
+            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; position: relative;">
+                <div style="text-align: left; margin-bottom: 3.5rem;">
+                    <p style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-body);">OUR CRAFTSMANSHIP</p>
+                    <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 400; color: var(--text-main); margin: 0; letter-spacing: 0.02em;">Featured Projects</h2>
+                </div>
 
-        <!-- Craftsmanship Section -->
-        <section class="craftsmanship">
-            <div class="section-container">
-                <h2 class="section-title">OUR CRAFTSMANSHIP</h2>
-                <div class="craft-content">
-                    <div class="craft-image-container">
-                        <div class="bg-offset"></div>
-                        <div class="image-wrapper">
-                            <img src="assets/planks.png" alt="OUR CRAFTSMANSHIP">
+                <!-- Carousel Container -->
+                <div class="project-carousel-container" style="overflow: hidden; width: 100%; position: relative; padding: 1rem 0;" onmouseenter="stopProjectCarousel()" onmouseleave="startProjectCarousel()">
+                    <div class="project-carousel-track" id="projectCarouselTrack" style="display: flex; gap: 2rem; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); will-change: transform; width: 100%;">
+                        
+                        <!-- Card 1: Aspire Rama 4 -->
+                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
+                                <img src="images/big1.jpg" alt="Aspire สุขุมวิท พระราม 4" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire สุขุมวิท พระราม 4</h4>
+                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
                         </div>
+
+                        <!-- Card 2: Life Udomsuk -->
+                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
+                                <img src="images/big6.jpg" alt="Life Udomsuk" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Life Udomsuk</h4>
+                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Aspire Arun Amarin -->
+                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
+                                <img src="images/big7.jpg" alt="Aspire อรุณอมรินทร์" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire อรุณอมรินทร์</h4>
+                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Burasiri Panya Indra -->
+                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
+                                <img src="images/built_in_kitchen.png" alt="Burasiri ปัญญาอินทรา" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Burasiri ปัญญาอินทรา</h4>
+                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Single House &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Setthasiri Pattanakarn -->
+                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
+                                <img src="images/built_in_fireplace.png" alt="Setthasiri พัฒนาการ" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Setthasiri พัฒนาการ</h4>
+                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Single House &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="craft-text">
-                        <h3>German Engineering,<br>Asian Durability</h3>
-                        <p class="desc">German Engineering, Asian Durability flooring & Bespoke uniocom wood flank.</p>
-                        <p class="quality"><a href="quality.html" style="color: inherit; text-decoration: underline;">Uncompromising Quality & Standards</a></p>
-                    </div>
+                </div>
+
+                <!-- View All Projects Button -->
+                <div style="text-align: center; margin-top: 3.5rem;">
+                    <button onclick="location.href='projects.html'" style="background: transparent; border: 1px solid var(--border-color); color: var(--text-main); padding: 0.9rem 2.2rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; cursor: pointer; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.8rem; text-transform: uppercase;">
+                        <span>View All Projects</span>
+                        <span style="font-size: 0.95rem;">›</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -116,7 +153,7 @@
                     <div class="info-image-container">
                         <div class="bg-offset"></div>
                         <div class="image-wrapper" style="overflow: hidden; border: 1px solid var(--border-color);">
-                            <div id="finish-preview" style="width: 100%; height: 100%; min-height: 380px; background-image: url('assets/planks.png'); background-size: cover; background-position: center; transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
+                            <div id="finish-preview" style="width: 100%; height: 100%; min-height: 380px; background-image: url('images/planks.png'); background-size: cover; background-position: center; transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);"></div>
                         </div>
                     </div>
                     <div class="info-text">
@@ -127,35 +164,35 @@
                         <p style="font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.2rem; color: var(--text-light); font-weight: 600;">Customizable Finishes</p>
                         <div style="display: flex; gap: 1rem 0.8rem; align-items: center; flex-wrap: wrap; max-width: 480px;">
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw1', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 0% 0%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw1', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 0% 0%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">White Oak</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw2', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 33.33% 0%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw2', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 33.33% 0%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Walnut</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw3', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 66.66% 0%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw3', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 66.66% 0%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Teak</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw4', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 100% 0%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw4', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 100% 0%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Classic Oak</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw5', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 0% 100%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw5', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 0% 100%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Wainuo</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw6', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 33.33% 100%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw6', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 33.33% 100%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Huno</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw7', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 66.66% 100%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw7', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 66.66% 100%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Tonnco</span>
                             </div>
                             <div style="text-align: center; width: 62px;">
-                                <div class="swatch-circle" onclick="selectFinish('sw8', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('assets/textures.png'); background-size: 400% 200%; background-position: 100% 100%;"></div>
+                                <div class="swatch-circle" onclick="selectFinish('sw8', this)" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.15); margin: 0 auto 0.4rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer; background-image: url('images/textures.png'); background-size: 400% 200%; background-position: 100% 100%;"></div>
                                 <span style="font-size: 0.55rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-light); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Espresso</span>
                             </div>
                         </div>
@@ -164,51 +201,7 @@
             </div>
         </section>
 
-        <!-- Cards Section -->
-        <section class="cards-section">
-            <div class="section-container">
-                <div class="cards-wrapper">
-                    <!-- Laminate Card -->
-                    <div class="card card-laminate">
-                        <div class="card-header">
-                            <h3>PREMIUM LAMINATE FLOORING</h3>
-                            <p>Available nominate flooring</p>
-                        </div>
-                        <div class="card-body">
-                            <div class="swatches-grid">
-                                <div class="swatch swatch-1"><span class="swatch-label">White Oak</span></div>
-                                <div class="swatch swatch-2"><span class="swatch-label">Walnut</span></div>
-                                <div class="swatch swatch-3"><span class="swatch-label">White Oak</span></div>
-                                <div class="swatch swatch-4"><span class="swatch-label">Walnut</span></div>
-                                <div class="swatch swatch-5"><span class="swatch-label">Wainuo</span></div>
-                                <div class="swatch swatch-6"><span class="swatch-label">Huno</span></div>
-                                <div class="swatch swatch-7"><span class="swatch-label">Tonnco</span></div>
-                                <div class="swatch swatch-8"><span class="swatch-label">Other</span></div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Stairs Card -->
-                    <div class="card card-stairs">
-                        <div class="card-header">
-                            <h3>CUSTOM WOOD STAIRS</h3>
-                            <p>Uniques quality TOA finishes</p>
-                        </div>
-                        <div class="card-body">
-                            <div class="stairs-gallery">
-                                <div class="stair-img-wrapper">
-                                    <img src="assets/stairs.png" alt="Spiral Stairs">
-                                </div>
-                                <div class="stair-img-wrapper">
-                                    <img src="assets/stairs_straight.png" alt="Straight Stairs">
-                                </div>
-                            </div>
-                            <button class="btn-see-details" style="margin-top: 1.5rem; width: 100%;" onclick="location.href='collections.html'">See Staircase Collections & Guides</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
@@ -265,7 +258,7 @@
             
             // Update preview
             const preview = document.getElementById('finish-preview');
-            preview.style.backgroundImage = "url('assets/textures.png')";
+            preview.style.backgroundImage = "url('images/textures.png')";
             preview.style.backgroundSize = "200% 200%";
             
             if (type === 'sw1') {
@@ -286,6 +279,67 @@
                 preview.style.backgroundPosition = "100% 100%";
             }
         }
+
+        // Featured Projects Auto-play Carousel Script
+        let projectIndex = 0;
+        let projectAutoplayInterval;
+        const projectTrack = document.getElementById('projectCarouselTrack');
+        
+        function getProjectCardsToShow() {
+            if (window.innerWidth <= 600) return 1;
+            if (window.innerWidth <= 1024) return 2;
+            return 3;
+        }
+        
+        function updateProjectCarousel() {
+            if (!projectTrack) return;
+            const cardCount = projectTrack.children.length;
+            const cardsToShow = getProjectCardsToShow();
+            const maxIndex = cardCount - cardsToShow;
+            
+            if (projectIndex < 0) {
+                projectIndex = maxIndex;
+            } else if (projectIndex > maxIndex) {
+                projectIndex = 0;
+            }
+            
+            const gap = 32; // 2rem gap
+            const containerWidth = projectTrack.parentElement.clientWidth;
+            const cardWidth = (containerWidth - (gap * (cardsToShow - 1))) / cardsToShow;
+            
+            for (let child of projectTrack.children) {
+                child.style.flex = `0 0 ${cardWidth}px`;
+                child.style.transition = 'all 0.35s ease';
+                child.style.opacity = '1'; // All cards fully opaque, no dimming
+            }
+            
+            const offset = projectIndex * (cardWidth + gap);
+            projectTrack.style.transform = `translateX(-${offset}px)`;
+        }
+        
+        function moveProjectCarousel(direction) {
+            projectIndex += direction;
+            updateProjectCarousel();
+        }
+        
+        function startProjectCarousel() {
+            stopProjectCarousel();
+            projectAutoplayInterval = setInterval(() => {
+                moveProjectCarousel(1);
+            }, 2000); // Faster slide interval (2 seconds)
+        }
+        
+        function stopProjectCarousel() {
+            if (projectAutoplayInterval) {
+                clearInterval(projectAutoplayInterval);
+            }
+        }
+        
+        window.addEventListener('resize', updateProjectCarousel);
+        
+        // Initialize Carousel
+        updateProjectCarousel();
+        startProjectCarousel();
     </script>
 </body>
 </html>
