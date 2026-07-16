@@ -1,3 +1,5 @@
+@import url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/LINE%20Seed%20Sans%20TH/LINE%20Seed%20Sans%20TH.css');
+
 :root {
     --bg-main: #2F2A25; /* Primary charcoal/brown background */
     --bg-footer: #1C1916; /* Darker warm black for footer */
@@ -7,8 +9,8 @@
     --border-color: #DCCBB3; /* TREF warm bronze/gold for borders and underlines */
     --white: #3A342E; /* Card background in dark warm-charcoal theme */
     
-    --font-heading: 'Cormorant Garamond', serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'LINE Seed Sans TH', 'Cormorant Garamond', serif;
+    --font-body: 'LINE Seed Sans TH', 'Montserrat', sans-serif;
 }
 
 * {
