@@ -73,91 +73,262 @@
                 </div>
 
                 <div class="flooring-grid">
-                    <!-- Project 1: Villa Luxury Living -->
+                    <!-- Project 1: Aspire Sukhumvit Rama 4 (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-1"></div></div>
-                        <div class="floor-info">
-                            <h4>VILLA LUXURY LIVING</h4>
-                            <p class="quality-tag">WHITE OAK</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Sukhumvit_Rama4_1.jpg" alt="Aspire สุขุมวิท พระราม 4 - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Sukhumvit_Rama4_2.jpg" alt="Aspire สุขุมวิท พระราม 4 - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Sukhumvit_Rama4_3.jpg" alt="Aspire สุขุมวิท พระราม 4 - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">ASPIRE SUKHUMVIT - RAMA 4</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">GERMAN LAMINATE FLOORING</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • สุขุมวิท พระราม 4 (3 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 2: Modern Penthouse -->
+                    <!-- Project 2: Life Rama 4 Asoke (4 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-2"></div></div>
-                        <div class="floor-info">
-                            <h4>MODERN PENTHOUSE</h4>
-                            <p class="quality-tag">WALNUT</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Rama4_Asoke_1.jpg" alt="Life Rama 4 Asoke - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Rama4_Asoke_2.jpg" alt="Life Rama 4 Asoke - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Rama4_Asoke_3.jpg" alt="Life Rama 4 Asoke - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Rama4_Asoke_4.jpg" alt="Life Rama 4 Asoke - ภาพ 4" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 3)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">LIFE RAMA 4 - ASOKE</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">NATURAL OAK ENGINEERED</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • พระราม 4 อโศก (4 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 3: Executive Office -->
+                    <!-- Project 3: Life Udomsuk (5 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-3"></div></div>
-                        <div class="floor-info">
-                            <h4>EXECUTIVE OFFICE</h4>
-                            <p class="quality-tag">SMOKED OAK</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: ออฟฟิศ</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Udomsuk_1.jpg" alt="Life Udomsuk - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Udomsuk_2.jpg" alt="Life Udomsuk - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Udomsuk_3.jpg" alt="Life Udomsuk - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Udomsuk_4.jpg" alt="Life Udomsuk - ภาพ 4" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Udomsuk_5.jpg" alt="Life Udomsuk - ภาพ 5" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 3)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 4)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">LIFE UDOMSUK</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">PREMIUM WOOD LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • อุดมสุข (5 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 4: Boutique Hotel Lobby -->
+                    <!-- Project 4: Nia By Sansiri (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-4"></div></div>
-                        <div class="floor-info">
-                            <h4>BOUTIQUE HOTEL LOBBY</h4>
-                            <p class="quality-tag">TEAK</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: โรงแรม</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Nia_By_Sansiri_1.jpg" alt="Nia By Sansiri - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Nia_By_Sansiri_2.jpg" alt="Nia By Sansiri - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Nia_By_Sansiri_3.jpg" alt="Nia By Sansiri - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">NIA BY SANSIRI</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">FINE WOOD FLOORING</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • สุขุมวิท 71 (3 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 5: Boutique Hotel Lobby -->
+                    <!-- Project 5: XT Ekkamai (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-5"></div></div>
-                        <div class="floor-info">
-                            <h4>BOUTIQUE HOTEL LOBBY</h4>
-                            <p class="quality-tag">TEAK</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: โรงแรม</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/XT_Ekkamai_1.jpg" alt="XT Ekkamai - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/XT_Ekkamai_2.jpg" alt="XT Ekkamai - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/XT_Ekkamai_3.jpg" alt="XT Ekkamai - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">XT EKKAMAI</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">LUXURY HARDWOOD</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • เอกมัย (3 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 6: Minimalist Residence -->
+                    <!-- Project 6: Blue Sukhumvit 105 (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-6"></div></div>
-                        <div class="floor-info">
-                            <h4>MINIMALIST RESIDENCE</h4>
-                            <p class="quality-tag">SILVER OAK</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Blue_Sukhumvit105_1.jpg" alt="Blue Sukhumvit 105 - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Blue_Sukhumvit105_2.jpg" alt="Blue Sukhumvit 105 - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Blue_Sukhumvit105_3.jpg" alt="Blue Sukhumvit 105 - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">BLUE SUKHUMVIT 105</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">TEAK TONE LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • สุขุมวิท 105 (3 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 7: Minimalist Floor -->
+                    <!-- Project 7: Life Ladprao Valley (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-7"></div></div>
-                        <div class="floor-info">
-                            <h4>MINIMALIST FLOOR</h4>
-                            <p class="quality-tag">GREY LAMINATE</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: บ้านพักอาศัย</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Ladprao_Valley_1.jpg" alt="Life Ladprao Valley - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Ladprao_Valley_2.jpg" alt="Life Ladprao Valley - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Life_Ladprao_Valley_3.jpg" alt="Life Ladprao Valley - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">LIFE LADPRAO VALLEY</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">WALNUT WOOD FLOORING</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • ลาดพร้าว (3 รูป)</p>
                         </div>
                     </div>
 
-                    <!-- Project 8: Private Gym Floor -->
+                    <!-- Project 8: Aspire Arun Amarin (3 photos) -->
                     <div class="floor-item">
-                        <div class="floor-swatch"><div class="floor-swatch-crop sw-8"></div></div>
-                        <div class="floor-info">
-                            <h4>PRIVATE GYM FLOOR</h4>
-                            <p class="quality-tag">GREY LAMINATE</p>
-                            <p class="floor-desc" style="font-size: 0.75rem; color: var(--text-light); margin-bottom: 1rem;">ประเภท: ฟิตเนส</p>
-                            <button class="btn-see-details">See Details</button>
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Arun_Amarin_1.jpg" alt="Aspire Arun Amarin - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Arun_Amarin_2.jpg" alt="Aspire Arun Amarin - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Arun_Amarin_3.jpg" alt="Aspire Arun Amarin - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">ASPIRE ARUN AMARIN</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">GERMAN OAK LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • อรุณอมรินทร์ (3 รูป)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: The Base Wongsawang (3 photos) -->
+                    <div class="floor-item">
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/The_Base_Wongsawang_1.jpg" alt="The Base Wongsawang - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/The_Base_Wongsawang_2.jpg" alt="The Base Wongsawang - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/The_Base_Wongsawang_3.jpg" alt="The Base Wongsawang - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">THE BASE WONGSAWANG</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">PREMIUM HARDWOOD</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • วงศ์สว่าง (3 รูป)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: Maxxi Phaholyothin 34 (3 photos) -->
+                    <div class="floor-item">
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Maxxi_Phaholyothin34_1.jpg" alt="Maxxi Phaholyothin 34 - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Maxxi_Phaholyothin34_2.jpg" alt="Maxxi Phaholyothin 34 - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Maxxi_Phaholyothin34_3.jpg" alt="Maxxi Phaholyothin 34 - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">MAXXI PHAHOLYOTHIN 34</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">MODERN OAK LAMINATE</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • พหลโยธิน (3 รูป)</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 11: Aspire Itsaraphap (3 photos) -->
+                    <div class="floor-item">
+                        <div class="floor-swatch slider-wrapper" style="position: relative; height: 240px; overflow: hidden; border-radius: 4px;" data-current-index="0">
+                            <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Itsaraphap_1.jpg" alt="Aspire Itsaraphap - ภาพ 1" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Itsaraphap_2.jpg" alt="Aspire Itsaraphap - ภาพ 2" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                                <img style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;" src="images/Project/Aspire_Itsaraphap_3.jpg" alt="Aspire Itsaraphap - ภาพ 3" style="width: 100%; height: 100%; object-fit: cover; flex: 0 0 100%;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                            <div class="slider-dots">
+                                <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            </div>
+                        </div>
+                        <div class="floor-info" style="padding: 1.2rem 0.5rem 0.5rem;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-main); font-weight: 500; margin-bottom: 0.3rem;">ASPIRE ITSARAPHAP</h4>
+                            <p class="quality-tag" style="font-size: 0.72rem; color: var(--border-color); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem;">SMOKED OAK FLOORING</p>
+                            <p class="floor-desc" style="font-size: 0.78rem; color: var(--text-light); opacity: 0.8; margin: 0;">ประเภท: คอนโดมิเนียม • อิสรภาพ (3 รูป)</p>
                         </div>
                     </div>
                 </div>
@@ -354,7 +525,7 @@
         </div>
         <div class="footer-contact">
             <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
-            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
             <p><span class="icon">💬</span> LINE OA</p>
             <p><span class="icon">💬</span> WhatsApp</p>
         </div>
@@ -385,6 +556,102 @@
         menuToggle.addEventListener('click', openDrawer);
         drawerClose.addEventListener('click', closeDrawer);
         drawerOverlay.addEventListener('click', closeDrawer);
+
+        // Project Card Image Slider Logic & Autoplay
+        function updateCardSlide(container, index) {
+            const imagesTrack = container.querySelector('.slider-images');
+            if (!imagesTrack) return;
+            const dots = container.querySelectorAll('.dot');
+            const total = imagesTrack.children.length;
+            if (total <= 1) return;
+            
+            let nextIndex = index;
+            if (nextIndex < 0) nextIndex = total - 1;
+            if (nextIndex >= total) nextIndex = 0;
+            
+            container.dataset.currentIndex = nextIndex;
+            imagesTrack.style.transform = `translateX(-${nextIndex * 100}%)`;
+            
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === nextIndex);
+            });
+        }
+
+        function prevProjectSlide(btn) {
+            const container = btn.closest('.slider-wrapper');
+            let curr = parseInt(container.dataset.currentIndex || 0);
+            updateCardSlide(container, curr - 1);
+        }
+
+        function nextProjectSlide(btn) {
+            const container = btn.closest('.slider-wrapper');
+            let curr = parseInt(container.dataset.currentIndex || 0);
+            updateCardSlide(container, curr + 1);
+        }
+
+        function goToCardSlide(dot, index) {
+            const container = dot.closest('.slider-wrapper');
+            updateCardSlide(container, index);
+        }
+
+        // Automatic Autoplay for All Project Cards on projects.html
+        const cardAutoplayTimers = new Map();
+
+        function startProjectCardsAutoplay() {
+            document.querySelectorAll('.slider-wrapper').forEach((container, idx) => {
+                const imagesTrack = container.querySelector('.slider-images');
+                if (!imagesTrack || imagesTrack.children.length <= 1) return;
+
+                // Pause on hover
+                container.addEventListener('mouseenter', () => {
+                    if (cardAutoplayTimers.has(container)) {
+                        clearInterval(cardAutoplayTimers.get(container));
+                        cardAutoplayTimers.delete(container);
+                    }
+                });
+
+                const startTimer = () => {
+                    if (!cardAutoplayTimers.has(container)) {
+                        const timer = setInterval(() => {
+                            let curr = parseInt(container.dataset.currentIndex || 0);
+                            updateCardSlide(container, curr + 1);
+                        }, 2500);
+                        cardAutoplayTimers.set(container, timer);
+                    }
+                };
+
+                container.addEventListener('mouseleave', startTimer);
+                
+                // Stagger initial start slightly for an elegant dynamic rhythm
+                setTimeout(startTimer, (idx % 3) * 400);
+            });
+        }
+
+        // Run on DOM ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', startProjectCardsAutoplay);
+        } else {
+            startProjectCardsAutoplay();
+        }
+
+        // Universal Dynamic 3D Mouse-Tracking Shadow Effect
+        document.querySelectorAll('.coll-prod-item, .project-card, .quality-section .floor-item').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const shadowX = -x / 12;
+                const shadowY = -y / 12 + 15;
+                card.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(220, 203, 179, 0.3)`;
+                card.style.transform = `perspective(1000px) rotateX(${-y / 30}deg) rotateY(${x / 30}deg) translateY(-7px)`;
+                card.style.borderColor = 'var(--border-color)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '';
+                card.style.transform = '';
+                card.style.borderColor = '';
+            });
+        });
     </script>
 </body>
 </html>

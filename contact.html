@@ -56,76 +56,57 @@
 
     <main class="main-content">
         <section class="consultation-section">
-            <div class="section-container">
-                <div class="consultation-container">
-                    <!-- Left Side: Contact info cards -->
-                    <div class="contact-info-side">
-                        <h2>GET IN TOUCH WITH AZZAGAR.</h2>
-                        <div class="contact-cards-grid">
-                            <!-- Card 1: Phone & Fax -->
-                            <div class="contact-card">
-                                <div class="card-icon">📞</div>
-                                <h4>PHONE & FAX</h4>
-                                <p class="card-val" style="font-size: 0.76rem; line-height: 1.5;">Tel: 02-159-8594<br>Tel: 02-297-0057<br>Fax: 02-159-8595</p>
-                                <p class="card-note">Helplines: 064-587-6725, 081-551-3364</p>
-                            </div>
-
-                            <!-- Card 2: Email -->
-                            <div class="contact-card">
-                                <div class="card-icon">✉️</div>
-                                <h4>EMAIL</h4>
-                                <p class="card-val"><a href="mailto:sales@azzagar.com">sales@azzagar.com</a></p>
-                                <p class="card-note">Send us your floor layouts.</p>
-                            </div>
-
-                            <!-- Card 3: Office Hours -->
-                            <div class="contact-card">
-                                <div class="card-icon">🕒</div>
-                                <h4>OFFICE HOURS</h4>
-                                <p class="card-val">Mon-Sat: 08:30 - 17:30</p>
-                                <p class="card-note">Visit our head office.</p>
-                            </div>
-
-                            <!-- Card 4: Address -->
-                            <div class="contact-card address-card" style="grid-column: span 1;">
-                                <div class="card-icon">📍</div>
-                                <h4>ADDRESS & LOCATION</h4>
-                                <p class="card-val" style="font-size: 0.74rem;">20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
-                            </div>
+            <div class="section-container" style="max-width: 1050px; margin: 0 auto;">
+                <div class="contact-info-side">
+                    <h2 style="text-align: center; margin-bottom: 3rem;">GET IN TOUCH WITH AZZAGAR.</h2>
+                    <div class="contact-cards-grid" style="grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                        <!-- Card 1: Phone & Fax -->
+                        <div class="contact-card">
+                            <div class="card-icon">📞</div>
+                            <h4>PHONE & FAX</h4>
+                            <p class="card-val" style="font-size: 0.76rem; line-height: 1.5;">Tel: 02-159-8594<br>Tel: 02-297-0057<br>Fax: 02-159-8595</p>
+                            <p class="card-note">Helplines: 064-587-6725, 081-551-3364</p>
                         </div>
 
-                        <!-- Map Section -->
-                        <div class="map-container" style="margin-top: 2rem; border: 1px solid var(--border-color); overflow: hidden; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
-                            <h3 style="padding: 1rem; background-color: var(--white); border-bottom: 1px solid var(--border-color); margin: 0; font-family: var(--font-heading); font-size: 1.1rem; letter-spacing: 0.05em; color: var(--border-color); text-align: center;">AZZAGAR OFFICE LOCATION MAP</h3>
-                            <a href="images/Map.jpg" target="_blank" title="Click to view large map">
-                                <img src="images/Map.jpg" alt="Azzagar Location Map" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                        <!-- Card 2: Email -->
+                        <div class="contact-card">
+                            <div class="card-icon">✉️</div>
+                            <h4>EMAIL</h4>
+                            <p class="card-val"><a href="mailto:sales@azzagar.com">sales@azzagar.com</a></p>
+                            <p class="card-note">Send us your floor layouts.</p>
+                        </div>
+
+                        <!-- Card 3: Office Hours -->
+                        <div class="contact-card">
+                            <div class="card-icon">🕒</div>
+                            <h4>OFFICE HOURS</h4>
+                            <p class="card-val">Mon-Sat: 08:30 - 17:30</p>
+                            <p class="card-note">Visit our head office.</p>
+                        </div>
+
+                        <!-- Card 4: Address -->
+                        <div class="contact-card address-card" style="grid-column: span 1;">
+                            <div class="card-icon">📍</div>
+                            <h4>ADDRESS & LOCATION</h4>
+                            <p class="card-val" style="font-size: 0.74rem; margin-bottom: 0.5rem;">20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+                            <a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.4rem; padding: 0.45rem 0.9rem; border: 1px solid var(--border-color); color: var(--border-color); font-size: 0.68rem; font-weight: 600; text-decoration: none; border-radius: 30px; transition: all 0.3s;" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-main)';" onmouseout="this.style.background='transparent'; this.style.color='var(--border-color)';">
+                                <span>📍 OPEN IN GOOGLE MAPS</span>
                             </a>
                         </div>
                     </div>
 
-                    <!-- Right Side: Contact form -->
-                    <div class="consultation-form-side">
-                        <div class="form-card">
-                            <h3>SEND US A MESSAGE</h3>
-                            <form action="#" class="consult-form">
-                                <div class="form-group">
-                                    <input type="text" placeholder="FULL NAME" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" placeholder="EMAIL ADDRESS" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" placeholder="PHONE NUMBER" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" placeholder="SUBJECT">
-                                </div>
-                                <div class="form-group">
-                                    <textarea placeholder="YOUR MESSAGE / DETAILS" rows="7" required></textarea>
-                                </div>
-                                <button type="submit" class="btn-submit-consultation" style="width: 100%; margin-top: 1rem;">SEND MESSAGE</button>
-                            </form>
+                    <!-- Map Section -->
+                    <div class="map-container" style="margin-top: 3rem; border: 1px solid var(--border-color); overflow: hidden; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); text-align: center; background: var(--white);">
+                        <div style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-color); display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem;">
+                            <h3 style="margin: 0; font-family: var(--font-heading); font-size: 1.15rem; letter-spacing: 0.05em; color: var(--border-color);">AZZAGAR OFFICE LOCATION MAP</h3>
+                            <a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--border-color); color: var(--bg-main); padding: 0.65rem 1.4rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-decoration: none; transition: all 0.3s; box-shadow: 0 4px 12px rgba(220, 203, 179, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 18px rgba(220, 203, 179, 0.45)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(220, 203, 179, 0.3)';">
+                                <span>📍 OPEN IN GOOGLE MAPS / นําทาง</span>
+                                <span style="font-size: 0.85rem;">↗</span>
+                            </a>
                         </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" title="Click to open Google Maps navigation">
+                            <img src="images/Map.jpg" alt="Azzagar Location Map" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.015)'" onmouseout="this.style.transform='scale(1)'">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -139,7 +120,7 @@
         </div>
         <div class="footer-contact">
             <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
-            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
             <p><span class="icon">💬</span> LINE OA</p>
             <p><span class="icon">💬</span> WhatsApp</p>
         </div>
@@ -170,6 +151,25 @@
         menuToggle.addEventListener('click', openDrawer);
         drawerClose.addEventListener('click', closeDrawer);
         drawerOverlay.addEventListener('click', closeDrawer);
+
+        // Universal Dynamic 3D Mouse-Tracking Shadow Effect
+        document.querySelectorAll('.contact-card, .form-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const shadowX = -x / 12;
+                const shadowY = -y / 12 + 15;
+                card.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(220, 203, 179, 0.3)`;
+                card.style.transform = `perspective(1000px) rotateX(${-y / 30}deg) rotateY(${x / 30}deg) translateY(-7px)`;
+                card.style.borderColor = 'var(--border-color)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '';
+                card.style.transform = '';
+                card.style.borderColor = '';
+            });
+        });
     </script>
 </body>
 </html>

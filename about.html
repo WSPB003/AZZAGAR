@@ -61,7 +61,35 @@
                 <h1 style="font-family: var(--font-heading); font-size: 3rem; text-align: center; color: var(--border-color); margin-bottom: 3rem; letter-spacing: 0.05em; font-weight: 400;">COMPANY HISTORY & PROFILE</h1>
                 
                 <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 5rem;">
-                    <!-- Text Side -->
+                    <!-- Owner/Award Photo Side (Left) -->
+                    <div class="history-photo-card" style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--border-color); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">FOUNDER & QUALITY AWARDS</h3>
+                        
+                        <div class="ceo-slider-wrapper" id="ceoSliderWrapper" style="position: relative; width: 100%; height: 580px; overflow: hidden; border-radius: 4px; margin-bottom: 1rem;" data-current-index="0">
+                            <div class="ceo-slider-images" id="ceoSliderTrack" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img src="images/CEO/CEO_1.jpg" alt="คุณศิริชัย ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_2.jpg" alt="คุณศิริชัย ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 2" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_3.jpg" alt="คุณศิริชัย ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 3" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_4.jpg" alt="คุณศิริชัย ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 4" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_5.jpg" alt="คุณศิริชัย ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 5" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevCeoSlide()" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextCeoSlide()" aria-label="Next Image">›</button>
+                            <div class="slider-dots" id="ceoSliderDots">
+                                <span class="dot active" onclick="goToCeoSlide(0)"></span>
+                                <span class="dot" onclick="goToCeoSlide(1)"></span>
+                                <span class="dot" onclick="goToCeoSlide(2)"></span>
+                                <span class="dot" onclick="goToCeoSlide(3)"></span>
+                                <span class="dot" onclick="goToCeoSlide(4)"></span>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.72rem; color: var(--text-light); line-height: 1.5; margin: 0; font-weight: 500;">
+                            คุณศิริชัย (ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด) เข้ารับมอบรางวัลผู้รับเหมาผลงานดีเด่นอันดับ 1 จากคณะผู้บริหารแสนสิริ
+                        </p>
+                    </div>
+
+                    <!-- Text Side (Right) -->
                     <div class="history-text" style="font-size: 0.95rem; line-height: 2; color: var(--text-main); font-weight: 300; letter-spacing: 0.02em;">
                         <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--text-main); font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 0.04em;">ประวัติความเป็นมา แอซซาก้า</h2>
                         <p style="margin-bottom: 1.5rem;">
@@ -72,15 +100,6 @@
                         </p>
                         <p style="margin-bottom: 1.5rem; color: var(--border-color); font-weight: 400;">
                             เราได้รับเกียรติเป็นพันธมิตรคุณภาพระดับ <strong>Diamond Partner</strong> จากงาน Sansiri Quality Day และรางวัลชนะเลิศอันดับ 1 ในประเภทงานบริการจัดส่งสินค้าและติดตั้งที่ได้มาตรฐานความปลอดภัยเป็นมิตรต่อสิ่งแวดล้อม
-                        </p>
-                    </div>
-
-                    <!-- Owner/Award Photo Side -->
-                    <div class="history-photo-card" style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); text-align: center;">
-                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--border-color); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">FOUNDER & QUALITY AWARDS</h3>
-                        <img src="images/award_new.png" alt="Azzagar Owner & Awards" style="width: 100%; height: auto; display: block; border-radius: 2px; margin-bottom: 1rem;">
-                        <p style="font-size: 0.72rem; color: var(--text-light); line-height: 1.5; margin: 0; font-weight: 500;">
-                            คุณศิริชัย (ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด) เข้ารับมอบรางวัลผู้รับเหมาผลงานดีเด่นอันดับ 1 จากคณะผู้บริหารแสนสิริ
                         </p>
                     </div>
                 </div>
@@ -127,6 +146,73 @@
                     </div>
                 </div>
             </div>
+        <!-- Certificate & Standards Section -->
+        <section class="about-certificate-section" style="padding: 6rem 0; background-color: var(--bg-main); border-top: 1px solid var(--border-color);">
+            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <p style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem;">CERTIFIED EXCELLENCE</p>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--text-main); font-weight: 400; letter-spacing: 0.05em; margin: 0;">CERTIFICATES & QUALITY STANDARDS</h2>
+                    <p style="font-size: 0.88rem; color: var(--text-light); opacity: 0.8; max-width: 650px; margin: 0.8rem auto 0; line-height: 1.6;">
+                        ได้รับการรับรองมาตรฐานอุตสาหกรรมระดับสากล ทั้งด้านคุณภาพ การบริหารงาน การคุ้มครองสิ่งแวดล้อม และความปลอดภัยต่อสุขภาพผู้อยู่อาศัย
+                    </p>
+                </div>
+
+                <div class="certificate-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+                    <!-- Certificate Card 1 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer2.png" alt="ISO 9001 Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">ISO 9001:2015</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">ใบรับรองระบบบริหารงานคุณภาพระดับสากล การันตีมาตรฐานทุกขั้นตอนการผลิตและการติดตั้ง</p>
+                    </div>
+
+                    <!-- Certificate Card 2 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer2019.png" alt="Sansiri Quality Partner 2019 Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">SANSIRI QUALITY AWARD 2019</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">รางวัลผู้รับเหมาและพันธมิตรยอดเยี่ยมอันดับ 1 จากแสนสิริ การันตีผลงานคุณภาพสูงสุด</p>
+                    </div>
+
+                    <!-- Certificate Card 3 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer6.png" alt="E1 Safety Standard Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">E1 SAFETY STANDARD</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">มาตรฐานสารระเหยฟอร์มาลดีไฮด์ต่ำระดับยุโรป ปลอดภัยไร้สารพิษต่อระบบทางเดินหายใจ</p>
+                    </div>
+
+                    <!-- Certificate Card 4 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer3.png" alt="DIN German Standard Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">GERMAN DIN STANDARD</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">ผ่านการทดสอบมาตรฐานวิศวกรรมเยอรมัน ทนต่อแรงกดทับ การขีดข่วน และความชื้น</p>
+                    </div>
+
+                    <!-- Certificate Card 5 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer7.png" alt="PEFC Forest Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">PEFC SUSTAINABLE WOOD</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">การรับรองแหล่งที่มาของไม้จากป่าปลูกยั่งยืน ไม่ทำลายสิ่งแวดล้อมและผืนป่าธรรมชาติ</p>
+                    </div>
+
+                    <!-- Certificate Card 6 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer4.png" alt="CE Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">CE EUROPEAN MARKING</h4>
+                        <p style="font-size: 0.76rem; color: var(--text-light); line-height: 1.5; margin: 0;">รับรองคุณภาพสินค้านำเข้าตามกฎระเบียบความปลอดภัยและมาตรฐานสหภาพยุโรป</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -137,7 +223,7 @@
         </div>
         <div class="footer-contact">
             <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
-            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
             <p><span class="icon">💬</span> LINE OA</p>
             <p><span class="icon">💬</span> WhatsApp</p>
         </div>
@@ -168,6 +254,70 @@
         menuToggle.addEventListener('click', openDrawer);
         drawerClose.addEventListener('click', closeDrawer);
         drawerOverlay.addEventListener('click', closeDrawer);
+
+        // CEO Photo Card Autoplay Slider Logic
+        let ceoCurrentIndex = 0;
+        const ceoTotal = 5;
+        let ceoAutoplayTimer = null;
+
+        function updateCeoSlide(index) {
+            if (index < 0) index = ceoTotal - 1;
+            if (index >= ceoTotal) index = 0;
+            ceoCurrentIndex = index;
+
+            const track = document.getElementById('ceoSliderTrack');
+            const dots = document.querySelectorAll('#ceoSliderDots .dot');
+
+            if (track) track.style.transform = `translateX(-${ceoCurrentIndex * 100}%)`;
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === ceoCurrentIndex);
+            });
+        }
+
+        function prevCeoSlide() {
+            updateCeoSlide(ceoCurrentIndex - 1);
+            resetCeoAutoplay();
+        }
+
+        function nextCeoSlide() {
+            updateCeoSlide(ceoCurrentIndex + 1);
+            resetCeoAutoplay();
+        }
+
+        function goToCeoSlide(index) {
+            updateCeoSlide(index);
+            resetCeoAutoplay();
+        }
+
+        function startCeoAutoplay() {
+            if (!ceoAutoplayTimer) {
+                ceoAutoplayTimer = setInterval(() => {
+                    updateCeoSlide(ceoCurrentIndex + 1);
+                }, 1500);
+            }
+        }
+
+        function stopCeoAutoplay() {
+            if (ceoAutoplayTimer) {
+                clearInterval(ceoAutoplayTimer);
+                ceoAutoplayTimer = null;
+            }
+        }
+
+        function resetCeoAutoplay() {
+            stopCeoAutoplay();
+            startCeoAutoplay();
+        }
+
+        // Start autoplay on load
+        startCeoAutoplay();
+
+        // Pause autoplay on hover
+        const ceoWrapper = document.getElementById('ceoSliderWrapper');
+        if (ceoWrapper) {
+            ceoWrapper.addEventListener('mouseenter', stopCeoAutoplay);
+            ceoWrapper.addEventListener('mouseleave', startCeoAutoplay);
+        }
     </script>
 </body>
 </html>

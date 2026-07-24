@@ -58,6 +58,7 @@
         <!-- Hero Section -->
         <section class="hero">
             <img src="images/hero.png" alt="Luxurious Living Room" class="hero-bg">
+            <div class="hero-glow-orb"></div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
                 <h1>ELEGANCE IN EVERY STEP.</h1>
@@ -68,7 +69,7 @@
 
         <!-- Craftsmanship Section (Featured Projects Carousel) -->
         <section class="craftsmanship" style="padding: 6rem 0; background-color: #2F2A25; border-bottom: 1px solid rgba(220, 203, 179, 0.15);">
-            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem; position: relative;">
+            <div class="section-container" style="max-width: 1400px; margin: 0 auto; padding: 0 2rem; position: relative;">
                 <div style="text-align: left; margin-bottom: 3.5rem;">
                     <p style="font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-body);">OUR CRAFTSMANSHIP</p>
                     <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 400; color: var(--text-main); margin: 0; letter-spacing: 0.02em;">Featured Projects</h2>
@@ -76,60 +77,93 @@
 
                 <!-- Carousel Container -->
                 <div class="project-carousel-container" style="overflow: hidden; width: 100%; position: relative; padding: 1rem 0;" onmouseenter="stopProjectCarousel()" onmouseleave="startProjectCarousel()">
-                    <div class="project-carousel-track" id="projectCarouselTrack" style="display: flex; gap: 2rem; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); will-change: transform; width: 100%;">
+                    <div class="project-carousel-track" id="projectCarouselTrack" style="display: flex; gap: 1.6rem; transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); will-change: transform; width: 100%;">
                         
-                        <!-- Card 1: Aspire Rama 4 -->
-                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
-                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
-                                <img src="images/big1.jpg" alt="Aspire สุขุมวิท พระราม 4" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                        <!-- Card 1: Life Udomsuk -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Life_Udomsuk_1.jpg" alt="Life Udomsuk" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
                             </div>
                             <div class="project-info">
-                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire สุขุมวิท พระราม 4</h4>
-                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Life Udomsuk</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
                             </div>
                         </div>
 
-                        <!-- Card 2: Life Udomsuk -->
-                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
-                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
-                                <img src="images/big6.jpg" alt="Life Udomsuk" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                        <!-- Card 2: Aspire Arun Amarin -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Aspire_Arun_Amarin_1.jpg" alt="Aspire อรุณอมรินทร์" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
                             </div>
                             <div class="project-info">
-                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Life Udomsuk</h4>
-                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire อรุณอมรินทร์</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
                             </div>
                         </div>
 
-                        <!-- Card 3: Aspire Arun Amarin -->
-                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
-                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
-                                <img src="images/big7.jpg" alt="Aspire อรุณอมรินทร์" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                        <!-- Card 3: Aspire Rama 4 -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Aspire_Sukhumvit_Rama4_1.jpg" alt="Aspire สุขุมวิท พระราม 4" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
                             </div>
                             <div class="project-info">
-                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire อรุณอมรินทร์</h4>
-                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Aspire สุขุมวิท พระราม 4</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
                             </div>
                         </div>
 
-                        <!-- Card 4: Burasiri Panya Indra -->
-                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
-                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
-                                <img src="images/built_in_kitchen.png" alt="Burasiri ปัญญาอินทรา" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                        <!-- Card 4: Life Rama 4 Asoke -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Life_Rama4_Asoke_1.jpg" alt="Life Rama 4 - Asoke" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
                             </div>
                             <div class="project-info">
-                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Burasiri ปัญญาอินทรา</h4>
-                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Single House &bull; BANGKOK</p>
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Life Rama 4 - Asoke</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
                             </div>
                         </div>
 
-                        <!-- Card 5: Setthasiri Pattanakarn -->
-                        <div class="project-card" style="flex: 0 0 calc(33.333% - 1.333rem); min-width: 280px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
-                            <div class="project-img-wrapper" style="border-radius: 12px; overflow: hidden; border: 2.5px solid transparent; transition: all 0.3s; box-shadow: 0 10px 25px rgba(0,0,0,0.25);">
-                                <img src="images/built_in_fireplace.png" alt="Setthasiri พัฒนาการ" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: transform 0.5s;">
+                        <!-- Card 5: Nia By Sansiri -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Nia_By_Sansiri_1.jpg" alt="Nia By Sansiri" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
                             </div>
                             <div class="project-info">
-                                <h4 style="font-size: 1.15rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Setthasiri พัฒนาการ</h4>
-                                <p style="font-size: 0.78rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Single House &bull; BANGKOK</p>
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Nia By Sansiri</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: XT Ekkamai -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/XT_Ekkamai_1.jpg" alt="XT Ekkamai" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">XT Ekkamai</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 7: Blue Sukhumvit 105 -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Blue_Sukhumvit105_1.jpg" alt="Blue สุขุมวิท 105" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Blue สุขุมวิท 105</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 8: Life Ladprao Valley -->
+                        <div class="project-card" style="flex: 0 0 calc(25% - 1.2rem); min-width: 240px; display: flex; flex-direction: column; gap: 1rem; cursor: pointer;" onclick="location.href='projects.html'">
+                            <div class="project-img-wrapper">
+                                <img src="images/Project/Life_Ladprao_Valley_1.jpg" alt="Life Ladprao Valley" style="width: 100%; height: 260px; object-fit: cover; display: block; transition: transform 0.5s;">
+                            </div>
+                            <div class="project-info">
+                                <h4 style="font-size: 1.05rem; font-weight: 500; color: var(--text-main); margin: 0 0 0.3rem; font-family: var(--font-body); letter-spacing: 0.02em;">Life Ladprao Valley</h4>
+                                <p style="font-size: 0.75rem; color: var(--text-light); opacity: 0.7; margin: 0; letter-spacing: 0.05em; font-family: var(--font-body);">Condominium &bull; BANGKOK</p>
                             </div>
                         </div>
 
@@ -159,7 +193,6 @@
                     <div class="info-text">
                         <h3>German Engineering,<br>Asian Durability</h3>
                         <p class="desc">German Engineering, Asian Durability and aminate floor</p>
-                        <p class="quality"><a href="quality.html" style="color: inherit; text-decoration: underline;">Uncompromising Quality</a></p>
                         <div class="divider" style="height: 1px; background-color: var(--border-color); opacity: 0.15; margin: 1.8rem 0;"></div>
                         <p style="font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.2rem; color: var(--text-light); font-weight: 600;">Customizable Finishes</p>
                         <div style="display: flex; gap: 1rem 0.8rem; align-items: center; flex-wrap: wrap; max-width: 480px;">
@@ -211,7 +244,7 @@
         </div>
         <div class="footer-contact">
             <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
-            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
             <p><span class="icon">💬</span> LINE OA</p>
             <p><span class="icon">💬</span> WhatsApp</p>
         </div>
@@ -287,8 +320,9 @@
         
         function getProjectCardsToShow() {
             if (window.innerWidth <= 600) return 1;
-            if (window.innerWidth <= 1024) return 2;
-            return 3;
+            if (window.innerWidth <= 900) return 2;
+            if (window.innerWidth <= 1200) return 3;
+            return 4;
         }
         
         function updateProjectCarousel() {
@@ -303,7 +337,7 @@
                 projectIndex = 0;
             }
             
-            const gap = 32; // 2rem gap
+            const gap = 25; // 1.6rem gap
             const containerWidth = projectTrack.parentElement.clientWidth;
             const cardWidth = (containerWidth - (gap * (cardsToShow - 1))) / cardsToShow;
             
@@ -340,6 +374,34 @@
         // Initialize Carousel
         updateProjectCarousel();
         startProjectCarousel();
+
+        // Dynamic 3D Mouse-Tracking Shadow Effect for Homepage Cards
+        document.querySelectorAll('.project-card, .info-image-container').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                const shadowX = -x / 10;
+                const shadowY = -y / 10 + 15;
+                const imgWrapper = card.querySelector('.project-img-wrapper') || card.querySelector('.image-wrapper');
+                
+                if (imgWrapper) {
+                    imgWrapper.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.65), 0 0 30px rgba(220, 203, 179, 0.35), 0 0 50px rgba(220, 203, 179, 0.15)`;
+                    imgWrapper.style.transform = `perspective(1000px) rotateX(${-y / 28}deg) rotateY(${x / 28}deg) translateY(-6px)`;
+                    imgWrapper.style.borderColor = 'var(--border-color)';
+                }
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                const imgWrapper = card.querySelector('.project-img-wrapper') || card.querySelector('.image-wrapper');
+                if (imgWrapper) {
+                    imgWrapper.style.boxShadow = '';
+                    imgWrapper.style.transform = '';
+                    imgWrapper.style.borderColor = '';
+                }
+            });
+        });
     </script>
 </body>
 </html>

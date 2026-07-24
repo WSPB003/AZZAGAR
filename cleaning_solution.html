@@ -164,7 +164,7 @@
         </div>
         <div class="footer-contact">
             <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057</p>
-            <p><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
             <p><span class="icon">💬</span> LINE OA</p>
             <p><span class="icon">💬</span> WhatsApp</p>
         </div>
@@ -195,6 +195,25 @@
         menuToggle.addEventListener('click', openDrawer);
         drawerClose.addEventListener('click', closeDrawer);
         drawerOverlay.addEventListener('click', closeDrawer);
+
+        // Universal Dynamic 3D Mouse-Tracking Shadow Effect
+        document.querySelectorAll('.floor-item, .coll-prod-item').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const shadowX = -x / 12;
+                const shadowY = -y / 12 + 15;
+                card.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(220, 203, 179, 0.3)`;
+                card.style.transform = `perspective(1000px) rotateX(${-y / 30}deg) rotateY(${x / 30}deg) translateY(-7px)`;
+                card.style.borderColor = 'var(--border-color)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '';
+                card.style.transform = '';
+                card.style.borderColor = '';
+            });
+        });
     </script>
 </body>
 </html>
