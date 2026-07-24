@@ -64,7 +64,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem 4rem;
+    padding: 1.2rem 4rem;
     background-color: var(--bg-main);
     border-bottom: 1px solid rgba(220, 203, 179, 0.15);
     position: sticky;
@@ -81,8 +81,9 @@ body {
 }
 
 .logo-icon {
-    height: 55px;
+    height: 90px;
     width: auto;
+    max-height: 100px;
     transition: transform 0.4s ease;
     object-fit: contain;
 }
