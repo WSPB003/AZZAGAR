@@ -729,42 +729,70 @@
         </section>
 
         <!-- 6. Accessories & Maintenance Section -->
-        <section class="maintenance-section" id="maintenance" style="border-top: 1px solid var(--border-color);">
+        <section class="maintenance-section" id="maintenance" style="border-top: 1px solid var(--border-color); padding: 5rem 0;">
             <div class="section-container">
-                <div class="right-sec-header">
-                    <h3>ผลิตภัณฑ์ถนอมและทำความสะอาดพื้น</h3>
-                    <p>ACCESSORIES & MAINTENANCE</p>
+                <div class="right-sec-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h3>ผลิตภัณฑ์ถนอมและทำความสะอาดพื้น คิงส์ทาวน์</h3>
+                    <p>KINGSTOWN HOUSEHOLD CLEANERS & MAINTENANCE</p>
                 </div>
-                <div class="maintenance-container">
-                    <div class="maintenance-img-container">
-                        <img src="images/maintenance.png" alt="Maintenance Bottle">
+
+                <div class="cleaner-redesign-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; background: rgba(220, 203, 179, 0.03); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+                    <!-- Left: Interactive Image Slider Showcase -->
+                    <div class="cleaner-slider-showcase slider-wrapper" style="position: relative; height: 380px; background: #1C1916; border-radius: 6px; overflow: hidden; border: 1px solid rgba(220, 203, 179, 0.3); box-shadow: 0 6px 20px rgba(0,0,0,0.3);" data-current-index="0">
+                        <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                            <img src="images/Floor cleaner/cleaner_1.jpg" alt="Kingstown Floor Cleaner 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_2.jpg" alt="Kingstown Floor Cleaner 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_3.jpg" alt="Kingstown Floor Cleaner 3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_4.jpg" alt="Kingstown Floor Cleaner 4" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_5.jpg" alt="Kingstown Floor Cleaner 5" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_6.jpg" alt="Kingstown Floor Cleaner 6" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_7.jpg" alt="Kingstown Floor Cleaner 7" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_8.jpg" alt="Kingstown Floor Cleaner 8" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_9.jpg" alt="Kingstown Floor Cleaner 9" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_10.jpg" alt="Kingstown Floor Cleaner 10" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_11.jpg" alt="Kingstown Floor Cleaner 11" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                        </div>
+                        <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                        <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 3)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 4)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 5)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 6)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 7)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 8)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 9)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 10)"></span>
+                        </div>
                     </div>
-                    <div class="maintenance-list">
-                        <!-- Cleaner -->
-                        <div class="maint-item">
-                            <div class="maint-info">
-                                <h4>Specialized wood cleaner</h4>
-                                <p>Safe for laminate and engineering wood floors</p>
+
+                    <!-- Right: Product Features & Information -->
+                    <div class="cleaner-features-content" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: #DCCBB3; font-weight: 500;">สูตรถนอมผิวหน้าไม้และขจัดคราบอย่างอ่อนโยน</h4>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">1. ผลิตภัณฑ์ถูพื้นประจำวัน (Daily Floor Cleaner)</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ช่วยขจัดฝุ่น คราบเหนียว และขจัดคราบสกปรกประจำวันได้หมดจด แห้งไว ปลอดภัย ไม่ทิ้งรอยเท้า</p>
                             </div>
-                            <button class="btn-add-enquiry" onclick="location.href='cleaning_solution.html'">View Cleaning Products</button>
+                            
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">2. ผลิตภัณฑ์ขจัดคราบฝังลึก (Deep Floor Cleaner & Polish)</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">สูตรเข้มข้นช่วยขจัดคราบน้ำมันและคราบฝังแน่น พร้อมเคลือบเงาให้พื้นไม้และพื้น SPC ดูสวยงามสดใหม่อยู่เสมอ</p>
+                            </div>
+
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">3. อ่อนโยนต่อสุขภาพและเป็นมิตรต่อสิ่งแวดล้อม</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ปราศจากสารเคมีอันตราย ปลอดภัยต่อเด็กและสัตว์เลี้ยง ให้กลิ่นหอมสะอาดสดชื่นตลอดวัน</p>
+                            </div>
                         </div>
 
-                        <!-- Tools -->
-                        <div class="maint-item">
-                            <div class="maint-info">
-                                <h4>Interlocking flooring tools</h4>
-                                <p>Professional kit for seamless planks installation</p>
-                            </div>
-                            <button class="btn-add-enquiry" onclick="location.href='contact.html'">Add to Enquiry</button>
-                        </div>
-
-                        <!-- Polish -->
-                        <div class="maint-item">
-                            <div class="maint-info">
-                                <h4>Luxury wood polish</h4>
-                                <p>Restores and seals natural textures surface finish</p>
-                            </div>
-                            <button class="btn-add-enquiry" onclick="location.href='cleaning_solution.html'">View Cleaning Products</button>
+                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+                            <button class="btn-enquire" style="padding: 0.8rem 1.6rem; font-size: 0.82rem;" onclick="location.href='cleaning_solution.html'">ดูหมวดหมู่สินค้าทำความสะอาดทั้งหมด</button>
+                            <button class="btn-quote" style="padding: 0.8rem 1.6rem; font-size: 0.82rem;" onclick="location.href='contact.html'">สอบถามสั่งซื้อสินค้า</button>
                         </div>
                     </div>
                 </div>
