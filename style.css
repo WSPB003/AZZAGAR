@@ -100,14 +100,14 @@
 :root {
     --bg-main: #f6f1eb; /* Primary light cream background */
     --bg-footer: #1C1916; /* Darker warm black for footer */
-    --text-main: #2F2A25; /* Dark charcoal/brown for primary text */
-    --text-light: #6E645A; /* Warm medium brown for description texts */
+    --text-main: #211C18; /* High contrast dark charcoal-brown for primary text */
+    --text-light: #4A423A; /* High contrast warm brown for description texts */
     --accent: #EAE4DC; /* Light warm cream for layered offsets */
-    --border-color: #8C755E; /* Rich warm bronze for borders and highlights */
+    --border-color: #7D6650; /* Rich warm bronze for borders and highlights */
     --white: #FFFFFF; /* Pure clean white for card backgrounds */
     
     --font-heading: 'Cormorant Garamond', 'LINE Seed Sans TH', serif;
-    --font-body: 'Cormorant Garamond', 'LINE Seed Sans TH', sans-serif;
+    --font-body: 'LINE Seed Sans TH', 'Cormorant Garamond', sans-serif;
 }
 
 * {
@@ -139,7 +139,11 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     overflow-x: hidden;
     /* Gentle load transition */
     animation: fadeInPage 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -353,7 +357,7 @@ body {
     border: 1px solid var(--border-color);
     padding: 0.95rem 2.4rem;
     font-family: var(--font-body);
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -533,7 +537,7 @@ body {
 }
 
 .card-header p {
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: var(--text-light);
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -595,7 +599,7 @@ body {
     z-index: 2;
     background: rgba(255, 255, 255, 0.92);
     color: var(--text-main);
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     font-weight: 600;
     text-align: center;
     padding: 0.35rem 0;
@@ -1087,7 +1091,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.5rem;
-    font-size: 0.68rem;
+    font-size: 0.80rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1170,11 +1174,12 @@ body {
     color: var(--text-main);
 }
 .coll-prod-info p {
-    font-size: 0.6rem;
-    font-weight: 600;
+    font-size: 0.80rem;
+    font-weight: 500;
     color: var(--text-light);
     margin-bottom: 1.25rem;
     letter-spacing: 0.02em;
+    line-height: 1.55;
 }
 
 .btn-enquire, .btn-quote {
@@ -1184,7 +1189,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.5rem;
-    font-size: 0.68rem;
+    font-size: 0.80rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1242,7 +1247,7 @@ body {
     color: var(--text-main);
 }
 .maint-info p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--text-light);
     margin-top: 0.15rem;
 }
@@ -1251,7 +1256,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.45rem 1rem;
-    font-size: 0.65rem;
+    font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1371,7 +1376,7 @@ body {
 
 .contact-card h4 {
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--text-main);
@@ -1392,7 +1397,7 @@ body {
 }
 
 .contact-card .card-note {
-    font-size: 0.75rem;
+    font-size: 0.82rem;
     color: var(--text-light);
 }
 
@@ -1445,7 +1450,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     color: var(--text-main);
     font-family: var(--font-body);
-    font-size: 0.75rem;
+    font-size: 0.88rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     transition: all 0.3s;
@@ -1464,7 +1469,7 @@ body {
     color: #DCCBB3;
     border: 2px solid var(--border-color);
     padding: 1.1rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
