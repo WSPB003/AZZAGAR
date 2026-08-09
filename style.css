@@ -1,3 +1,6 @@
+@import url('https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/LINE%20Seed%20Sans%20TH/LINE%20Seed%20Sans%20TH.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 @font-face {
     font-family: 'LINE Seed Sans TH';
     src: url('LINE_Seed_Sans_TH_V1.003/LINE_Seed_Sans_TH_V1.003/Web/WOFF2/LINESeedSansTH_W_Th.woff2') format('woff2'),
@@ -100,10 +103,10 @@
 :root {
     --bg-main: #f6f1eb; /* Primary light cream background */
     --bg-footer: #1C1916; /* Darker warm black for footer */
-    --text-main: #211C18; /* High contrast dark charcoal-brown for primary text */
-    --text-light: #4A423A; /* High contrast warm brown for description texts */
+    --text-main: #2F2A25; /* Dark charcoal/brown for primary text */
+    --text-light: #6E645A; /* Warm medium brown for description texts */
     --accent: #EAE4DC; /* Light warm cream for layered offsets */
-    --border-color: #7D6650; /* Rich warm bronze for borders and highlights */
+    --border-color: #8C755E; /* Rich warm bronze for borders and highlights */
     --white: #FFFFFF; /* Pure clean white for card backgrounds */
     
     --font-heading: 'Cormorant Garamond', 'LINE Seed Sans TH', serif;
@@ -139,11 +142,7 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.7;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+    line-height: 1.6;
     overflow-x: hidden;
     /* Gentle load transition */
     animation: fadeInPage 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -357,7 +356,7 @@ body {
     border: 1px solid var(--border-color);
     padding: 0.95rem 2.4rem;
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -537,7 +536,7 @@ body {
 }
 
 .card-header p {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     color: var(--text-light);
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -599,7 +598,7 @@ body {
     z-index: 2;
     background: rgba(255, 255, 255, 0.92);
     color: var(--text-main);
-    font-size: 0.78rem;
+    font-size: 0.65rem;
     font-weight: 600;
     text-align: center;
     padding: 0.35rem 0;
@@ -1091,7 +1090,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.5rem;
-    font-size: 0.80rem;
+    font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1174,12 +1173,11 @@ body {
     color: var(--text-main);
 }
 .coll-prod-info p {
-    font-size: 0.80rem;
-    font-weight: 500;
+    font-size: 0.6rem;
+    font-weight: 600;
     color: var(--text-light);
     margin-bottom: 1.25rem;
     letter-spacing: 0.02em;
-    line-height: 1.55;
 }
 
 .btn-enquire, .btn-quote {
@@ -1189,7 +1187,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.5rem;
-    font-size: 0.80rem;
+    font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1247,7 +1245,7 @@ body {
     color: var(--text-main);
 }
 .maint-info p {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: var(--text-light);
     margin-top: 0.15rem;
 }
@@ -1256,7 +1254,7 @@ body {
     color: #DCCBB3;
     border: 1px solid var(--border-color);
     padding: 0.45rem 1rem;
-    font-size: 0.78rem;
+    font-size: 0.65rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -1376,7 +1374,7 @@ body {
 
 .contact-card h4 {
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     color: var(--text-main);
@@ -1397,7 +1395,7 @@ body {
 }
 
 .contact-card .card-note {
-    font-size: 0.82rem;
+    font-size: 0.75rem;
     color: var(--text-light);
 }
 
@@ -1450,7 +1448,7 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     color: var(--text-main);
     font-family: var(--font-body);
-    font-size: 0.88rem;
+    font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     transition: all 0.3s;
@@ -1469,7 +1467,7 @@ body {
     color: #DCCBB3;
     border: 2px solid var(--border-color);
     padding: 1.1rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
