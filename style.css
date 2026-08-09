@@ -98,13 +98,13 @@
 }
 
 :root {
-    --bg-main: #2F2A25; /* Primary charcoal/brown background */
+    --bg-main: #f6f1eb; /* Primary light cream background */
     --bg-footer: #1C1916; /* Darker warm black for footer */
-    --text-main: #FAF9F6; /* Soft linen white for primary text */
-    --text-light: #C5BEB5; /* Warm light-gray for description texts */
-    --accent: #3E3730; /* Lighter charcoal for layered offsets */
-    --border-color: #DCCBB3; /* TREF warm bronze/gold for borders and underlines */
-    --white: #3A342E; /* Card background in dark warm-charcoal theme */
+    --text-main: #2F2A25; /* Dark charcoal/brown for primary text */
+    --text-light: #6E645A; /* Warm medium brown for description texts */
+    --accent: #EAE4DC; /* Light warm cream for layered offsets */
+    --border-color: #8C755E; /* Rich warm bronze for borders and highlights */
+    --white: #FFFFFF; /* Pure clean white for card backgrounds */
     
     --font-heading: 'Cormorant Garamond', 'LINE Seed Sans TH', serif;
     --font-body: 'Cormorant Garamond', 'LINE Seed Sans TH', sans-serif;
@@ -162,7 +162,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.4rem 4rem;
-    background-color: var(--bg-main);
+    background-color: #2F2A25;
     border-bottom: 1px solid rgba(220, 203, 179, 0.15);
     position: sticky;
     top: 0;
@@ -206,7 +206,7 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: var(--text-main);
+    color: #FAF9F6;
     font-size: 1.05rem;
     font-weight: 600;
     letter-spacing: 0.1em;
@@ -726,7 +726,7 @@ body {
 .menu-toggle .bar {
     width: 100%;
     height: 2px;
-    background-color: var(--text-main);
+    background-color: #FAF9F6;
     transition: all 0.3s ease;
 }
 
@@ -757,9 +757,9 @@ body {
     bottom: 0;
     width: 300px;
     max-width: 80%;
-    background-color: var(--bg-main);
+    background-color: #2F2A25;
     z-index: 200;
-    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 10px 0 30px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -783,7 +783,7 @@ body {
     border: none;
     font-size: 2.2rem;
     line-height: 1;
-    color: var(--text-main);
+    color: #FAF9F6;
     cursor: pointer;
     transition: color 0.3s;
 }
@@ -800,7 +800,7 @@ body {
 
 .drawer-nav a {
     text-decoration: none;
-    color: var(--text-main);
+    color: #FAF9F6;
     font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -1522,10 +1522,10 @@ body {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--white);
+    background-color: #231F1C;
     min-width: 220px;
-    box-shadow: 0 12px 30px rgba(139, 123, 97, 0.12);
-    border: 1px solid var(--border-color);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(220, 203, 179, 0.2);
     z-index: 1000;
     padding: 0.8rem 0;
     margin-top: 8px;
@@ -1545,7 +1545,7 @@ body {
 }
 
 .dropdown-content a {
-    color: var(--text-main);
+    color: #FAF9F6;
     padding: 0.85rem 1.6rem;
     text-decoration: none;
     display: block;
@@ -1562,8 +1562,8 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: var(--border-color);
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #DCCBB3;
     padding-left: 1.8rem;
 }
 
