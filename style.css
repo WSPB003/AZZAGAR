@@ -103,10 +103,10 @@
 :root {
     --bg-main: #f6f1eb; /* Primary light cream background */
     --bg-footer: #1C1916; /* Darker warm black for footer */
-    --text-main: #2F2A25; /* Dark charcoal/brown for primary text */
-    --text-light: #6E645A; /* Warm medium brown for description texts */
+    --text-main: #211C18; /* High contrast dark charcoal for primary text */
+    --text-light: #4A423A; /* High contrast warm brown for description texts */
     --accent: #EAE4DC; /* Light warm cream for layered offsets */
-    --border-color: #8C755E; /* Rich warm bronze for borders and highlights */
+    --border-color: #7D6650; /* Rich warm bronze for borders and highlights */
     --white: #FFFFFF; /* Pure clean white for card backgrounds */
     
     --font-heading: 'Cormorant Garamond', 'LINE Seed Sans TH', serif;
