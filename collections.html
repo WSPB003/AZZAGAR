@@ -16,7 +16,7 @@
         .tab-buttons {
             display: flex;
             border-bottom: 1px solid var(--border-color);
-            background: #25211E;
+            background: var(--accent);
         }
         .tab-btn {
             flex: 1;
@@ -25,7 +25,7 @@
             font-size: 1.1rem;
             font-weight: 500;
             letter-spacing: 0.05em;
-            color: var(--text-light);
+            color: var(--text-main);
             background: transparent;
             border: none;
             cursor: pointer;
@@ -33,14 +33,14 @@
             text-align: center;
         }
         .tab-btn:hover {
-            color: #DCCBB3;
-            background: rgba(139, 123, 97, 0.02);
+            color: var(--border-color);
+            background: rgba(140, 117, 94, 0.08);
         }
         .tab-btn.active {
-            color: #DCCBB3;
+            color: var(--border-color);
             background: var(--white);
             font-weight: 600;
-            border-bottom: 2px solid #DCCBB3;
+            border-bottom: 2px solid var(--border-color);
             margin-bottom: -1px;
         }
         .tab-contents {
@@ -66,7 +66,7 @@
         .guide-step h5 {
             font-family: var(--font-heading);
             font-size: 1.3rem;
-            color: #DCCBB3;
+            color: var(--border-color);
             margin-bottom: 0.5rem;
             font-weight: 500;
         }
@@ -506,9 +506,9 @@
                         <!-- Tab 1: Structure & Components -->
                         <div id="structure" class="tab-pane active">
                             <!-- Technical Specifications Diagram Image -->
-                            <div style="text-align: center; margin-bottom: 2.5rem; background: rgba(220, 203, 179, 0.03); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-                                <h5 style="color: #DCCBB3; font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; letter-spacing: 0.05em;">โครงสร้างแผ่นไม้สำเร็จรูป (AZ ZAGAR FLOOR Layer Structure)</h5>
-                                <img src="images/TECHNICAL SPECIFICATIONS/Technical.png" alt="AZ ZAGAR FLOOR Technical Specifications" style="width: 100%; max-width: 900px; height: auto; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+                            <div style="text-align: center; margin-bottom: 2.5rem; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <h5 style="color: var(--border-color); font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; letter-spacing: 0.05em;">โครงสร้างแผ่นไม้สำเร็จรูป (AZ ZAGAR FLOOR Layer Structure)</h5>
+                                <img src="images/TECHNICAL SPECIFICATIONS/Technical.png" alt="AZ ZAGAR FLOOR Technical Specifications" style="width: 100%; max-width: 900px; height: auto; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
                             </div>
 
                             <div class="guide-step">
@@ -736,9 +736,9 @@
                     <p>KINGSTOWN HOUSEHOLD CLEANERS & MAINTENANCE</p>
                 </div>
 
-                <div class="cleaner-redesign-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; background: rgba(220, 203, 179, 0.03); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+                <div class="cleaner-redesign-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                     <!-- Left: Interactive Image Slider Showcase -->
-                    <div class="cleaner-slider-showcase slider-wrapper" style="position: relative; height: 380px; background: #1C1916; border-radius: 6px; overflow: hidden; border: 1px solid rgba(220, 203, 179, 0.3); box-shadow: 0 6px 20px rgba(0,0,0,0.3);" data-current-index="0">
+                    <div class="cleaner-slider-showcase slider-wrapper" style="position: relative; height: 380px; background: #2A241F; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 6px 20px rgba(0,0,0,0.15);" data-current-index="0">
                         <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
                             <img src="images/Floor cleaner/cleaner_1.jpg" alt="Kingstown Floor Cleaner 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
                             <img src="images/Floor cleaner/cleaner_2.jpg" alt="Kingstown Floor Cleaner 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
@@ -771,20 +771,20 @@
 
                     <!-- Right: Product Features & Information -->
                     <div class="cleaner-features-content" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: #DCCBB3; font-weight: 500;">สูตรถนอมผิวหน้าไม้และขจัดคราบอย่างอ่อนโยน</h4>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-main); font-weight: 500;">สูตรถนอมผิวหน้าไม้และขจัดคราบอย่างอ่อนโยน</h4>
                         
                         <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
                                 <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">1. ผลิตภัณฑ์ถูพื้นประจำวัน (Daily Floor Cleaner)</h5>
                                 <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ช่วยขจัดฝุ่น คราบเหนียว และขจัดคราบสกปรกประจำวันได้หมดจด แห้งไว ปลอดภัย ไม่ทิ้งรอยเท้า</p>
                             </div>
                             
-                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
                                 <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">2. ผลิตภัณฑ์ขจัดคราบฝังลึก (Deep Floor Cleaner & Polish)</h5>
                                 <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">สูตรเข้มข้นช่วยขจัดคราบน้ำมันและคราบฝังแน่น พร้อมเคลือบเงาให้พื้นไม้และพื้น SPC ดูสวยงามสดใหม่อยู่เสมอ</p>
                             </div>
 
-                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid #DCCBB3;">
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
                                 <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">3. อ่อนโยนต่อสุขภาพและเป็นมิตรต่อสิ่งแวดล้อม</h5>
                                 <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ปราศจากสารเคมีอันตราย ปลอดภัยต่อเด็กและสัตว์เลี้ยง ให้กลิ่นหอมสะอาดสดชื่นตลอดวัน</p>
                             </div>
