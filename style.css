@@ -110,7 +110,7 @@
     --white: #FFFFFF; /* Pure clean white for card backgrounds */
     
     --font-heading: 'Cormorant Garamond', 'LINE Seed Sans TH', serif;
-    --font-body: 'LINE Seed Sans TH', 'Cormorant Garamond', sans-serif;
+    --font-body: 'Cormorant Garamond', 'LINE Seed Sans TH', sans-serif;
 }
 
 * {
