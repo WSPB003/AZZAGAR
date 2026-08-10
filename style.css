@@ -1938,6 +1938,135 @@ textarea:focus,
     display: block;
 }
 
+/* ==========================================================================
+   Ultra-Deluxe Mobile & Tablet Responsive Optimization System (<= 768px & <= 480px)
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    /* Global Padding & Spacing Adjustments */
+    .section-container {
+        padding: 0 1.2rem !important;
+    }
+    
+    .craftsmanship, 
+    .info-top, 
+    .cards-section, 
+    .flooring-collections-section, 
+    .stairs-section, 
+    .carpentry-section, 
+    .maintenance-section,
+    .about-history-section,
+    .about-work-showcase,
+    .quality-section {
+        padding: 3.5rem 0 !important;
+    }
+
+    /* Header & Mobile Navigation Toggle */
+    .header {
+        padding: 0.5rem 1.2rem !important;
+    }
+    .logo-icon {
+        height: 60px !important;
+        max-height: 65px !important;
+    }
+    
+    /* Hero Section Adjustments */
+    .hero-content h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.04em !important;
+    }
+    .hero-content p {
+        font-size: 0.95rem !important;
+        margin-bottom: 1.8rem !important;
+    }
+
+    /* About Page History Grid & CEO Slider */
+    .history-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+        margin-bottom: 3rem !important;
+    }
+    .ceo-slider-wrapper {
+        height: 380px !important;
+    }
+    .history-text h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 1.2rem !important;
+    }
+    .history-text {
+        font-size: 0.98rem !important;
+        line-height: 1.75 !important;
+    }
+
+    /* Collections Page Cleaner Showcase */
+    .cleaner-redesign-container {
+        grid-template-columns: 1fr !important;
+        padding: 1.5rem !important;
+        gap: 1.8rem !important;
+    }
+    .cleaner-slider-showcase {
+        height: 280px !important;
+    }
+
+    /* Matching Wood Profiles & Product Grids */
+    .stairs-carpentry-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem !important;
+    }
+
+    /* Project Page Search & Real Estate Grid */
+    #projectSearch {
+        padding: 0.95rem !important;
+        font-size: 0.88rem !important;
+    }
+    #projectList {
+        padding: 1rem !important;
+        max-height: 320px !important;
+        gap: 0.5rem !important;
+    }
+    .project-tag {
+        padding: 0.5rem 0.8rem !important;
+        font-size: 0.78rem !important;
+    }
+
+    /* Footer Mobile Optimization */
+    .footer {
+        padding: 2.5rem 1.5rem !important;
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra Small Screen Mobile Enhancements */
+    .hero-content h1 {
+        font-size: 1.85rem !important;
+    }
+    .stairs-carpentry-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .flooring-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .ceo-slider-wrapper {
+        height: 300px !important;
+    }
+    .cleaner-slider-showcase {
+        height: 240px !important;
+    }
+    .coll-hero {
+        height: 200px !important;
+    }
+    .coll-hero-content h2 {
+        font-size: 1.3rem !important;
+    }
+    .btn-primary, .btn-see-details, .btn-enquire, .btn-quote, .btn-submit-consultation {
+        width: 100% !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+}
+
 
 
 
