@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | About Us & History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="images/Logo/NEWLOGO.png" class="logo-icon" alt="AZZAGAR Logo">
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="about.html" class="active">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#spc">Premium SPC Flooring</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="images/Logo/NEWLOGO.png" class="logo-icon" alt="AZZAGAR Logo">
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="about.html" class="active">ABOUT US</a>
+            <a href="collections.html">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- History Section -->
+        <section class="about-history-section" style="padding: 7rem 0 4rem; background-color: var(--bg-main);">
+            <div class="section-container" style="max-width: 1000px; margin: 0 auto; padding: 0 2rem;">
+                <h1 style="font-family: var(--font-heading); font-size: 3rem; text-align: center; color: var(--border-color); margin-bottom: 3rem; letter-spacing: 0.05em; font-weight: 400;">COMPANY HISTORY & PROFILE</h1>
+                
+                <div class="history-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 5rem;">
+                    <!-- Owner/Award Photo Side (Left) -->
+                    <div class="history-photo-card" style="background-color: var(--white); border: 1px solid var(--border-color); border-radius: 4px; padding: 1.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.15); text-align: center;">
+                        <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: var(--border-color); margin-bottom: 1rem; letter-spacing: 0.05em; font-weight: 600;">FOUNDER & QUALITY AWARDS</h3>
+                        
+                        <div class="ceo-slider-wrapper" id="ceoSliderWrapper" style="position: relative; width: 100%; height: 580px; overflow: hidden; border-radius: 4px; margin-bottom: 1rem;" data-current-index="0">
+                            <div class="ceo-slider-images" id="ceoSliderTrack" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                <img src="images/CEO/CEO_1.jpg" alt="คุณ ธัญลักษณ์ วิชย์โกวิทเทน ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 1" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_2.jpg" alt="คุณ ธัญลักษณ์ วิชย์โกวิทเทน ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 2" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_3.jpg" alt="คุณ ธัญลักษณ์ วิชย์โกวิทเทน ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 3" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_4.jpg" alt="คุณ ธัญลักษณ์ วิชย์โกวิทเทน ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 4" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                                <img src="images/CEO/CEO_5.jpg" alt="คุณ ธัญลักษณ์ วิชย์โกวิทเทน ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด 5" style="width: 100%; height: 100%; object-fit: cover; object-position: top center; flex: 0 0 100%; display: block;">
+                            </div>
+                            <button class="slider-arrow prev-arrow" onclick="prevCeoSlide()" aria-label="Previous Image">‹</button>
+                            <button class="slider-arrow next-arrow" onclick="nextCeoSlide()" aria-label="Next Image">›</button>
+                            <div class="slider-dots" id="ceoSliderDots">
+                                <span class="dot active" onclick="goToCeoSlide(0)"></span>
+                                <span class="dot" onclick="goToCeoSlide(1)"></span>
+                                <span class="dot" onclick="goToCeoSlide(2)"></span>
+                                <span class="dot" onclick="goToCeoSlide(3)"></span>
+                                <span class="dot" onclick="goToCeoSlide(4)"></span>
+                            </div>
+                        </div>
+
+                        <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin: 0; font-weight: 500;">
+                            คุณ ธัญลักษณ์ วิชย์โกวิทเทน (ผู้บริหารและผู้ก่อตั้ง บริษัท แอซซาก้า จำกัด)
+                        </p>
+                    </div>
+
+                    <!-- Text Side (Right) -->
+                    <div class="history-text" style="font-size: 1.05rem; line-height: 1.85; color: var(--text-main); font-weight: 400; letter-spacing: 0.01em;">
+                        <h2 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--border-color); font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 0.03em;">ประวัติความเป็นมา แอซซาก้า</h2>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-main); font-weight: 400;">
+                            <strong style="color: var(--text-main); font-weight: 700;">บริษัท แอซซาก้า จำกัด (Az Zagar Co., Ltd.)</strong> ดำเนินธุรกิจเป็นผู้นำด้านการจำหน่ายและติดตั้งวัสดุปูพื้นไม้สำเร็จรูป ไม้บันไดทำสีสำเร็จ และงานไม้ตกแต่งครบวงจร เรามุ่งมั่นคัดสรรเฉพาะวัสดุเกรดพรีเมียมที่ผลิตด้วยเทคโนโลยีวิศวกรรมขั้นสูงจากประเทศเยอรมนี เพื่อตอบสนองความต้องการงานตกแต่งที่เรียกร้องความประณีตและความคงทนระดับสูงสุด
+                        </p>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-main); font-weight: 400;">
+                            ด้วยประสบการณ์ที่สั่งสมมาอย่างยาวนานและความเป็นมืออาชีพในการทำงาน ทำให้เราได้รับความไว้วางใจจากบริษัทอสังหาริมทรัพย์ชั้นนำระดับประเทศในการดูแลติดตั้งพื้นไม้สำหรับโครงการบ้านเดี่ยวและคอนโดมิเนียมหรูหรามากมาย
+                        </p>
+                        <p style="margin-bottom: 1.5rem; color: var(--text-main); font-weight: 400;">
+                            เราได้รับเกียรติเป็นพันธมิตรคุณภาพระดับ <strong style="color: var(--border-color); font-weight: 700;">Diamond Partner</strong> จากงาน Sansiri Quality Day และรางวัลชนะเลิศอันดับ 1 ในประเภทงานบริการจัดส่งสินค้าและติดตั้งที่ได้มาตรฐานความปลอดภัยเป็นมิตรต่อสิ่งแวดล้อม
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Showcases Section -->
+        <section class="about-work-showcase" style="padding: 4rem 0 6rem; background-color: var(--accent); border-top: 1px solid var(--border-color);">
+            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                <h2 style="font-family: var(--font-heading); font-size: 2.2rem; text-align: center; color: var(--text-main); margin-bottom: 3rem; letter-spacing: 0.05em; font-weight: 400;">PORTFOLIO SHOWCASE & SERVICES</h2>
+                
+                <div class="work-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                    <!-- Card 1 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/big1.jpg" alt="Azzagar Work Example 1" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Residential Laminate Flooring</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                ติดตั้งพื้นไม้สำเร็จรูปด้วยนวัตกรรมและเทคนิคขั้นสูงจากประเทศเยอรมนี รอยต่อแนบสนิท แข็งแรงทนทาน เหมาะสำหรับบ้านพักอาศัยสมัยใหม่
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/big6.jpg" alt="Azzagar Work Example 2" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Heavy-Duty Commercial Projects</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                รองรับงานติดตั้งบนพื้นที่การใช้งานหนักเป็นพิเศษ (Heavy Duty) เช่น อาคารสำนักงาน โรงแรม ฟิตเนส และคลินิกการแพทย์ที่ต้องการมาตรฐานความแข็งแกร่งสูงสุด
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="work-card" style="background-color: var(--bg-main); border: 1px solid rgba(220, 203, 179, 0.15); border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <img src="images/big7.jpg" alt="Azzagar Work Example 3" style="width: 100%; height: 240px; object-fit: cover; display: block;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="font-size: 0.9rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.05em; margin-bottom: 0.5rem; text-transform: uppercase;">Bespoke Material Selection</h4>
+                            <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.6; margin: 0;">
+                                คัดเลือกและให้คำปรึกษาเฉดสีไม้ตกแต่งตามต้องการ เพื่อให้ผลงานปูพื้นคุมโทนสลับแต่งเข้ากับเฟอร์นิเจอร์หลักได้อย่างหรูหรามีสไตล์
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Certificate & Standards Section -->
+        <section class="about-certificate-section" style="padding: 6rem 0; background-color: var(--bg-main); border-top: 1px solid var(--border-color);">
+            <div class="section-container" style="max-width: 1200px; margin: 0 auto; padding: 0 2rem;">
+                <div style="text-align: center; margin-bottom: 4rem;">
+                    <p style="font-size: 0.88rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem;">CERTIFIED EXCELLENCE</p>
+                    <h2 style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--text-main); font-weight: 400; letter-spacing: 0.05em; margin: 0;">CERTIFICATES & QUALITY STANDARDS</h2>
+                    <p style="font-size: 0.88rem; color: var(--text-light); opacity: 0.8; max-width: 650px; margin: 0.8rem auto 0; line-height: 1.6;">
+                        ได้รับการรับรองมาตรฐานอุตสาหกรรมระดับสากล ทั้งด้านคุณภาพ การบริหารงาน การคุ้มครองสิ่งแวดล้อม และความปลอดภัยต่อสุขภาพผู้อยู่อาศัย
+                    </p>
+                </div>
+
+                <div class="certificate-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+                    <!-- Certificate Card 1 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer2.png" alt="ISO 9001 Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">ISO 9001:2015</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">ใบรับรองระบบบริหารงานคุณภาพระดับสากล การันตีมาตรฐานทุกขั้นตอนการผลิตและการติดตั้ง</p>
+                    </div>
+
+                    <!-- Certificate Card 2 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer2019.png" alt="Sansiri Quality Partner 2019 Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">SANSIRI QUALITY AWARD 2019</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">รางวัลผู้รับเหมาและพันธมิตรยอดเยี่ยมอันดับ 1 จากแสนสิริ การันตีผลงานคุณภาพสูงสุด</p>
+                    </div>
+
+                    <!-- Certificate Card 3 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer6.png" alt="E1 Safety Standard Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">E1 SAFETY STANDARD</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">มาตรฐานสารระเหยฟอร์มาลดีไฮด์ต่ำระดับยุโรป ปลอดภัยไร้สารพิษต่อระบบทางเดินหายใจ</p>
+                    </div>
+
+                    <!-- Certificate Card 4 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer3.png" alt="DIN German Standard Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">GERMAN DIN STANDARD</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">ผ่านการทดสอบมาตรฐานวิศวกรรมเยอรมัน ทนต่อแรงกดทับ การขีดข่วน และความชื้น</p>
+                    </div>
+
+                    <!-- Certificate Card 5 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer7.png" alt="PEFC Forest Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">PEFC SUSTAINABLE WOOD</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">การรับรองแหล่งที่มาของไม้จากป่าปลูกยั่งยืน ไม่ทำลายสิ่งแวดล้อมและผืนป่าธรรมชาติ</p>
+                    </div>
+
+                    <!-- Certificate Card 6 -->
+                    <div class="cert-card" style="background-color: var(--white); border: 1px solid rgba(220, 203, 179, 0.2); border-radius: 8px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.25); text-align: center; padding: 1.5rem;">
+                        <div class="cert-img-wrapper" style="overflow: hidden; border-radius: 4px; background: #FAF9F6; padding: 0.8rem; margin-bottom: 1.2rem; border: 1px solid rgba(220, 203, 179, 0.15);">
+                            <img src="images/cer4.png" alt="CE Certificate" style="width: 100%; height: 200px; object-fit: contain; display: block; transition: transform 0.4s ease;">
+                        </div>
+                        <h4 style="font-size: 0.95rem; font-weight: 600; color: var(--border-color); margin-bottom: 0.5rem; font-family: var(--font-body);">CE EUROPEAN MARKING</h4>
+                        <p style="font-size: 0.88rem; color: var(--text-light); line-height: 1.5; margin: 0;">รับรองคุณภาพสินค้านำเข้าตามกฎระเบียบความปลอดภัยและมาตรฐานสหภาพยุโรป</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+
+        // CEO Photo Card Autoplay Slider Logic
+        let ceoCurrentIndex = 0;
+        const ceoTotal = 5;
+        let ceoAutoplayTimer = null;
+
+        function updateCeoSlide(index) {
+            if (index < 0) index = ceoTotal - 1;
+            if (index >= ceoTotal) index = 0;
+            ceoCurrentIndex = index;
+
+            const track = document.getElementById('ceoSliderTrack');
+            const dots = document.querySelectorAll('#ceoSliderDots .dot');
+
+            if (track) track.style.transform = `translateX(-${ceoCurrentIndex * 100}%)`;
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === ceoCurrentIndex);
+            });
+        }
+
+        function prevCeoSlide() {
+            updateCeoSlide(ceoCurrentIndex - 1);
+            resetCeoAutoplay();
+        }
+
+        function nextCeoSlide() {
+            updateCeoSlide(ceoCurrentIndex + 1);
+            resetCeoAutoplay();
+        }
+
+        function goToCeoSlide(index) {
+            updateCeoSlide(index);
+            resetCeoAutoplay();
+        }
+
+        function startCeoAutoplay() {
+            if (!ceoAutoplayTimer) {
+                ceoAutoplayTimer = setInterval(() => {
+                    updateCeoSlide(ceoCurrentIndex + 1);
+                }, 1500);
+            }
+        }
+
+        function stopCeoAutoplay() {
+            if (ceoAutoplayTimer) {
+                clearInterval(ceoAutoplayTimer);
+                ceoAutoplayTimer = null;
+            }
+        }
+
+        function resetCeoAutoplay() {
+            stopCeoAutoplay();
+            startCeoAutoplay();
+        }
+
+        // Start autoplay on load
+        startCeoAutoplay();
+
+        // Pause autoplay on hover
+        const ceoWrapper = document.getElementById('ceoSliderWrapper');
+        if (ceoWrapper) {
+            ceoWrapper.addEventListener('mouseenter', stopCeoAutoplay);
+            ceoWrapper.addEventListener('mouseleave', startCeoAutoplay);
+        }
+    </script>
+</body>
+</html>

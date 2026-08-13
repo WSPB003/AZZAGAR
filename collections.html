@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZZAGAR | Product Collections</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tabs Styling for Guidelines */
+        .tabs-container {
+            margin-top: 3rem;
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(139, 123, 97, 0.05);
+        }
+        .tab-buttons {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--accent);
+        }
+        .tab-btn {
+            flex: 1;
+            padding: 1.5rem;
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: var(--text-main);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+        }
+        .tab-btn:hover {
+            color: var(--border-color);
+            background: rgba(140, 117, 94, 0.08);
+        }
+        .tab-btn.active {
+            color: var(--border-color);
+            background: var(--white);
+            font-weight: 600;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: -1px;
+        }
+        .tab-contents {
+            padding: 3rem;
+        }
+        .tab-pane {
+            display: none;
+        }
+        .tab-pane.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        .guide-step {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .guide-step:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        .guide-step h5 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--border-color);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .guide-step p, .guide-step ul {
+            font-size: 0.88rem;
+            line-height: 1.6;
+            color: var(--text-light);
+        }
+        .guide-step ul {
+            padding-left: 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .guide-step li {
+            margin-bottom: 0.4rem;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            .tab-buttons {
+                flex-direction: column;
+            }
+            .tab-btn {
+                padding: 1rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .tab-btn.active {
+                border-bottom: 1px solid #DCCBB3;
+                border-left: 3px solid #DCCBB3;
+            }
+            .tab-contents {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header scrolled">
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="images/Logo/NEWLOGO.png" class="logo-icon" alt="AZZAGAR Logo">
+            <span class="logo-text">AZZAGAR</span>
+        </div>
+        <nav class="nav">
+            <a href="about.html">ABOUT US</a>
+            <div class="nav-dropdown">
+                <a href="collections.html" class="active" class="dropdown-trigger">COLLECTIONS ▾</a>
+                <div class="dropdown-content">
+                    <a href="collections.html#flooring">Laminate & Wood Flooring</a>
+                    <a href="collections.html#spc">Premium SPC Flooring</a>
+                    <a href="collections.html#profiles">Matching Wood Profiles</a>
+                    <a href="collections.html#maintenance">Care & Maintenance</a>
+                </div>
+            </div>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+            <div class="logo" onclick="location.href='index.html'">
+                <img src="images/Logo/NEWLOGO.png" class="logo-icon" alt="AZZAGAR Logo">
+                <span class="logo-text">AZZAGAR</span>
+            </div>
+            <button class="drawer-close" id="drawerClose" aria-label="Close Menu">&times;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="about.html">ABOUT US</a>
+            <a href="collections.html" class="active">COLLECTIONS</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- 1. Unified Hero Section -->
+        <section class="coll-hero">
+            <img src="images/wood_collection_banner.png" alt="Azzagar Collections Banner" class="coll-hero-bg">
+            <div class="coll-hero-overlay"></div>
+            <div class="coll-hero-content">
+                <h2>AZZAGAR PRODUCT COLLECTIONS</h2>
+                <p style="font-size: 0.95rem; letter-spacing: 0.05em; font-family: var(--font-body); font-weight: 300; margin-top: 0.8rem; color: #EAE4D9;">พื้นไม้ลามิเนต บันไดทำสีสำเร็จ และงานช่างฝีมือระดับไฮเอนด์</p>
+            </div>
+        </section>
+
+        <!-- 2. Flooring Collections Grid Section -->
+        <section class="flooring-collections-section" id="flooring">
+            <div class="section-container wide-container">
+                <div class="coll-header-row">
+                    <div class="coll-title">
+                        <h2>FLOORING COLLECTIONS</h2>
+                        <p>Laminate & Engineered Wood Flooring</p>
+                    </div>
+                </div>
+
+                <div class="flooring-grid">
+                    <!-- Item 1 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10004A.jpg" alt="Salinas Oak (AZS 10004A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Salinas Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10004A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 1001A.jpg" alt="White Wash Oak (AZS 1001A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>White Wash Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 1001A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10612A.jpg" alt="Asisi Oak (AZS 10612A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Asisi Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10612A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10617A.jpg" alt="Honduram Oak (AZS 10617A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Honduram Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10617A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10619A.jpg" alt="Canyon Frontier Light Oak (AZS 10619A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Canyon Frontier Light Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10619A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10623A.jpg" alt="Somber Oak (AZS 10623A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Somber Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10623A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10624A.jpg" alt="Royal Plank Natural Oak (AZS 10624A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Royal Plank Natural Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10624A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10634A.jpg" alt="Atlanta Sapelle (AZS 10634A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Atlanta Sapelle</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10634A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10639A.jpg" alt="Burlington Oak Allover (AZS 10639A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Burlington Oak Allover</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10639A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 10 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10656A.jpg" alt="Atlanta Grey (AZS 10656A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Atlanta Grey</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10656A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 11 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10667A.jpg" alt="Sheffield Oak (AZS 10667A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Sheffield Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10667A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 12 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 1067A.jpg" alt="Doussie Oak (AZS 1067A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Doussie Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 1067A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 13 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10720A.jpg" alt="Walnut (AZS 10720A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Walnut</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10720A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 14 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10732A.jpg" alt="Saffron Oak (AZS 10732A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Saffron Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10732A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 15 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 10733A.jpg" alt="Cagnac Teak (AZS 10733A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Cagnac Teak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 10733A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 16 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 1078A.jpg" alt="White Oak (AZS 1078A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>White Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 1078A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 17 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 11176A.jpg" alt="Dover Oak (AZS 11176A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Dover Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 11176A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 18 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 11304A.jpg" alt="Cinnamon Oak (AZS 11304A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Cinnamon Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 11304A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 19 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 20631.jpg" alt="Tholian Country (AZS 20631A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Tholian Country</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 20631A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 20 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 20638A.jpg" alt="Glasier Oak (AZS 20638A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Glasier Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 20638A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 21 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 20649A.jpg" alt="Travertine Silver Oak (AZS 20649A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Travertine Silver Oak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 20649A (8 mm.)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 22 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/FLOORING COLLECTIONS/AZS 2083A.jpg" alt="Cotta Walnut (AZS 2083A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Cotta Walnut</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZS 2083A (8 mm.)</p>
+                        </div>
+                    </div>
+
+ 
+            </div>
+        </section>
+
+        <!-- 3. Pre-Finished Stairs Sections (Merged from stairs.html) -->
+        <!-- 3. Premium SPC Vinyl Flooring Collection -->
+        <section class="flooring-collections-section" id="spc" style="border-top: 1px solid var(--border-color);">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>พื้น SPC คุณภาพสูง</h3>
+                    <p>PREMIUM SPC VINYL FLOORING</p>
+                </div>
+
+                <div class="flooring-grid">
+                    <!-- Item 1 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC00717A - Jakarta Rodeo 23x122x0.4 cm.jpg" alt="Jakarta Rodeo (AZC 00717A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Jakarta Rodeo</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 00717A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC00719A - Chicaco Elm 23x122x0.4 cm.jpg" alt="Chicaco Elm (AZC 00719A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Chicaco Elm</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 00719A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC00721A - Ebon Pine 23x122x0.4 cm.jpg" alt="Ebon Pine (AZC 00721A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Ebon Pine</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 00721A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC02321A - Derwent Moca Walnut 23x122x0.4 cm.jpg" alt="Derwent Moca Walnut (AZC 02321A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Derwent Moca Walnut</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 02321A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC07018A - White Pabelo Elm 23x122x0.4 cm.jpg" alt="White Pabelo Elm (AZC 07018A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>White Pabelo Elm</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 07018A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC07078A - Laurel Oarc wind 23x122x0.4 cm..jpg" alt="Laurel Oak Wind (AZC 07078A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Laurel Oak Wind</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 07078A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC20082A - Daco Stad Teak 23x122x0.4 cm.jpg" alt="Daco Stad Teak (AZC 20082A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Daco Stad Teak</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 20082A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="floor-item">
+                        <div class="floor-swatch"><img src="images/SPC/AZC30136A - Strobus Tropical 23x122x0.4 cm..jpg" alt="Strobus Tropical (AZC 30136A)" class="floor-swatch-img"></div>
+                        <div class="floor-info">
+                            <h4>Strobus Tropical</h4>
+                            <p class="quality-tag">รหัสสินค้า: AZC 30136A (23x122x0.4 cm.) 4 mm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Guidelines Tabs -->
+        <section class="carpentry-section" style="border-top: 1px solid var(--border-color);">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>รายละเอียดเชิงเทคนิคและคุณสมบัติพิเศษของพื้นไม้สำเร็จรูป</h3>
+                    <p>TECHNICAL SPECIFICATIONS & WARRANTY POLICY</p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="openTab(event, 'structure')">ส่วนประกอบของพื้นไม้ (COMPONENTS)</button>
+                        <button class="tab-btn" onclick="openTab(event, 'features')">คุณสมบัติพิเศษ (FEATURES)</button>
+                        <button class="tab-btn" onclick="openTab(event, 'warranty')">การรับประกันสินค้า (WARRANTY)</button>
+                    </div>
+
+                    <div class="tab-contents">
+                        <!-- Tab 1: Structure & Components -->
+                        <div id="structure" class="tab-pane active">
+                            <!-- Technical Specifications Diagram Image -->
+                            <div style="text-align: center; margin-bottom: 2.5rem; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                                <h5 style="color: var(--border-color); font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1.2rem; letter-spacing: 0.05em;">โครงสร้างแผ่นไม้สำเร็จรูป (AZ ZAGAR FLOOR Layer Structure)</h5>
+                                <img src="images/TECHNICAL SPECIFICATIONS/Technical.png" alt="AZ ZAGAR FLOOR Technical Specifications" style="width: 100%; max-width: 900px; height: auto; border-radius: 6px; display: block; margin: 0 auto; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                            </div>
+
+                            <div class="guide-step">
+                                <h5>1. ด้านหน้าปิดทับผิวหน้าด้วยแผ่น เมลามีน - เรซิ่น คุณภาพสูง</h5>
+                                <p>เพื่อป้องกันพื้นไม้จากรอยขูดขีด สารเคมี และรังสี UV จากดวงอาทิตย์</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>2. ลายไม้ผลิตจาก DECORATIVE FILM ที่ถ่ายจากไม้ธรรมชาติ</h5>
+                                <p>ทำให้ได้ลวดลายสวยงาม คมชัด เหมือนจริงและทนทานกว่ากระดาษพิมพ์ลาย บนพื้นไม้ LAMINATE ทั่วไป</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>3. แกนกลางเป็นส่วนของเนื้อไม้อัดแรงดันสูง HDF (HIGH DENSITY FIBER)</h5>
+                                <p>ผลิตจากไม้สนคุณภาพสูง 100% ทำให้ได้แผ่นไม้ที่มีความแข็งแกร่งเท่ากันตลอดทั้งแผ่น</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>4. ด้านหลังปิดด้วยแผ่นเมลามีน</h5>
+                                <p>ป้องกันความชื้นจากด้านล่างอย่างมีประสิทธิภาพ</p>
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Special Features -->
+                        <div id="features" class="tab-pane">
+                            <div class="guide-step">
+                                <h5>1. สามารถติดตั้งทับบนพื้นผิวเดิมได้ทันที</h5>
+                                <p>โดยไม่ต้องรื้อถอนออก ปราศจากความยุ่งยาก สามารถทับบนพื้นไม้ปาร์เก้เดิม หินขัด หินอ่อน หินแกรนิต กระเบื้อง กระเบื้องยาง ยางพารา ได้ทันทีโดยไม่ทำให้พื้นเดิมเสียหาย</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>2. ไร้ฝุ่นและกลิ่นสีรบกวน</h5>
+                                <p>ไม่มีขบวนการขัดผิวหน้าเหมือนปาร์เก้แบบเก่า และไม่มีการทำสีหลังการติดตั้ง ทำให้ปราศจากฝุ่น และกลิ่นสีรบกวนต่อระบบทางเดินหายใจ</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>3. ผิวหน้าแข็งแกร่งทนทานต่อการใช้งาน</h5>
+                                <p>ไม่เป็นรอยขูดขีดง่าย เช่น รอยส้นรองเท้า กรงเล็บอันแหลมคมของสัตว์เลี้ยง ทนทานต่อแรงกดทับจากเฟอร์นิเจอร์ที่มีน้ำหนักมาก เช่น ตู้เย็น หรือตู้เสื้อผ้าขนาดใหญ่</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>4. ป้องกันแสงแดด สีไม่ซีดจาง</h5>
+                                <p>สามารถป้องกันแสงอาทิตย์ได้เป็นอย่างดี โดยไม่ทำให้สีซีดจางแม้โดนแดดตลอดทั้งวัน</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>5. ทนทานต่อสารเคมีและความร้อน</h5>
+                                <p>ทนทานต่อสารเคมี กรด ด่าง และความร้อนจากก้นบุหรี่ สามารถขี้บุหรี่บนพื้นไม้ได้โดยไม่เกิดรอยไหม้</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>6. ติดตั้งด้วยระบบ LOC SYSTEM</h5>
+                                <p>ไม่ใช้กาวในการติดตั้ง ทำให้ไม่เกิดปัญหาการเลอะกาว หรือเกิดภาวะเสื่อมสภาพ ปลอดภัยต่อสิ่งแวดล้อม</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>7. ถอดซ่อมแซมง่ายด้วยระบบ LOC SYSTEM</h5>
+                                <p>เมื่อเกิดความเสียหายกับแผ่นไม้ สามารถถอดซ่อมแซมได้อย่างสะดวก</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>8. ถอดเปลี่ยนเฉพาะแผ่นที่ชำรุดได้</h5>
+                                <p>สามารถเปลี่ยนเฉพาะแผ่นที่มีการชำรุดได้โดยไม่ทำให้แผ่นอื่นๆ เสียหาย แตกต่างจากระบบที่ใช้กาวในการติดตั้ง</p>
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Warranty Policy -->
+                        <div id="warranty" class="tab-pane">
+                            <div style="background: rgba(220, 203, 179, 0.05); border-left: 4px solid #DCCBB3; padding: 1.2rem; margin-bottom: 2rem; border-radius: 0 4px 4px 0;">
+                                <h5 style="color: #DCCBB3; font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 0.4rem;">เงื่อนไขการรับประกันสินค้า (AZ ZAGAR FLOOR)</h5>
+                                <p style="font-size: 0.9rem; color: var(--text-main); margin: 0;">พื้นไม้สำเร็จรูป AZ ZAGAR FLOOR มีการรับประกันคุณภาพสินค้าเป็นเวลา <strong>5 ปี</strong> และรับประกันการติดตั้ง <strong>1 ปี</strong> ดังรายละเอียดต่อไปนี้</p>
+                            </div>
+
+                            <div class="guide-step">
+                                <h5>1. ไม่เกิดรอยขูดขีดจากการใช้งานตามปกติ</h5>
+                                <p>รับประกันพื้นไม้จะไม่เกิดรอยขูดขีดจากการใช้งานตามปกติภายในอาคาร</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>2. ป้องกันคราบสกปรกฝังลึก</h5>
+                                <p>คราบสกปรกไม่สามารถซึมผ่านผิวเมลามีน หรือติดฝังกับพื้นไม้ได้</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>3. ป้องกันรังสี UV สีไม่ซีดจาง</h5>
+                                <p>พื้นไม้สามารถป้องกันรังสี UV ได้เป็นอย่างดี ไม่ทำให้สีซีดจางจากแสงอาทิตย์ แม้ว่าจะใช้งานต่อเนื่องหลายปี</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>4. รับประกันผลงานการติดตั้ง (1 ปี)</h5>
+                                <p>หากพื้นไม้มีการโก่งตัวจากการติดตั้ง บริษัทฯ จะดำเนินการแก้ไขในการซ่อมแซมให้อยู่ในสภาพเดิม</p>
+                            </div>
+                            <div class="guide-step">
+                                <h5>5. ข้อยกเว้นการรับประกัน</h5>
+                                <p>การรับประกันไม่ครอบคลุมถึงความเสียหายจากอุบัติเหตุ น้ำท่วม หรือการเจตนาทำให้พื้นเกิดความเสียหายจากโลหะมีคม</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4.2 Matching Wood Profiles Section -->
+        <section class="stairs-section" id="profiles" style="background-color: var(--white); border-top: 1px solid var(--border-color);">
+            <div class="section-container">
+                <div class="right-sec-header">
+                    <h3>ตัวจบงานและอุปกรณ์เสริม</h3>
+                    <p>MATCHING WOOD PROFILES &amp; SKIRTING</p>
+                </div>
+                <div class="stairs-carpentry-grid" style="grid-template-columns: repeat(5, 1fr); gap: 1rem; margin-top: 2.5rem;">
+                    <!-- Profile 1: ตัวเชื่อมระหว่างห้อง -->
+                    <div class="coll-prod-item" style="padding: 1rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="coll-prod-img slider-wrapper" style="position: relative; height: 140px; background: #FAF9F6; border-radius: 4px; overflow: hidden; margin-bottom: 0.8rem; border: 1px solid rgba(220, 203, 179, 0.2);" data-current-index="0">
+                                <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                    <img src="images/joint/joint/LINE_ALBUM_Joint_260803_2.jpg" alt="ตัวเชื่อมระหว่างห้อง 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/joint/LINE_ALBUM_Joint_260803_1.jpg" alt="ตัวเชื่อมระหว่างห้อง 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/joint/LINE_ALBUM_Joint_260803_3.jpg" alt="ตัวเชื่อมระหว่างห้อง 3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                </div>
+                                <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                                <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                </div>
+                            </div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; margin-bottom: 0.5rem;">ตัวเชื่อมระหว่างห้อง</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.2rem;">Joint Profile สำหรับปิดช่องรอยต่อระหว่างห้องพักที่มีระดับความสูงระนาบเดียวกัน</p>
+                        </div>
+                        <button class="btn-enquire" style="font-size: 0.78rem; padding: 0.5rem 1rem;" onclick="location.href='contact.html'">Enquire</button>
+                    </div>
+
+                    <!-- Profile 2: ตัวเชื่อมต่างระดับ -->
+                    <div class="coll-prod-item" style="padding: 1rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="coll-prod-img slider-wrapper" style="position: relative; height: 140px; background: #FAF9F6; border-radius: 4px; overflow: hidden; margin-bottom: 0.8rem; border: 1px solid rgba(220, 203, 179, 0.2);" data-current-index="0">
+                                <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                    <img src="images/joint/transition/LINE_ALBUM_Transition_260803_2.jpg" alt="ตัวเชื่อมต่างระดับ 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/transition/LINE_ALBUM_Transition_260803_1.jpg" alt="ตัวเชื่อมต่างระดับ 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/transition/LINE_ALBUM_Transition_260803_3.jpg" alt="ตัวเชื่อมต่างระดับ 3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                </div>
+                                <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                                <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                </div>
+                            </div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; margin-bottom: 0.5rem;">ตัวเชื่อมต่างระดับ</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.2rem;">Transition Profile สำหรับปิดช่วงรอยต่อระหว่างวัสดุพื้นสองชนิดที่มีระดับต่างกัน</p>
+                        </div>
+                        <button class="btn-enquire" style="font-size: 0.78rem; padding: 0.5rem 1rem;" onclick="location.href='contact.html'">Enquire</button>
+                    </div>
+
+                    <!-- Profile 3: ตัวจบริมผนัง -->
+                    <div class="coll-prod-item" style="padding: 1rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="coll-prod-img slider-wrapper" style="position: relative; height: 140px; background: #FAF9F6; border-radius: 4px; overflow: hidden; margin-bottom: 0.8rem; border: 1px solid rgba(220, 203, 179, 0.2);" data-current-index="0">
+                                <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                    <img src="images/joint/edging/LINE_ALBUM_Edging_260803_2.jpg" alt="ตัวจบริมผนัง 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/edging/LINE_ALBUM_Edging_260803_1.jpg" alt="ตัวจบริมผนัง 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/edging/LINE_ALBUM_Edging_260803_3.jpg" alt="ตัวจบริมผนัง 3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                </div>
+                                <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                                <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                </div>
+                            </div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; margin-bottom: 0.5rem;">ตัวจบริมผนัง</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.2rem;">Edging Profile สำหรับจบขอบพื้นริมกำแพง เฟอร์นิเจอร์ หรือประตูบานเลื่อน</p>
+                        </div>
+                        <button class="btn-enquire" style="font-size: 0.78rem; padding: 0.5rem 1rem;" onclick="location.href='contact.html'">Enquire</button>
+                    </div>
+
+                    <!-- Profile 4: บัวเชิงผนังสำเร็จรูป -->
+                    <div class="coll-prod-item" style="padding: 1rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="coll-prod-img slider-wrapper" style="position: relative; height: 140px; background: #FAF9F6; border-radius: 4px; overflow: hidden; margin-bottom: 0.8rem; border: 1px solid rgba(220, 203, 179, 0.2);" data-current-index="0">
+                                <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                    <img src="images/joint/skirting/skirting_4inch_1.jpg" alt="บัวเชิงผนัง 4 นิ้ว 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/skirting/skirting_2inch_1.jpg" alt="บัวเชิงผนัง 2 นิ้ว 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/skirting/skirting_3inch_1.jpg" alt="บัวเชิงผนัง 3 นิ้ว 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/skirting/skirting_2inch_2.jpg" alt="บัวเชิงผนัง 2 นิ้ว 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/skirting/skirting_3inch_2.jpg" alt="บัวเชิงผนัง 3 นิ้ว 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/joint/skirting/skirting_4inch_2.jpg" alt="บัวเชิงผนัง 4 นิ้ว 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                </div>
+                                <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                                <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 3)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 4)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 5)"></span>
+                                </div>
+                            </div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; margin-bottom: 0.5rem;">บัวเชิงผนังสำเร็จรูป</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.2rem;">Skirting บัวประดับเชิงผนังสำเร็จรูปเพื่อเก็บงานรอยต่อระหว่างพื้นและผนังให้สวยงาม</p>
+                        </div>
+                        <button class="btn-enquire" style="font-size: 0.78rem; padding: 0.5rem 1rem;" onclick="location.href='contact.html'">Enquire</button>
+                    </div>
+
+                    <!-- Profile 5: ตัวจบหน้าบันได -->
+                    <div class="coll-prod-item" style="padding: 1rem; text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="coll-prod-img slider-wrapper" style="position: relative; height: 140px; background: #FAF9F6; border-radius: 4px; overflow: hidden; margin-bottom: 0.8rem; border: 1px solid rgba(220, 203, 179, 0.2);" data-current-index="0">
+                                <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.4s ease;">
+                                    <img src="images/joint/stair_nose/Stair.jpg" alt="ตัวจบหน้าบันได 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                    <img src="images/stair.png" alt="ตัวจบหน้าบันได 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 4px;">
+                                </div>
+                                <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                                <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                                <div class="slider-dots">
+                                    <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                                    <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                                </div>
+                            </div>
+                            <h4 style="font-family: var(--font-heading); font-size: 1.05rem; margin-bottom: 0.5rem;">ตัวจบหน้าบันได</h4>
+                            <p style="font-size: 0.84rem; color: var(--text-light); line-height: 1.5; margin-bottom: 1.2rem;">Stair Nose สำหรับจบขอบชานพัก ขอบขั้นบันได เพื่อป้องกันการลื่นและเพิ่มความทนทาน</p>
+                        </div>
+                        <button class="btn-enquire" style="font-size: 0.78rem; padding: 0.5rem 1rem;" onclick="location.href='contact.html'">Enquire</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Accessories & Maintenance Section -->
+        <section class="maintenance-section" id="maintenance" style="border-top: 1px solid var(--border-color); padding: 5rem 0;">
+            <div class="section-container">
+                <div class="right-sec-header" style="text-align: center; margin-bottom: 3rem;">
+                    <h3>ผลิตภัณฑ์ถนอมและทำความสะอาดพื้น คิงส์ทาวน์</h3>
+                    <p>KINGSTOWN HOUSEHOLD CLEANERS & MAINTENANCE</p>
+                </div>
+
+                <div class="cleaner-redesign-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; padding: 2.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <!-- Left: Interactive Image Slider Showcase -->
+                    <div class="cleaner-slider-showcase slider-wrapper" style="position: relative; height: 380px; background: #f6f1eb; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-color); box-shadow: 0 6px 20px rgba(0,0,0,0.06);" data-current-index="0">
+                        <div class="slider-images" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
+                            <img src="images/Floor cleaner/cleaner_1.jpg" alt="Kingstown Floor Cleaner 1" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_2.jpg" alt="Kingstown Floor Cleaner 2" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_3.jpg" alt="Kingstown Floor Cleaner 3" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_4.jpg" alt="Kingstown Floor Cleaner 4" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_5.jpg" alt="Kingstown Floor Cleaner 5" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_6.jpg" alt="Kingstown Floor Cleaner 6" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_7.jpg" alt="Kingstown Floor Cleaner 7" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_8.jpg" alt="Kingstown Floor Cleaner 8" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_9.jpg" alt="Kingstown Floor Cleaner 9" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_10.jpg" alt="Kingstown Floor Cleaner 10" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                            <img src="images/Floor cleaner/cleaner_11.jpg" alt="Kingstown Floor Cleaner 11" style="width: 100%; height: 100%; object-fit: contain; flex: 0 0 100%; padding: 8px;">
+                        </div>
+                        <button class="slider-arrow prev-arrow" onclick="prevProjectSlide(this)" aria-label="Previous Image">‹</button>
+                        <button class="slider-arrow next-arrow" onclick="nextProjectSlide(this)" aria-label="Next Image">›</button>
+                        <div class="slider-dots">
+                            <span class="dot active" onclick="goToCardSlide(this, 0)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 1)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 2)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 3)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 4)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 5)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 6)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 7)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 8)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 9)"></span>
+                            <span class="dot" onclick="goToCardSlide(this, 10)"></span>
+                        </div>
+                    </div>
+
+                    <!-- Right: Product Features & Information -->
+                    <div class="cleaner-features-content" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-main); font-weight: 500;">สูตรถนอมผิวหน้าไม้และขจัดคราบอย่างอ่อนโยน</h4>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">1. ผลิตภัณฑ์ถูพื้นประจำวัน (Daily Floor Cleaner)</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ช่วยขจัดฝุ่น คราบเหนียว และขจัดคราบสกปรกประจำวันได้หมดจด แห้งไว ปลอดภัย ไม่ทิ้งรอยเท้า</p>
+                            </div>
+                            
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">2. ผลิตภัณฑ์ขจัดคราบฝังลึก (Deep Floor Cleaner & Polish)</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">สูตรเข้มข้นช่วยขจัดคราบน้ำมันและคราบฝังแน่น พร้อมเคลือบเงาให้พื้นไม้และพื้น SPC ดูสวยงามสดใหม่อยู่เสมอ</p>
+                            </div>
+
+                            <div style="background: var(--bg-main); padding: 1.1rem; border-radius: 6px; border-left: 3px solid var(--border-color);">
+                                <h5 style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 0.3rem;">3. อ่อนโยนต่อสุขภาพและเป็นมิตรต่อสิ่งแวดล้อม</h5>
+                                <p style="font-size: 0.82rem; color: var(--text-light); line-height: 1.5; margin: 0;">ปราศจากสารเคมีอันตราย ปลอดภัยต่อเด็กและสัตว์เลี้ยง ให้กลิ่นหอมสะอาดสดชื่นตลอดวัน</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; margin-top: 0.5rem; flex-wrap: wrap;">
+                            <button class="btn-quote" style="padding: 0.8rem 1.6rem; font-size: 0.82rem;" onclick="location.href='contact.html'">สอบถามสั่งซื้อสินค้า</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-contact">
+            <p><span class="icon">📞</span> 02-159-8594 | 02-297-0057 | 064-587-6725</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=20/54+ซอยจตุโชติ+4+แขวงออเงิน+เขตสายไหม+กรุงเทพฯ+10220" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--border-color)'" onmouseout="this.style.color='inherit'"><span class="icon">📍</span> 20/54 ซอยจตุโชติ 4 แขวงออเงิน เขตสายไหม กรุงเทพฯ 10220 ↗</a></p>
+            <p><span class="icon">💬</span> LINE OA</p>
+            <p><span class="icon">💬</span> WhatsApp</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const drawerClose = document.getElementById('drawerClose');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+
+        function openDrawer() {
+            mobileDrawer.classList.add('open');
+            drawerOverlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDrawer() {
+            mobileDrawer.classList.remove('open');
+            drawerOverlay.classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        menuToggle.addEventListener('click', openDrawer);
+        drawerClose.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+
+        // Tab selection logic
+        function openTab(evt, tabName) {
+            const tabContents = document.getElementsByClassName("tab-pane");
+            for (let i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+            }
+            
+            const tabBtns = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].classList.remove("active");
+            }
+            
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Interactive Card Image Slider Logic
+        function updateCardSlide(container, index) {
+            const imagesTrack = container.querySelector('.slider-images');
+            const dots = container.querySelectorAll('.slider-dots .dot');
+            if (!imagesTrack) return;
+            
+            const total = imagesTrack.children.length;
+            if (total <= 1) return;
+            
+            let nextIndex = index;
+            if (nextIndex < 0) nextIndex = total - 1;
+            if (nextIndex >= total) nextIndex = 0;
+            
+            container.dataset.currentIndex = nextIndex;
+            imagesTrack.style.transform = `translateX(-${nextIndex * 100}%)`;
+            
+            dots.forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === nextIndex);
+            });
+        }
+
+        function prevProjectSlide(btn) {
+            const container = btn.closest('.slider-wrapper');
+            let curr = parseInt(container.dataset.currentIndex || 0);
+            updateCardSlide(container, curr - 1);
+        }
+
+        function nextProjectSlide(btn) {
+            const container = btn.closest('.slider-wrapper');
+            let curr = parseInt(container.dataset.currentIndex || 0);
+            updateCardSlide(container, curr + 1);
+        }
+
+        function goToCardSlide(dot, index) {
+            const container = dot.closest('.slider-wrapper');
+            updateCardSlide(container, index);
+        }
+
+        // Universal Dynamic 3D Mouse-Tracking Shadow Effect
+        document.querySelectorAll('.floor-item, .coll-prod-item').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const shadowX = -x / 12;
+                const shadowY = -y / 12 + 15;
+                card.style.boxShadow = `${shadowX}px ${shadowY}px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(220, 203, 179, 0.3)`;
+                card.style.transform = `perspective(1000px) rotateX(${-y / 30}deg) rotateY(${x / 30}deg) translateY(-7px)`;
+                card.style.borderColor = 'var(--border-color)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '';
+                card.style.transform = '';
+                card.style.borderColor = '';
+            });
+        });
+    </script>
+</body>
+</html>
