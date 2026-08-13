@@ -133,6 +133,7 @@
         const drawerOverlay = document.getElementById('drawerOverlay');
 
         function openDrawer() {
+            if (mobileDrawer) mobileDrawer.scrollTop = 0;
             mobileDrawer.classList.add('open');
             drawerOverlay.classList.add('open');
             document.body.style.overflow = 'hidden';
