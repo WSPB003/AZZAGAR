@@ -1260,6 +1260,69 @@
                 card.style.borderColor = '';
             });
         });
+
+        // Real-time Project Search Filter Handler
+        const projectSearch = document.getElementById('projectSearch');
+        const projectList = document.getElementById('projectList');
+
+        if (projectSearch && projectList) {
+            const tags = Array.from(projectList.querySelectorAll('.project-tag'));
+            
+            // Create a no-results message element
+            const noResult = document.createElement('div');
+            noResult.id = 'noProjectResult';
+            noResult.style.display = 'none';
+            noResult.style.width = '100%';
+            noResult.style.textAlign = 'center';
+            noResult.style.padding = '2rem 1rem';
+            noResult.style.color = 'var(--border-color)';
+            noResult.style.fontFamily = 'var(--font-body)';
+            noResult.style.fontSize = '1.05rem';
+            noResult.style.fontWeight = '500';
+            noResult.textContent = 'ไม่พบรายชื่อโครงการที่ตรงกับคำค้นหา';
+            projectList.appendChild(noResult);
+
+            function filterProjects() {
+                const query = projectSearch.value.trim().toLowerCase();
+                let visibleCount = 0;
+
+                tags.forEach(tag => {
+                    const text = tag.textContent.toLowerCase();
+                    if (!query || text.includes(query)) {
+                        tag.style.display = 'inline-block';
+                        visibleCount++;
+                    } else {
+                        tag.style.display = 'none';
+                    }
+                });
+
+                noResult.style.display = (visibleCount === 0 && query !== '') ? 'block' : 'none';
+            }
+
+            projectSearch.addEventListener('input', filterProjects);
+
+            // Make project tags interactive and searchable on click
+            tags.forEach(tag => {
+                tag.style.cursor = 'pointer';
+                tag.title = 'คลิกเพื่อค้นหาโครงการนี้';
+                tag.addEventListener('mouseover', () => {
+                    tag.style.borderColor = 'var(--border-color)';
+                    tag.style.color = 'var(--border-color)';
+                    tag.style.background = 'rgba(125, 102, 80, 0.08)';
+                });
+                tag.addEventListener('mouseout', () => {
+                    tag.style.borderColor = 'var(--border-color)';
+                    tag.style.color = 'var(--text-light)';
+                    tag.style.background = 'transparent';
+                });
+                tag.addEventListener('click', () => {
+                    const name = tag.textContent.replace(/^โครงการ\s*/, '').trim();
+                    projectSearch.value = name;
+                    filterProjects();
+                    projectSearch.focus();
+                });
+            });
+        }
     </script>
 </body>
 </html>
