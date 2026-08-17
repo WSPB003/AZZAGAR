@@ -121,6 +121,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 114%; /* Enlarged font scale across entire site */
 }
 
 /* Premium Scrollbar */
@@ -149,8 +150,8 @@ body {
     font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
-    font-size: 1.08rem;
-    line-height: 1.68;
+    font-size: 1.15rem;
+    line-height: 1.7;
     overflow-x: hidden;
     /* Gentle load transition without transform */
     animation: fadeInPage 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -216,7 +217,7 @@ body {
 .nav a {
     text-decoration: none;
     color: #FAF9F6;
-    font-size: 1.2rem;
+    font-size: 0.98rem !important; /* Preserved navbar link size */
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -1566,7 +1567,7 @@ body {
     padding: 0.85rem 1.6rem;
     text-decoration: none;
     display: block;
-    font-size: 0.92rem;
+    font-size: 0.85rem !important;
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
