@@ -1344,12 +1344,16 @@
                     if (matchCard) {
                         matchCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
                         matchCard.style.transition = 'outline 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease';
-                        matchCard.style.outline = '3px solid var(--border-color)';
-                        matchCard.style.boxShadow = '0 0 35px rgba(125, 102, 80, 0.6)';
+                        matchCard.style.outline = '4px solid var(--border-color)';
+                        matchCard.style.boxShadow = '0 0 40px rgba(125, 102, 80, 0.7)';
                         setTimeout(() => {
                             matchCard.style.outline = 'none';
                             matchCard.style.boxShadow = '';
-                        }, 2200);
+                        }, 2500);
+                    } else {
+                        // Smooth scroll back up to top project search bar
+                        projectSearch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        projectSearch.focus();
                     }
                 });
             });
