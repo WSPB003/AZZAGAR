@@ -64,63 +64,57 @@
             </div>
         </section>
 
-        <!-- Promotion Banner Slider Section -->
-        <section class="promotion-section" style="position: relative; padding: 5rem 0; background-color: var(--bg-main); border-bottom: 1px solid var(--border-color); overflow: hidden;">
-            <!-- Faded Background Image Overlay -->
+        <!-- Special Promotion Section (Luxury Dual Showcase Layout) -->
+        <section class="promotion-section" style="position: relative; padding: 6rem 0; background-color: var(--bg-main); border-bottom: 1px solid var(--border-color); overflow: hidden;">
+            <!-- Faded Background Texture Overlay -->
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('images/BackG/BackG.jpg'); background-size: cover; background-position: center; opacity: 0.35; pointer-events: none; filter: contrast(105%) brightness(0.98);"></div>
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(246, 241, 235, 0.65) 0%, rgba(246, 241, 235, 0.4) 50%, rgba(246, 241, 235, 0.72) 100%); pointer-events: none;"></div>
             
-            <div class="section-container" style="max-width: 1400px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 2;">
+            <div class="section-container" style="max-width: 1300px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 2;">
                 <!-- Section Header -->
-                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
-                    <div>
-                        <p style="font-size: 0.88rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-body);">SPECIAL OFFERS</p>
-                        <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 400; color: var(--text-main); margin: 0; letter-spacing: 0.02em;">Promotions</h2>
-                    </div>
-                    <a href="contact.html" style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--border-color); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: 0.3s; letter-spacing: 0.05em;">
-                        <span>ติดต่อสอบถามข้อมูลเพิ่มเติม</span>
-                        <span style="font-size: 1.1rem;">↗</span>
-                    </a>
+                <div style="text-align: center; margin-bottom: 3.5rem;">
+                    <p style="font-size: 0.88rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-body);">EXCLUSIVE PROMOTIONS</p>
+                    <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 400; color: var(--text-main); margin: 0 0 0.8rem; letter-spacing: 0.02em;">โปรโมชั่นพิเศษ</h2>
+                    <p style="font-family: var(--font-body); font-size: 1rem; color: var(--text-light); max-width: 600px; margin: 0 auto; opacity: 0.85;">ข้อเสนอสุดพิเศษสำหรับวัสดุปูพื้นไม้พรีเมียมและงานติดตั้งมาตรฐานสากล</p>
                 </div>
 
-                <!-- Promotion Slider Card (Centered & Scaled to show full image) -->
-                <div class="promotion-slider-wrapper" id="promotionSliderWrapper" style="position: relative; width: 100%; max-width: 880px; margin: 0 auto; aspect-ratio: 4 / 3; max-height: 620px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 16px 40px rgba(40, 51, 35, 0.18); overflow: hidden; background: #181512;" onmouseenter="stopPromoAutoplay()" onmouseleave="startPromoAutoplay()">
+                <!-- Dual Promotion Cards Grid -->
+                <div class="promotion-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; max-width: 1020px; margin: 0 auto; align-items: start;">
                     
-                    <!-- Slider Slides Track (4 Cropped Slides with Full Contain Visibility) -->
-                    <div class="promo-slider-track" id="promoSliderTrack" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);">
-                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #181512; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/promo_1_part1.jpg" alt="AZZAGAR Promotion Part 1" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                    <!-- Promotion Card 1 -->
+                    <div class="promo-card" style="background: var(--white); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 16px 40px rgba(40, 51, 35, 0.12); transition: all 0.4s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 24px 50px rgba(40, 51, 35, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 16px 40px rgba(40, 51, 35, 0.12)';">
+                        <div class="promo-card-badge" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.4rem; background: var(--bg-footer); border-bottom: 1px solid var(--border-color);">
+                            <span style="font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.1em; text-transform: uppercase;">PROMOTION 01</span>
+                            <span style="font-family: var(--font-body); font-size: 0.78rem; background: rgba(220, 203, 179, 0.2); color: #FAF7F2; padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid rgba(220, 203, 179, 0.3);">✨ HOT DEAL</span>
                         </div>
-                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #181512; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/promo_1_part2.jpg" alt="AZZAGAR Promotion Part 2" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                        <div class="promo-card-img-wrapper" style="overflow: hidden; background: #FAF9F6; cursor: pointer;" onclick="location.href='contact.html'" title="คลิกเพื่อสอบถามโปรโมชั่นนี้">
+                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_1.jpg" alt="AZZAGAR Special Promotion 1" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
                         </div>
-                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #181512; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/promo_2_part1.jpg" alt="AZZAGAR Promotion Part 3" style="width: 100%; height: 100%; object-fit: contain; display: block;">
-                        </div>
-                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: #181512; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/promo_2_part2.jpg" alt="AZZAGAR Promotion Part 4" style="width: 100%; height: 100%; object-fit: contain; display: block;">
+                        <div class="promo-card-footer" style="padding: 1.4rem; background: var(--white); text-align: center; border-top: 1px solid rgba(220, 203, 179, 0.25);">
+                            <button onclick="location.href='contact.html'" style="width: 100%; background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.85rem 1.5rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='var(--bg-footer)'; this.style.color='#FAF7F2';">
+                                <span>ขอรับสิทธิ์โปรโมชั่นนี้</span>
+                                <span style="font-size: 1rem;">↗</span>
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Navigation Arrows -->
-                    <button class="promo-arrow promo-prev" onclick="prevPromoSlide(event)" aria-label="Previous Promotion" style="position: absolute; top: 50%; left: 1.2rem; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background: rgba(40, 51, 35, 0.85); border: 1px solid var(--border-color); color: #FAF7F2; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; z-index: 4; backdrop-filter: blur(6px);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='rgba(40, 51, 35, 0.85)'; this.style.color='#FAF7F2';">‹</button>
-                    <button class="promo-arrow promo-next" onclick="nextPromoSlide(event)" aria-label="Next Promotion" style="position: absolute; top: 50%; right: 1.2rem; transform: translateY(-50%); width: 42px; height: 42px; border-radius: 50%; background: rgba(40, 51, 35, 0.85); border: 1px solid var(--border-color); color: #FAF7F2; font-size: 1.3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; z-index: 4; backdrop-filter: blur(6px);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='rgba(40, 51, 35, 0.85)'; this.style.color='#FAF7F2';">›</button>
-
-                    <!-- Navigation Dots (4 Dots) -->
-                    <div class="promo-dots" id="promoDots" style="position: absolute; bottom: 1.2rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.6rem; z-index: 4;">
-                        <span class="promo-dot" onclick="goToPromoSlide(0)" style="width: 11px; height: 11px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s; transform: scale(1.25); box-shadow: 0 0 8px rgba(0,0,0,0.6);"></span>
-                        <span class="promo-dot" onclick="goToPromoSlide(1)" style="width: 11px; height: 11px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.6);"></span>
-                        <span class="promo-dot" onclick="goToPromoSlide(2)" style="width: 11px; height: 11px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.6);"></span>
-                        <span class="promo-dot" onclick="goToPromoSlide(3)" style="width: 11px; height: 11px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.6);"></span>
+                    <!-- Promotion Card 2 -->
+                    <div class="promo-card" style="background: var(--white); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 16px 40px rgba(40, 51, 35, 0.12); transition: all 0.4s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 24px 50px rgba(40, 51, 35, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 16px 40px rgba(40, 51, 35, 0.12)';">
+                        <div class="promo-card-badge" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.4rem; background: var(--bg-footer); border-bottom: 1px solid var(--border-color);">
+                            <span style="font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.1em; text-transform: uppercase;">PROMOTION 02</span>
+                            <span style="font-family: var(--font-body); font-size: 0.78rem; background: rgba(220, 203, 179, 0.2); color: #FAF7F2; padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid rgba(220, 203, 179, 0.3);">⭐ SPECIAL OFFER</span>
+                        </div>
+                        <div class="promo-card-img-wrapper" style="overflow: hidden; background: #FAF9F6; cursor: pointer;" onclick="location.href='contact.html'" title="คลิกเพื่อสอบถามโปรโมชั่นนี้">
+                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_2.jpg" alt="AZZAGAR Special Promotion 2" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
+                        </div>
+                        <div class="promo-card-footer" style="padding: 1.4rem; background: var(--white); text-align: center; border-top: 1px solid rgba(220, 203, 179, 0.25);">
+                            <button onclick="location.href='contact.html'" style="width: 100%; background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.85rem 1.5rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='var(--bg-footer)'; this.style.color='#FAF7F2';">
+                                <span>ขอรับสิทธิ์โปรโมชั่นนี้</span>
+                                <span style="font-size: 1rem;">↗</span>
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Floating CTA Button (Bottom-Right) -->
-                    <div style="position: absolute; bottom: 1.2rem; right: 1.2rem; z-index: 4;">
-                        <span onclick="location.href='contact.html'" style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.65rem 1.4rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; box-shadow: 0 8px 20px rgba(0,0,0,0.4); backdrop-filter: blur(8px); transition: all 0.3s ease; cursor: pointer;">
-                            <span>สอบถามสิทธิ์โปรโมชั่น</span>
-                            <span style="color: var(--border-color); font-size: 0.95rem;">↗</span>
-                        </span>
-                    </div>
                 </div>
             </div>
         </section>
@@ -463,60 +457,6 @@
             });
         });
 
-        // Promotion Slider Logic
-        let promoCurrentIndex = 0;
-        const promoTrack = document.getElementById('promoSliderTrack');
-        const promoDots = document.querySelectorAll('#promoDots .promo-dot');
-        const totalPromoSlides = document.querySelectorAll('.promo-slide').length;
-        let promoAutoplayTimer = null;
-
-        function updatePromoSlide() {
-            if (!promoTrack) return;
-            promoTrack.style.transform = `translateX(-${promoCurrentIndex * 100}%)`;
-            promoDots.forEach((dot, idx) => {
-                if (idx === promoCurrentIndex) {
-                    dot.style.background = 'var(--border-color)';
-                    dot.style.transform = 'scale(1.25)';
-                } else {
-                    dot.style.background = 'rgba(255,255,255,0.45)';
-                    dot.style.transform = 'scale(1)';
-                }
-            });
-        }
-
-        function prevPromoSlide(e) {
-            if (e) e.stopPropagation();
-            promoCurrentIndex = (promoCurrentIndex - 1 + totalPromoSlides) % totalPromoSlides;
-            updatePromoSlide();
-        }
-
-        function nextPromoSlide(e) {
-            if (e) e.stopPropagation();
-            promoCurrentIndex = (promoCurrentIndex + 1) % totalPromoSlides;
-            updatePromoSlide();
-        }
-
-        function goToPromoSlide(index) {
-            promoCurrentIndex = index;
-            updatePromoSlide();
-        }
-
-        function startPromoAutoplay() {
-            stopPromoAutoplay();
-            promoAutoplayTimer = setInterval(() => {
-                nextPromoSlide();
-            }, 4500);
-        }
-
-        function stopPromoAutoplay() {
-            if (promoAutoplayTimer) {
-                clearInterval(promoAutoplayTimer);
-            }
-        }
-
-        if (totalPromoSlides > 0) {
-            startPromoAutoplay();
-        }
     </script>
 </body>
 </html>
