@@ -84,15 +84,21 @@
                 </div>
 
                 <!-- Promotion Slider Card -->
-                <div class="promotion-slider-wrapper" id="promotionSliderWrapper" style="position: relative; width: 100%; aspect-ratio: 16 / 9; max-height: 560px; min-height: 320px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 16px 40px rgba(40, 51, 35, 0.15); overflow: hidden; background: #1C1916;" onmouseenter="stopPromoAutoplay()" onmouseleave="startPromoAutoplay()">
+                <div class="promotion-slider-wrapper" id="promotionSliderWrapper" style="position: relative; width: 100%; aspect-ratio: 16 / 10; max-height: 580px; min-height: 320px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 16px 40px rgba(40, 51, 35, 0.15); overflow: hidden; background: #1C1916;" onmouseenter="stopPromoAutoplay()" onmouseleave="startPromoAutoplay()">
                     
-                    <!-- Slider Slides Track -->
+                    <!-- Slider Slides Track (4 Cropped Slides) -->
                     <div class="promo-slider-track" id="promoSliderTrack" style="display: flex; width: 100%; height: 100%; transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);">
                         <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_1.jpg" alt="AZZAGAR Promotion 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img src="images/Promotion/promo_1_part1.jpg" alt="AZZAGAR Promotion Part 1" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                         <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; cursor: pointer;" onclick="location.href='contact.html'">
-                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_2.jpg" alt="AZZAGAR Promotion 2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                            <img src="images/Promotion/promo_1_part2.jpg" alt="AZZAGAR Promotion Part 2" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; cursor: pointer;" onclick="location.href='contact.html'">
+                            <img src="images/Promotion/promo_2_part1.jpg" alt="AZZAGAR Promotion Part 3" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                        </div>
+                        <div class="promo-slide" style="flex: 0 0 100%; width: 100%; height: 100%; cursor: pointer;" onclick="location.href='contact.html'">
+                            <img src="images/Promotion/promo_2_part2.jpg" alt="AZZAGAR Promotion Part 4" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                         </div>
                     </div>
 
@@ -100,10 +106,12 @@
                     <button class="promo-arrow promo-prev" onclick="prevPromoSlide(event)" aria-label="Previous Promotion" style="position: absolute; top: 50%; left: 1.5rem; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(40, 51, 35, 0.8); border: 1px solid var(--border-color); color: #FAF7F2; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; z-index: 4; backdrop-filter: blur(6px);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='rgba(40, 51, 35, 0.8)'; this.style.color='#FAF7F2';">‹</button>
                     <button class="promo-arrow promo-next" onclick="nextPromoSlide(event)" aria-label="Next Promotion" style="position: absolute; top: 50%; right: 1.5rem; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: rgba(40, 51, 35, 0.8); border: 1px solid var(--border-color); color: #FAF7F2; font-size: 1.4rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.3s ease; z-index: 4; backdrop-filter: blur(6px);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='rgba(40, 51, 35, 0.8)'; this.style.color='#FAF7F2';">›</button>
 
-                    <!-- Navigation Dots -->
+                    <!-- Navigation Dots (4 Dots) -->
                     <div class="promo-dots" id="promoDots" style="position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); display: flex; gap: 0.6rem; z-index: 4;">
                         <span class="promo-dot" onclick="goToPromoSlide(0)" style="width: 12px; height: 12px; border-radius: 50%; background: var(--border-color); cursor: pointer; transition: all 0.3s; transform: scale(1.25); box-shadow: 0 0 8px rgba(0,0,0,0.5);"></span>
                         <span class="promo-dot" onclick="goToPromoSlide(1)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></span>
+                        <span class="promo-dot" onclick="goToPromoSlide(2)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></span>
+                        <span class="promo-dot" onclick="goToPromoSlide(3)" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.45); cursor: pointer; transition: all 0.3s; box-shadow: 0 0 8px rgba(0,0,0,0.5);"></span>
                     </div>
 
                     <!-- Floating CTA Button (Bottom-Right) -->
