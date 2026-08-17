@@ -138,11 +138,19 @@ html {
     background: #B5A893;
 }
 
+/* Non-dropping Lining Figures for all numbers across the website */
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6, p, span, a, div, td, th,
+.card-val, .quality-tag, .history-text, .footer-contact, .floor-info {
+    font-variant-numeric: lining-nums tabular-nums !important;
+    font-feature-settings: "lnum" 1, "tnum" 1 !important;
+}
+
 body {
     font-family: var(--font-body);
     background-color: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.6;
+    font-size: 1.08rem;
+    line-height: 1.68;
     overflow-x: hidden;
     /* Gentle load transition without transform */
     animation: fadeInPage 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -162,7 +170,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem 4rem;
+    padding: 0.8rem 4.5rem;
     background-color: #2F2A25;
     border-bottom: 1px solid rgba(220, 203, 179, 0.15);
     position: sticky;
@@ -181,9 +189,9 @@ body {
 }
 
 .logo-icon {
-    height: 80px;
+    height: 85px;
     width: auto;
-    max-height: 90px;
+    max-height: 95px;
     margin: 0;
     padding: 0;
     transition: transform 0.4s ease;
@@ -201,19 +209,19 @@ body {
 
 .nav {
     display: flex;
-    gap: 2.2rem;
+    gap: 2.8rem;
     align-items: center;
 }
 
 .nav a {
     text-decoration: none;
     color: #FAF9F6;
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 4px;
+    padding: 0.4rem 0;
     transition: color 0.3s ease;
 }
 
@@ -223,7 +231,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: #DCCBB3;
     transform: scaleX(0);
     transform-origin: right;
@@ -1062,13 +1070,13 @@ body {
 
 .floor-info h4 {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: 0.25rem;
     color: var(--text-main);
 }
 .floor-info .quality-tag {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--border-color);
     margin-bottom: 0.5rem;
