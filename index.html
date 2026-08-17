@@ -64,54 +64,79 @@
             </div>
         </section>
 
-        <!-- Special Promotion Section (Luxury Dual Showcase Layout) -->
+        <!-- Special Promotion Section (Interactive Editorial Split Layout) -->
         <section class="promotion-section" style="position: relative; padding: 6rem 0; background-color: var(--bg-main); border-bottom: 1px solid var(--border-color); overflow: hidden;">
             <!-- Faded Background Texture Overlay -->
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('images/BackG/BackG.jpg'); background-size: cover; background-position: center; opacity: 0.35; pointer-events: none; filter: contrast(105%) brightness(0.98);"></div>
             <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(246, 241, 235, 0.65) 0%, rgba(246, 241, 235, 0.4) 50%, rgba(246, 241, 235, 0.72) 100%); pointer-events: none;"></div>
             
-            <div class="section-container" style="max-width: 1300px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 2;">
-                <!-- Section Header -->
-                <div style="text-align: center; margin-bottom: 3.5rem;">
-                    <p style="font-size: 0.88rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.5rem; font-family: var(--font-body);">EXCLUSIVE PROMOTIONS</p>
-                    <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 400; color: var(--text-main); margin: 0 0 0.8rem; letter-spacing: 0.02em;">โปรโมชั่นพิเศษ</h2>
-                    <p style="font-family: var(--font-body); font-size: 1rem; color: var(--text-light); max-width: 600px; margin: 0 auto; opacity: 0.85;">ข้อเสนอสุดพิเศษสำหรับวัสดุปูพื้นไม้พรีเมียมและงานติดตั้งมาตรฐานสากล</p>
-                </div>
-
-                <!-- Dual Promotion Cards Grid -->
-                <div class="promotion-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2.5rem; max-width: 1020px; margin: 0 auto; align-items: start;">
+            <div class="section-container" style="max-width: 1350px; margin: 0 auto; padding: 0 2rem; position: relative; z-index: 2;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 3.5rem; align-items: center;">
                     
-                    <!-- Promotion Card 1 -->
-                    <div class="promo-card" style="background: var(--white); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 16px 40px rgba(40, 51, 35, 0.12); transition: all 0.4s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 24px 50px rgba(40, 51, 35, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 16px 40px rgba(40, 51, 35, 0.12)';">
-                        <div class="promo-card-badge" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.4rem; background: var(--bg-footer); border-bottom: 1px solid var(--border-color);">
-                            <span style="font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.1em; text-transform: uppercase;">PROMOTION 01</span>
-                            <span style="font-family: var(--font-body); font-size: 0.78rem; background: rgba(220, 203, 179, 0.2); color: #FAF7F2; padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid rgba(220, 203, 179, 0.3);">✨ HOT DEAL</span>
+                    <!-- Left Column: Editorial Info & Promotion Switcher -->
+                    <div class="promo-editorial-left">
+                        <p style="font-size: 0.88rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--border-color); font-weight: 600; margin-bottom: 0.6rem; font-family: var(--font-body);">SPECIAL PROMOTIONS & OFFERS</p>
+                        <h2 style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 400; color: var(--text-main); margin: 0 0 1.2rem; letter-spacing: 0.02em; line-height: 1.2;">สิทธิพิเศษ & โปรโมชั่นล่าสุด</h2>
+                        <p style="font-family: var(--font-body); font-size: 1rem; color: var(--text-light); line-height: 1.7; margin-bottom: 2rem; opacity: 0.9;">
+                            ยกระดับความหรูหราให้กับบ้านและโครงการของคุณ ด้วยวัสดุปูพื้นไม้สำเร็จรูปมาตรฐานเยอรมนี ในราคาโปรโมชั่นสุดคุ้มค่า พร้อมทีมงานติดตั้งมืออาชีพครบวงจร
+                        </p>
+
+                        <!-- Promotion Interactive Tab Cards -->
+                        <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2.2rem;">
+                            <!-- Tab 1 -->
+                            <div id="promoTab1" class="promo-selector active" onclick="switchPromoDisplay(1)" style="padding: 1.2rem 1.5rem; background: var(--bg-footer); border: 1.5px solid var(--border-color); border-radius: 8px; cursor: pointer; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">
+                                <div>
+                                    <h4 style="margin: 0 0 0.3rem; font-family: var(--font-body); font-size: 1.05rem; font-weight: 600; color: #FAF7F2;">01. ลามิเนต 8 มม. (Laminate Flooring)</h4>
+                                    <p style="margin: 0; font-family: var(--font-body); font-size: 0.85rem; color: var(--border-color);">ราคาพิเศษ 239.- / ตร.ม. (รวม VAT แล้ว)</p>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(220, 203, 179, 0.25); color: #FAF7F2; padding: 0.25rem 0.75rem; border-radius: 20px; font-weight: 600;">✨ HOT DEAL</span>
+                            </div>
+
+                            <!-- Tab 2 -->
+                            <div id="promoTab2" class="promo-selector" onclick="switchPromoDisplay(2)" style="padding: 1.2rem 1.5rem; background: var(--white); border: 1px solid var(--border-color); border-radius: 8px; cursor: pointer; transition: all 0.3s ease; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+                                <div>
+                                    <h4 style="margin: 0 0 0.3rem; font-family: var(--font-body); font-size: 1.05rem; font-weight: 600; color: var(--text-main);">02. โปรโมชั่นวัสดุปูพื้น AZZAGAR Collection</h4>
+                                    <p style="margin: 0; font-family: var(--font-body); font-size: 0.85rem; color: var(--text-light);">สิทธิพิเศษและบริการติดตั้งคุณภาพมาตรฐานสากล</p>
+                                </div>
+                                <span style="font-size: 0.8rem; background: rgba(40, 51, 35, 0.08); color: var(--text-main); padding: 0.25rem 0.75rem; border-radius: 20px; font-weight: 600;">⭐ SPECIAL</span>
+                            </div>
                         </div>
-                        <div class="promo-card-img-wrapper" style="overflow: hidden; background: #FAF9F6; cursor: pointer;" onclick="location.href='contact.html'" title="คลิกเพื่อสอบถามโปรโมชั่นนี้">
-                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_1.jpg" alt="AZZAGAR Special Promotion 1" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
+
+                        <!-- Key Benefits List -->
+                        <div style="margin-bottom: 2.2rem; display: flex; flex-direction: column; gap: 0.6rem;">
+                            <div style="display: flex; align-items: center; gap: 0.75rem; font-family: var(--font-body); font-size: 0.92rem; color: var(--text-main);">
+                                <span style="color: var(--border-color); font-weight: bold; font-size: 1.1rem;">✔</span>
+                                <span>มาตรฐานเยอรมนี ลวดลายไม้ธรรมชาติ คมชัด ทนรอยขีดข่วน</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem; font-family: var(--font-body); font-size: 0.92rem; color: var(--text-main);">
+                                <span style="color: var(--border-color); font-weight: bold; font-size: 1.1rem;">✔</span>
+                                <span>ราคารวมภาษีมูลค่าเพิ่ม (VAT) ชัดเจน ไม่มีค่าใช้จ่ายแอบแฝง</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.75rem; font-family: var(--font-body); font-size: 0.92rem; color: var(--text-main);">
+                                <span style="color: var(--border-color); font-weight: bold; font-size: 1.1rem;">✔</span>
+                                <span>พร้อมทีมช่างผู้เชี่ยวชาญ รับประกันงานติดตั้งคุณภาพ</span>
+                            </div>
                         </div>
-                        <div class="promo-card-footer" style="padding: 1.4rem; background: var(--white); text-align: center; border-top: 1px solid rgba(220, 203, 179, 0.25);">
-                            <button onclick="location.href='contact.html'" style="width: 100%; background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.85rem 1.5rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='var(--bg-footer)'; this.style.color='#FAF7F2';">
-                                <span>ขอรับสิทธิ์โปรโมชั่นนี้</span>
-                                <span style="font-size: 1rem;">↗</span>
+
+                        <!-- Action Buttons -->
+                        <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                            <button onclick="location.href='contact.html'" style="background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.9rem 2rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='var(--bg-footer)'; this.style.color='#FAF7F2';">
+                                <span>ขอใบเสนอราคา / จองสิทธิ์โปรโมชั่น</span>
+                                <span style="font-size: 1.1rem;">↗</span>
                             </button>
+                            <a href="tel:084-439-8900" style="font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--text-main); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.85rem 1.4rem; border: 1px solid var(--border-color); border-radius: 30px; background: var(--white); transition: all 0.3s;">
+                                <span>📞 084-439-8900</span>
+                            </a>
                         </div>
                     </div>
 
-                    <!-- Promotion Card 2 -->
-                    <div class="promo-card" style="background: var(--white); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 16px 40px rgba(40, 51, 35, 0.12); transition: all 0.4s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 24px 50px rgba(40, 51, 35, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 16px 40px rgba(40, 51, 35, 0.12)';">
-                        <div class="promo-card-badge" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.4rem; background: var(--bg-footer); border-bottom: 1px solid var(--border-color);">
-                            <span style="font-family: var(--font-body); font-size: 0.82rem; font-weight: 600; color: var(--border-color); letter-spacing: 0.1em; text-transform: uppercase;">PROMOTION 02</span>
-                            <span style="font-family: var(--font-body); font-size: 0.78rem; background: rgba(220, 203, 179, 0.2); color: #FAF7F2; padding: 0.25rem 0.75rem; border-radius: 20px; border: 1px solid rgba(220, 203, 179, 0.3);">⭐ SPECIAL OFFER</span>
-                        </div>
-                        <div class="promo-card-img-wrapper" style="overflow: hidden; background: #FAF9F6; cursor: pointer;" onclick="location.href='contact.html'" title="คลิกเพื่อสอบถามโปรโมชั่นนี้">
-                            <img src="images/Promotion/LINE_ALBUM_Promotion_260817_2.jpg" alt="AZZAGAR Special Promotion 2" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
-                        </div>
-                        <div class="promo-card-footer" style="padding: 1.4rem; background: var(--white); text-align: center; border-top: 1px solid rgba(220, 203, 179, 0.25);">
-                            <button onclick="location.href='contact.html'" style="width: 100%; background: var(--bg-footer); color: #FAF7F2; border: 1px solid var(--border-color); padding: 0.85rem 1.5rem; border-radius: 30px; font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; justify-content: center; gap: 0.6rem; box-shadow: 0 4px 15px rgba(0,0,0,0.15);" onmouseover="this.style.background='var(--border-color)'; this.style.color='var(--bg-footer)';" onmouseout="this.style.background='var(--bg-footer)'; this.style.color='#FAF7F2';">
-                                <span>ขอรับสิทธิ์โปรโมชั่นนี้</span>
-                                <span style="font-size: 1rem;">↗</span>
-                            </button>
+                    <!-- Right Column: Interactive Poster Card -->
+                    <div class="promo-editorial-right" style="position: relative; max-width: 540px; margin: 0 auto; width: 100%;">
+                        <div style="background: var(--white); border: 1px solid var(--border-color); border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(40, 51, 35, 0.18); transition: transform 0.4s ease; cursor: pointer;" onclick="location.href='contact.html'" onmouseover="this.style.transform='translateY(-6px)';" onmouseout="this.style.transform='translateY(0)';" title="คลิกเพื่อสอบถามโปรโมชั่นนี้">
+                            <!-- Image 1 -->
+                            <img id="promoImg1" src="images/Promotion/LINE_ALBUM_Promotion_260817_1.jpg" alt="AZZAGAR Promotion 1" style="width: 100%; height: auto; display: block; transition: opacity 0.4s ease;">
+                            <!-- Image 2 -->
+                            <img id="promoImg2" src="images/Promotion/LINE_ALBUM_Promotion_260817_2.jpg" alt="AZZAGAR Promotion 2" style="width: 100%; height: auto; display: none; transition: opacity 0.4s ease;">
                         </div>
                     </div>
 
@@ -455,8 +480,57 @@
                     imgWrapper.style.borderColor = '';
                 }
             });
-        });
+        // Promotion Tab Switcher Logic
+        function switchPromoDisplay(id) {
+            const tab1 = document.getElementById('promoTab1');
+            const tab2 = document.getElementById('promoTab2');
+            const img1 = document.getElementById('promoImg1');
+            const img2 = document.getElementById('promoImg2');
+            
+            if (!tab1 || !tab2 || !img1 || !img2) return;
 
+            if (id === 1) {
+                // Tab 1 Active
+                tab1.style.background = 'var(--bg-footer)';
+                tab1.style.border = '1.5px solid var(--border-color)';
+                tab1.querySelector('h4').style.color = '#FAF7F2';
+                tab1.querySelector('p').style.color = 'var(--border-color)';
+                tab1.querySelector('span').style.background = 'rgba(220, 203, 179, 0.25)';
+                tab1.querySelector('span').style.color = '#FAF7F2';
+
+                // Tab 2 Inactive
+                tab2.style.background = 'var(--white)';
+                tab2.style.border = '1px solid var(--border-color)';
+                tab2.querySelector('h4').style.color = 'var(--text-main)';
+                tab2.querySelector('p').style.color = 'var(--text-light)';
+                tab2.querySelector('span').style.background = 'rgba(40, 51, 35, 0.08)';
+                tab2.querySelector('span').style.color = 'var(--text-main)';
+
+                // Images
+                img1.style.display = 'block';
+                img2.style.display = 'none';
+            } else {
+                // Tab 2 Active
+                tab2.style.background = 'var(--bg-footer)';
+                tab2.style.border = '1.5px solid var(--border-color)';
+                tab2.querySelector('h4').style.color = '#FAF7F2';
+                tab2.querySelector('p').style.color = 'var(--border-color)';
+                tab2.querySelector('span').style.background = 'rgba(220, 203, 179, 0.25)';
+                tab2.querySelector('span').style.color = '#FAF7F2';
+
+                // Tab 1 Inactive
+                tab1.style.background = 'var(--white)';
+                tab1.style.border = '1px solid var(--border-color)';
+                tab1.querySelector('h4').style.color = 'var(--text-main)';
+                tab1.querySelector('p').style.color = 'var(--text-light)';
+                tab1.querySelector('span').style.background = 'rgba(40, 51, 35, 0.08)';
+                tab1.querySelector('span').style.color = 'var(--text-main)';
+
+                // Images
+                img1.style.display = 'none';
+                img2.style.display = 'block';
+            }
+        }
     </script>
 </body>
 </html>
