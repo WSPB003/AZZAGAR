@@ -1261,12 +1261,14 @@
             });
         });
 
-        // Real-time Project Search Filter Handler
+        // Real-time Project Search & Flooring Showcase Grid Linked Handler
         const projectSearch = document.getElementById('projectSearch');
         const projectList = document.getElementById('projectList');
+        const flooringGrid = document.querySelector('.flooring-grid');
 
         if (projectSearch && projectList) {
             const tags = Array.from(projectList.querySelectorAll('.project-tag'));
+            const showcaseCards = flooringGrid ? Array.from(flooringGrid.querySelectorAll('.floor-item')) : [];
             
             // Create a no-results message element
             const noResult = document.createElement('div');
@@ -1284,27 +1286,38 @@
 
             function filterProjects() {
                 const query = projectSearch.value.trim().toLowerCase();
-                let visibleCount = 0;
+                let visibleTagCount = 0;
 
+                // Filter tags in projectList
                 tags.forEach(tag => {
                     const text = tag.textContent.toLowerCase();
                     if (!query || text.includes(query)) {
                         tag.style.display = 'inline-block';
-                        visibleCount++;
+                        visibleTagCount++;
                     } else {
                         tag.style.display = 'none';
                     }
                 });
 
-                noResult.style.display = (visibleCount === 0 && query !== '') ? 'block' : 'none';
+                noResult.style.display = (visibleTagCount === 0 && query !== '') ? 'block' : 'none';
+
+                // Filter showcase cards in flooringGrid
+                showcaseCards.forEach(card => {
+                    const text = card.textContent.toLowerCase();
+                    if (!query || text.includes(query)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
             }
 
             projectSearch.addEventListener('input', filterProjects);
 
-            // Make project tags interactive and searchable on click
+            // Make project tags interactive, searchable, and scroll to matching showcase card
             tags.forEach(tag => {
                 tag.style.cursor = 'pointer';
-                tag.title = 'คลิกเพื่อค้นหาโครงการนี้';
+                tag.title = 'คลิกเพื่อเลือกดูและค้นหาโครงการนี้';
                 tag.addEventListener('mouseover', () => {
                     tag.style.borderColor = 'var(--border-color)';
                     tag.style.color = 'var(--border-color)';
@@ -1316,10 +1329,28 @@
                     tag.style.background = 'transparent';
                 });
                 tag.addEventListener('click', () => {
-                    const name = tag.textContent.replace(/^โครงการ\s*/, '').trim();
+                    const fullText = tag.textContent;
+                    const name = fullText.replace(/^โครงการ\s*/, '').trim();
                     projectSearch.value = name;
                     filterProjects();
-                    projectSearch.focus();
+
+                    // Find matching showcase card in flooringGrid
+                    const matchCard = showcaseCards.find(card => {
+                        const cardText = card.textContent.toLowerCase();
+                        const tagClean = name.toLowerCase();
+                        return cardText.includes(tagClean) || tagClean.split(/\s+/).some(kw => kw.length > 2 && cardText.includes(kw));
+                    });
+
+                    if (matchCard) {
+                        matchCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        matchCard.style.transition = 'outline 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease';
+                        matchCard.style.outline = '3px solid var(--border-color)';
+                        matchCard.style.boxShadow = '0 0 35px rgba(125, 102, 80, 0.6)';
+                        setTimeout(() => {
+                            matchCard.style.outline = 'none';
+                            matchCard.style.boxShadow = '';
+                        }, 2200);
+                    }
                 });
             });
         }
