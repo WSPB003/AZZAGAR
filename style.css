@@ -171,7 +171,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.8rem 4.5rem;
-    background-color: #2F2A25;
+    background-color: #283323;
     border-bottom: 1px solid rgba(220, 203, 179, 0.15);
     position: sticky;
     top: 0;
@@ -768,7 +768,7 @@ body {
     max-width: 85vw;
     height: 100vh;
     height: 100dvh;
-    background-color: #2F2A25;
+    background-color: #283323;
     z-index: 100000;
     box-shadow: 10px 0 30px rgba(0, 0, 0, 0.4);
     display: flex;
@@ -1538,7 +1538,7 @@ body {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #231F1C;
+    background-color: #283323;
     min-width: 220px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(220, 203, 179, 0.2);
@@ -1869,12 +1869,12 @@ textarea:focus,
 
 .partner-marquee-wrapper::before {
     left: 0;
-    background: linear-gradient(to right, var(--bg-main, #2F2A25), transparent);
+    background: linear-gradient(to right, var(--bg-main, #283323), transparent);
 }
 
 .partner-marquee-wrapper::after {
     right: 0;
-    background: linear-gradient(to left, var(--bg-main, #2F2A25), transparent);
+    background: linear-gradient(to left, var(--bg-main, #283323), transparent);
 }
 
 .partner-marquee-row {
